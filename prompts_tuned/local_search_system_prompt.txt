@@ -57,7 +57,7 @@
 {response_type}
 
 
----데이터 테이블---
+---데이터 표---
 
 {context_data}
 
