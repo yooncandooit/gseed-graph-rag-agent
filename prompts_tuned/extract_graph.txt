@@ -1,0 +1,114 @@
+-목표-
+아래 텍스트 문서와 엔티티 유형 목록을 기반으로, 해당 유형에 속하는 모든 엔티티와 그 사이의 관계를 식별하라.
+이 문서는 건축 설계 도면 또는 G-SEED 녹색건축 인증 기준 중 하나이다.
+
+-절차-
+1. 모든 엔티티를 식별하라. 각 엔티티에 대해 다음 정보를 추출하라:
+- entity_name: 엔티티 이름 (한국어, 대문자 표기 불필요)
+- entity_type: 다음 유형 중 하나: [{entity_types}]
+- entity_description: 엔티티의 속성과 역할에 대한 포괄적인 한국어 설명
+각 엔티티를 다음 형식으로 작성하라: ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
+
+2. 1단계에서 식별한 엔티티 중 *명확하게 관련된* 모든 쌍(source_entity, target_entity)을 식별하라.
+각 관련 엔티티 쌍에 대해 다음 정보를 추출하라:
+- source_entity: 출발 엔티티 이름 (1단계에서 식별된 것)
+- target_entity: 도착 엔티티 이름 (1단계에서 식별된 것)
+- relationship_description: 두 엔티티가 관련된 이유에 대한 한국어 설명
+- relationship_strength: 두 엔티티 간 관계 강도를 나타내는 숫자 점수 (1~10)
+각 관계를 다음 형식으로 작성하라: ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+
+3. 1단계와 2단계에서 식별한 모든 엔티티와 관계를 단일 목록으로 한국어로 출력하라. 목록 구분자로 **{record_delimiter}**를 사용하라.
+
+4. 완료되면 {completion_delimiter}를 출력하라.
+
+-엔티티 유형 정의-
+- certification_item: G-SEED 인증 평가 항목 (예: R-2.1 에너지 성능, NR-2.4 조명에너지 절약)
+- required_variable: 인증 항목 평가에 필요한 입력 변수 (예: main_use_lighting_power_density, energy_efficiency_grade)
+- drawing_evidence: 도면에서 확인 가능한 증거 자료 또는 제출서류 (예: 조명밀도 계산서, 장비일람표, 형별 성능관계내역)
+- building_system: 건물 내 설비·시스템 (예: 지열히트펌프, 태양광설비, 환기설비, 조명설비)
+- calculation_value: 도면 또는 계산서에서 추출된 실제 수치 (예: 조명밀도 5.890W/㎡, 단열재 두께 100mm)
+- discipline: 도면 분야 구분 (architecture / mechanical / electrical / renewable_energy)
+
+-판단 규칙 (반드시 준수)-
+- drawing_evidence의 evidence_type이 "drawing" 또는 "diagram"인 경우, geometry·배관 경로·공간 연결관계는 OCR 텍스트만으로 확정하지 말 것
+- calculation_value는 텍스트에 수치가 명시된 경우에만 추출하고, 추론하지 말 것
+- G-SEED 기준 JSON에 없는 certification_item은 생성하지 말 것
+
+######################
+-예시-
+######################
+예시 1 (도면 페이지 — electrical, calculation_sheet):
+Entity_types: certification_item, required_variable, drawing_evidence, building_system, calculation_value, discipline
+Text:
+[Page 31] 조명밀도 계산서 | discipline: electrical | hint: 조명밀도 계산서
+84A 면적: 84.0368㎡ | 세대합계: 495W | 조명밀도: 5.890W/㎡
+LED 조명기구 사용, 전등설비 평면도 연계
+######################
+출력:
+("entity"{tuple_delimiter}조명밀도 계산서{tuple_delimiter}drawing_evidence{tuple_delimiter}84A 세대의 조명 소비전력과 면적을 기반으로 조명밀도(W/㎡)를 산출한 계산서. NR-2.4 조명에너지 절약 항목의 핵심 제출서류이다.)
+{record_delimiter}
+("entity"{tuple_delimiter}조명밀도 5.890W/㎡{tuple_delimiter}calculation_value{tuple_delimiter}84A 세대의 조명밀도 계산 결과값. 세대합계 495W를 면적 84.0368㎡로 나누어 산출됨.)
+{record_delimiter}
+("entity"{tuple_delimiter}NR-2.4 조명에너지 절약{tuple_delimiter}certification_item{tuple_delimiter}신축 비주거용 G-SEED 인증 항목. 주 용도 조명전력밀도(W/㎡) 및 조명 자동제어 설치 여부를 평가함. 배점 4점.)
+{record_delimiter}
+("entity"{tuple_delimiter}main_use_lighting_power_density{tuple_delimiter}required_variable{tuple_delimiter}NR-2.4 조명에너지 절약 항목의 핵심 입력 변수. 주 용도 공간의 조명전력밀도(W/㎡)를 의미함.)
+{record_delimiter}
+("entity"{tuple_delimiter}조명설비{tuple_delimiter}building_system{tuple_delimiter}LED 조명기구를 포함한 전등설비 시스템. electrical 분야에 해당함.)
+{record_delimiter}
+("entity"{tuple_delimiter}electrical{tuple_delimiter}discipline{tuple_delimiter}전기 분야 도면. 전등설비, 조명밀도 계산서 등을 포함함.)
+{record_delimiter}
+("relationship"{tuple_delimiter}조명밀도 계산서{tuple_delimiter}NR-2.4 조명에너지 절약{tuple_delimiter}조명밀도 계산서는 NR-2.4 항목의 예비인증 제출서류로, main_use_lighting_power_density 변수 산출의 근거 자료임{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}조명밀도 5.890W/㎡{tuple_delimiter}main_use_lighting_power_density{tuple_delimiter}조명밀도 계산 결과값 5.890W/㎡는 main_use_lighting_power_density 변수의 실제 측정값임{tuple_delimiter}10)
+{record_delimiter}
+("relationship"{tuple_delimiter}조명밀도 계산서{tuple_delimiter}electrical{tuple_delimiter}조명밀도 계산서는 electrical 분야 도면에 포함된 제출서류임{tuple_delimiter}8)
+{completion_delimiter}
+
+######################
+예시 2 (G-SEED 기준 JSON — 신축 주거용):
+Entity_types: certification_item, required_variable, drawing_evidence, building_system, calculation_value, discipline
+Text:
+[R-2.3] 신·재생에너지 이용 | 건물유형: 신축 주거용 | 배점: 3점 | 구분: 평가항목
+필요변수: evaluation_ratio(신재생에너지 공급비율, %), renewable_electric_capacity(신재생 전기 생산용량, kW), total_electric_capacity(총 전기 용량, kW)
+제출서류: 신·재생에너지 설비 설계도서, 신·재생에너지 공급비율 계산서 및 근거자료, 설치 계획서
+######################
+출력:
+("entity"{tuple_delimiter}R-2.3 신·재생에너지 이용{tuple_delimiter}certification_item{tuple_delimiter}신축 주거용 G-SEED 인증 항목. 신재생에너지 공급비율(%)을 평가하며 배점은 3점임.)
+{record_delimiter}
+("entity"{tuple_delimiter}evaluation_ratio{tuple_delimiter}required_variable{tuple_delimiter}R-2.3 신재생에너지 이용 항목의 핵심 입력 변수. 신재생에너지 공급비율(%)을 의미하며, renewable 용량 합계를 total 용량으로 나누어 산출함.)
+{record_delimiter}
+("entity"{tuple_delimiter}신·재생에너지 공급비율 계산서{tuple_delimiter}drawing_evidence{tuple_delimiter}신재생에너지 설비의 공급비율을 산출한 계산서. R-2.3 항목의 예비인증 제출서류임.)
+{record_delimiter}
+("entity"{tuple_delimiter}태양광설비{tuple_delimiter}building_system{tuple_delimiter}신재생에너지 전기 생산을 담당하는 설비. renewable_energy 분야에 해당하며 renewable_electric_capacity 변수와 연결됨.)
+{record_delimiter}
+("relationship"{tuple_delimiter}R-2.3 신·재생에너지 이용{tuple_delimiter}evaluation_ratio{tuple_delimiter}evaluation_ratio는 R-2.3 항목 평가의 핵심 입력 변수임{tuple_delimiter}10)
+{record_delimiter}
+("relationship"{tuple_delimiter}신·재생에너지 공급비율 계산서{tuple_delimiter}R-2.3 신·재생에너지 이용{tuple_delimiter}공급비율 계산서는 R-2.3 항목의 예비인증 필수 제출서류임{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}태양광설비{tuple_delimiter}evaluation_ratio{tuple_delimiter}태양광설비의 전기 생산용량(renewable_electric_capacity)은 evaluation_ratio 산출에 사용되는 분자 요소임{tuple_delimiter}8)
+{completion_delimiter}
+
+######################
+예시 3 (도면 페이지 — renewable_energy, diagram):
+Entity_types: certification_item, required_variable, drawing_evidence, building_system, calculation_value, discipline
+Text:
+[Page 128] 태양광설비 배치도 | discipline: renewable_energy | evidence_type: diagram | computability: 후보 계산 가능
+태양광 모듈 배치 확인 가능. 단, 설치 용량 수치는 텍스트에 미기재.
+######################
+출력:
+("entity"{tuple_delimiter}태양광설비 배치도{tuple_delimiter}drawing_evidence{tuple_delimiter}태양광 모듈의 배치를 나타낸 도면. evidence_type이 diagram이므로 설치 용량 등 수치는 OCR 텍스트만으로 확정 불가. 원본 도면 이미지 또는 설계 계산서 추가 필요.)
+{record_delimiter}
+("entity"{tuple_delimiter}태양광설비{tuple_delimiter}building_system{tuple_delimiter}신재생에너지 전기 생산 설비. renewable_energy 분야에 해당하며 R-2.3, RH-2.2 인증 항목과 연결됨.)
+{record_delimiter}
+("entity"{tuple_delimiter}renewable_energy{tuple_delimiter}discipline{tuple_delimiter}신재생에너지 분야 도면. 태양광, 지열 등 신재생에너지 설비 관련 도면을 포함함.)
+{record_delimiter}
+("relationship"{tuple_delimiter}태양광설비 배치도{tuple_delimiter}태양광설비{tuple_delimiter}배치도는 태양광설비의 물리적 배치를 나타내는 도면이나, diagram 유형이므로 용량 수치 확정에는 추가 자료 필요{tuple_delimiter}6)
+{completion_delimiter}
+
+######################
+-실제 데이터-
+######################
+Entity_types: {entity_types}
+Text: {input_text}
+######################
+출력:
