@@ -1,0 +1,1299 @@
+﻿community,level,title,summary,rank,full_content
+617,3,"창 호 도 -4 창호 상세(THK 26/24 로이 복층유리, 롤방충망)","이 커뮤니티는 건축 창호/커튼월 글레이징 사양을 담은 도면 시트(창 호 도 -4)를 중심으로, THK 26 로이 복층유리 및 THK 24 로이 복층유리, 롤방충망 포함 여부, 그리고 손잡이(레버형 및 수평/수직 막대형) 허용 범위가 관계로 연결되어 구성된다. 창 호 도 -4는 스케일(1/100)을 사용하며, 커튼월 부분에는 26mm Low-E 복층유리를, 프로젝트 창 부분에는 24mm Low-E 복층유리를 지정하고, 롤방충망 포함과 손잡이 타입 허용(레버형/막대형)을 메모(노트)로 제공한다. [Data: Entities (1559, 1568, 1569, 1564, 1572, 1573); Relationships (2044, 2045, 2003, 2050, 2055, 2056)]",1.2,"# 창 호 도 -4 창호 상세(THK 26/24 로이 복층유리, 롤방충망)
+
+이 커뮤니티는 건축 창호/커튼월 글레이징 사양을 담은 도면 시트(창 호 도 -4)를 중심으로, THK 26 로이 복층유리 및 THK 24 로이 복층유리, 롤방충망 포함 여부, 그리고 손잡이(레버형 및 수평/수직 막대형) 허용 범위가 관계로 연결되어 구성된다. 창 호 도 -4는 스케일(1/100)을 사용하며, 커튼월 부분에는 26mm Low-E 복층유리를, 프로젝트 창 부분에는 24mm Low-E 복층유리를 지정하고, 롤방충망 포함과 손잡이 타입 허용(레버형/막대형)을 메모(노트)로 제공한다. [Data: Entities (1559, 1568, 1569, 1564, 1572, 1573); Relationships (2044, 2045, 2003, 2050, 2055, 2056)]
+
+## 창 호 도 -4가 전체 사양을 묶는 중심 도면 역할을 한다
+
+창 호 도 -4는 창호 상세/도면 시트로서 창의 구성 요소(유리 사양, 스크린 포함 여부, 손잡이 허용 유형 등)를 한 문서에서 정의하는 중심 엔티티다. 시트에는 도면의 작성 기준(스케일 1:100)과 함께, 이후 개별 제품/사양들이 특정 용도(커튼월 vs. 프로젝트 창)에 따라 연결된다. 이는 창호/외피 성능과 사용성에 직결되는 결정 사항들이 동일 시트에서 관리된다는 점을 시사한다. [Data: Entities (1559); Relationships (2003, 2044, 2045, 2050, 2055, 2056)]
+
+특히 이 구조는 단일 도면을 기준으로 여러 하위 사양이 파생되는 형태이므로, 창 호 도 -4의 내용 변경(예: 유리 두께/Low-E 적용 범위, 방충망 포함, 손잡이 규정)이 연쇄적으로 현장 적용 범위를 바꿀 수 있다. 다만 제공된 데이터에는 특정 위반이나 위해 의도 같은 추가 정보는 없다. [Data: Entities (1559); Relationships (2044, 2045, 2050)]
+
+## 커튼월 부분에는 THK 26 로이(26mm Low-E 복층유리) 지정이 연결된다
+
+창 호 도 -4는 커튼월(커튼월 portions) 적용에 대해 THK 26 로이 복층유리를 26mm 두께의 Low-E 복층유리로 명시한다. THK 26 로이 복층유리는 Low-E 특성을 통해 방사율을 낮추고, 복층 구조로 실내외 열교환을 줄여 단열 성능/에너지 효율 향상에 기여하는 것으로 설명된다. [Data: Entities (1568); Relationships (2044)]
+
+이 관계는 커튼월의 열성능이 특정 유리 규격(26mm Low-E 복층)으로 고정됨을 의미한다. 결과적으로 해당 구간의 외피 성능(예: 열 손실 저감 기대) 및 글레이징 호환성(창호/커튼월 글레이징에 사용되는 유리 시스템이라는 제품 설명)에 대한 설계 의도가 분명히 문서화되어 있다. [Data: Entities (1568); Relationships (2044)]
+
+## 프로젝트 창 부분에는 THK 24 로이(24mm Low-E 복층유리) 지정이 연결된다
+
+창 호 도 -4는 프로젝트 window portions에 대해 THK 24 로이 복층유리를 24mm 두께의 low-E 복층유리(절연유리 조립체)로 지정한다. THK 24 로이 복층유리는 단열 알루미늄 창 프레임(G-01)과 함께 작동하도록 의도된 사양이며, Low-E 성능을 포함한 복층 구성을 통해 단열 및 에너지 효율을 개선하는 것으로 설명된다. [Data: Entities (1569); Relationships (2045)]
+
+이 관계는 창(프로젝트 window) 구간의 유리 두께와 Low-E 성능 적용이 THK 24 로이로 정해져 있음을 보여준다. 따라서 같은 건물 외피라도 커튼월과 창 사이에서 유리 두께(26mm vs 24mm) 및 제품 사양이 달라질 수 있으며, 이는 열성능/부하 및 결로 위험 평가 등에서 구간별로 고려될 필요가 있음을 시사한다. [Data: Entities (1568, 1569); Relationships (2044, 2045)]
+
+## 롤방충망 포함이 사양 시트에 포함되어 있다
+
+창 호 도 -4는 롤방충망 포함(roll insect screen)이 포함된다는 점을 사양에 반영한다. 이는 창호 상세에 단순 유리/프레임 구성뿐 아니라 벌레 차단용 스크린의 포함 여부가 문서화되어 있음을 의미한다. [Data: Entities (1564); Relationships (2050)]
+
+롤방충망이 포함된다는 사실은 사용자 편의성과 실내 환경(예: 벌레 유입 저감)에 영향을 줄 수 있다. 다만 제공된 데이터에서는 롤방충망의 성능(재질, 메쉬 스펙, 동작 조건)이나 설치 품질 기준 등 추가 근거가 없어, 실제 운영 효과나 신뢰성에 대한 정량 평가는 불가능하다. [Data: Entities (1564); Relationships (2050)]
+
+## 손잡이(레버형) 허용 규정이 창 호 도 -4의 노트로 연결된다
+
+창 호 도 -4의 노트(notes)는 레버형 도어 핸들이 허용된다고 명시한다. 즉, 특정 창/문 구성 요소의 사용성 또는 제작/조달 편의성을 고려하여, 손잡이 타입이 규정 범위 안에서 선택 가능하도록 되어 있음을 시사한다. [Data: Entities (1572); Relationships (2055)]
+
+이러한 허용은 설계 대안 관리 관점에서 중요할 수 있다. 예를 들어, 동일한 도어/창호 시스템 내에서도 손잡이 형식이 조달 일정이나 사용자 접근성 요구에 맞춰 선택될 여지가 생길 수 있다. 그러나 데이터에는 특정 공급사, 성능(내구성/보안성), 또는 규정 준수 실패 정황이 포함되어 있지 않다. [Data: Entities (1572); Relationships (2055)]
+
+## 손잡이(수평 또는 수직 막대형) 허용 규정도 함께 제공된다
+
+창 호 도 -4의 노트는 수평 또는 수직 막대형 도어 핸들 타입도 허용된다고 명시한다. 이는 손잡이 형식이 최소 2개 계열(레버형 및 막대형)로 범위화되어 있고, 설계/시공 시 선택이 가능한 구조임을 보여준다. [Data: Entities (1573); Relationships (2056)]
+
+이 두 손잡이 규정(레버형, 막대형)은 창호/도어의 인터페이스가 사용자 경험 및 유지보수 방식에 영향을 줄 수 있음을 의미한다. 다만 “허용” 범위가 실제로 어떤 표준(규격, 치수, 안전 요구)을 만족해야 하는지에 대한 근거는 제공되지 않았으므로, 기술적/법적 준수 수준을 여기서 단정할 수는 없다. [Data: Entities (1572, 1573); Relationships (2055, 2056)]
+
+## 도면 스케일(1:100) 정보는 적용 범위 및 검토 절차에 영향을 줄 수 있다
+
+창 호 도 -4는 스케일 1:100을 사용한다고 명시되어 있다. 이는 도면 해석 시 치수 판단과 상세 검토가 동일한 기준(축척)에서 이뤄져야 함을 의미한다. [Data: Relationships (2003)]
+
+도면 스케일은 시공/검토 과정에서 오해를 줄이고, 상세 사양(유리 두께, 포함 사양, 손잡이 타입 등)을 도면 상에서 일관되게 해석하는 데 기초 정보를 제공한다. 다만 스케일이 실제 시공 정확도나 성능과 직접 연결되는지에 대한 추가 데이터(예: 검도면, 시공 오차 기록)가 제공되지는 않는다. [Data: Relationships (2003)]"
+618,3,"Window Schedule Community: 창 호 도 -4/-5, PJ, 1:100 Scale, and 160x60 Aluminum Curtain-Wall Systems","This community consists of two architectural drawing/schedule sheets—창 호 도 -4 and 창 호 도 -5—that define window types, locations, and specifications using a shared 1:100 scale. Within these sheets, the glazing specification includes the projectable/project window type designation “PJ,” and the sheets specify an aluminum insulated curtain-wall project window assembly (160 x 60), plus an explicit requirement to include all accessory hardware. The community’s entities are tightly linked through their roles in the window schedule documentation: each drawing sheet references the scale value (1:100), the PJ designation (at least for 창 호 도 -4), the 160 x 60 window/cascading assembly details (by sheet), and accessory hardware inclusion (by sheet).",1.8,"# Window Schedule Community: 창 호 도 -4/-5, PJ, 1:100 Scale, and 160x60 Aluminum Curtain-Wall Systems
+
+This community consists of two architectural drawing/schedule sheets—창 호 도 -4 and 창 호 도 -5—that define window types, locations, and specifications using a shared 1:100 scale. Within these sheets, the glazing specification includes the projectable/project window type designation “PJ,” and the sheets specify an aluminum insulated curtain-wall project window assembly (160 x 60), plus an explicit requirement to include all accessory hardware. The community’s entities are tightly linked through their roles in the window schedule documentation: each drawing sheet references the scale value (1:100), the PJ designation (at least for 창 호 도 -4), the 160 x 60 window/cascading assembly details (by sheet), and accessory hardware inclusion (by sheet).
+
+## 창 호 도 -4 is a primary window schedule sheet that ties together PJ glazing designation, 1:100 scale, a 160x60 aluminum insulated curtain-wall project window assembly, and accessory hardware inclusion.
+
+The sheet 창 호 도 -4 serves as a consolidated source of window schedule specifications, including the glazing specification reference to the window type designation “PJ.” It also defines the drawing scale as 1:100 and specifies an aluminum insulated curtain-wall and project window assembly with dimensions 160 x 60. Finally, it includes a requirement that all other accessory hardware be included as part of the window assembly, indicating completeness of the physical build scope within the documentation.
+
+These linkages suggest that 창 호 도 -4 functions as an authoritative configuration reference for how certain windows should be constructed and documented, with PJ and the 160x60 assembly forming key specification anchors, and the accessory hardware requirement reducing ambiguity around what components must be included. [Data: Entities (1561,1560,1566,1563); Relationships (2039,2003,2041,2048)]
+
+## PJ is documented as a projectable/project window type designation within the glazing specification of 창 호 도 -4.
+
+The entity “PJ” is described as a window type designation used in curtain wall and window specifications, referring to a projectable or projecting window type. In the community relationships, PJ is specifically referenced from the glazing specification context on the sheet 창 호 도 -4, where the sheet includes the project window type PJ.
+
+In practical terms, this indicates that the window configuration being scheduled on 창 호 도 -4 includes (or depends on) a projectable/project window behavior or design intent associated with PJ. Because it appears in the glazing specification, it likely governs how glazing and the window frame/window operation are selected or validated during construction or review of that sheet’s window schedule. [Data: Entities (1561); Relationships (2039)]
+
+## Both 창 호 도 -4 and 창 호 도 -5 use a consistent architectural drawing scale of 1:100, indicating standardized documentation granularity across the community.
+
+The scale value entity (1 / 100) is used by both drawing sheets in the community. Specifically, the relationships show that 창 호 도 -4 uses a scale of 1:100 and 창 호 도 -5 also uses a scale of 1:100.
+
+This consistency implies standardized drawing granularity and reduces the risk of mismatched dimensions or misinterpretation when comparing specifications across the two sheets. While scale does not by itself determine technical performance, consistent scaling can matter for downstream tasks such as coordination, verification, and cross-referencing window sizes, locations, and schedules. [Data: Entities (1558); Relationships (2003,2004)]
+
+## The 160x60 aluminum insulated curtain-wall and project window assembly is specified on 창 호 도 -4 and as a distinct 160x60 curtain-wall window assembly (stairwell) on 창 호 도 -5.
+
+Within the community, 창 호 도 -4 specifies an “160X60 알루미늄 단열커튼월 및 프로젝트창” assembly, described as an aluminum insulated curtain-wall and project window assembly with dimensions 160 x 60 used in the first-floor window schedule. Separately, 창 호 도 -5 specifies “160X60 알루미늄 단열커튼월창” for the stairwell location, described as an aluminum insulated curtain-wall window assembly with dimensions 160 x 60.
+
+Although the shared dimensions (160 x 60) indicate a common size basis, the community distinguishes between (a) a curtain-wall and project window assembly on one sheet and (b) a curtain-wall window assembly for a stairwell on the other sheet. This suggests the documentation uses consistent dimensional parameters while adapting the window type/configuration to the building area. [Data: Entities (1566,1567); Relationships (2041,2043)]
+
+## 창 호 도 -4 explicitly requires inclusion of all other accessory hardware within the window assembly (기타부속철물일체).
+
+The entity “기타부속철물일체” is defined as a specification indicating that all other accessory hardware is included as part of the window assembly. In the community relationships, 창 호 도 -4 requires this accessory hardware inclusion.
+
+This is a noteworthy scoping detail: by embedding the “include all accessory hardware” requirement directly into the sheet’s specifications, the documentation likely aims to prevent incomplete procurement or installation—where accessory items might otherwise be omitted or treated as separate line items. In decision-making terms, this can reduce the likelihood of gaps between the scheduled window package and the final physical assembly. [Data: Entities (1563); Relationships (2048)]
+
+## The two drawing sheets organize window specifications by location/use: first-floor window schedule (창 호 도 -4) versus stairwell location (창 호 도 -5).
+
+The community’s descriptions connect window assemblies to different building contexts. “160X60 알루미늄 단열커튼월 및 프로젝트창” is described as used in the first-floor window schedule, and it is specified by 창 호 도 -4. Meanwhile, “160X60 알루미늄 단열커튼월창” is described as used in the stairwell location and is specified by 창 호 도 -5.
+
+This division indicates that the community’s core knowledge is not only about window types and dimensions but also about where those windows belong in the building. That matters for any review or validation process, because different locations can impose different functional expectations (for example, access, egress-adjacent areas, or different installation constraints), even when dimensions match. [Data: Entities (1566,1567); Relationships (2041,2043)]"
+619,3,"84㎡ 주거 유닛 도면/평면 커뮤니티(84㎡형, A-332, 세대수 비율표)","이 커뮤니티는 주택 프로젝트의 84㎡형 주거 유닛을 중심으로, 세대수 비율표(총 634유닛 및 84㎡ 타입 비율)와 84㎡형 단위세대 도면(확장형 주단면도, 스케일 표기 A1=1/50·A3=1/100, 도면 식별자 A-332) 및 유닛 내부 구성요소(파우더룸/드레스룸, 식당)를 상호 연결하는 문서/도면 체계로 구성되어 있습니다. 관계 데이터에서는 세대수 비율표가 84㎡형과 공동주택 신축공사에 연결되고, A-332 및 확장형 주단면도·스케일 표기 등이 84㎡형을 구체화하며, 내부 공간인 파우더룸/드레스룸과 식당이 84㎡형 레이아웃의 구성 요소로 연결됩니다. [Data: Entities (38, 144, 161, 180, 186, 187, 176, 190); Relationships (110, 109, 161, 167, 198, 180, 186, 110,+more)]",1.6,"# 84㎡ 주거 유닛 도면/평면 커뮤니티(84㎡형, A-332, 세대수 비율표)
+
+이 커뮤니티는 주택 프로젝트의 84㎡형 주거 유닛을 중심으로, 세대수 비율표(총 634유닛 및 84㎡ 타입 비율)와 84㎡형 단위세대 도면(확장형 주단면도, 스케일 표기 A1=1/50·A3=1/100, 도면 식별자 A-332) 및 유닛 내부 구성요소(파우더룸/드레스룸, 식당)를 상호 연결하는 문서/도면 체계로 구성되어 있습니다. 관계 데이터에서는 세대수 비율표가 84㎡형과 공동주택 신축공사에 연결되고, A-332 및 확장형 주단면도·스케일 표기 등이 84㎡형을 구체화하며, 내부 공간인 파우더룸/드레스룸과 식당이 84㎡형 레이아웃의 구성 요소로 연결됩니다. [Data: Entities (38, 144, 161, 180, 186, 187, 176, 190); Relationships (110, 109, 161, 167, 198, 180, 186, 110,+more)]
+
+## 세대수 비율표가 84㎡형의 총 물량(634유닛)을 정의하는 중심 문서로 연결됨
+
+세대수 비율표는 주택 프로젝트의 유닛 구성(비율 및 총 세대수)을 요약하는 표이며, 84㎡형 타입과 연결되어 84㎡ 타입의 총 수량(634유닛)을 직접적으로 제시합니다. 또한 이 표는 공동주택 신축공사에도 연결되어, 84㎡형이 프로젝트 규모 계획의 일부로 편성되었음을 시사합니다. [Data: Entities (144); Relationships (110, 109)]
+
+이 커뮤니티 관점에서는 “어떤 유닛이 얼마나 많은지”를 규정하는 상위(계획/수량) 문서가 존재하며, 그 기준이 84㎡형으로 수렴합니다. 따라서 이후 도면(단면도/스케일)이나 평면 구성요소(파우더룸/드레스룸, 식당)는 이 수량 계획의 대상 유닛(84㎡형)에 종속되는 형태로 이해될 수 있습니다. [Data: Relationships (110, 109, 161, 167, 180, 186)]
+
+## 84㎡형과 도면 식별자 A-332가 84㎡ 타입 단위세대의 ‘섹션/도면 세트’로 연결됨
+
+A-332는 84㎡ 타입의 유닷 단면(sectonal) 도면과 관련된 도면/시트 식별자로 제시되며, 84㎡형(유닛 타입)과 직접적으로 연결되어 해당 타입을 나타내는 도면 세트가 존재함을 보여줍니다. 즉 84㎡형은 단순한 기술 설명을 넘어서, 특정 도면 식별자(A-332)로 문서화되어 관리되고 있습니다. [Data: Entities (176, 38); Relationships (161)]
+
+이 연결은 커뮤니티의 구조가 “타입(84㎡형) → 도면 식별자(A-332) → 단면도(확장형 포함) → 내부 공간 요소(파우더룸/드레스룸, 식당)”로 이어지는 방식임을 강화합니다. 의사결정 관점에서는 A-332가 참조될 때, 그것이 바로 84㎡형 타입의 도면 묶음이라는 맥락이 제공된다는 점이 중요합니다. [Data: Relationships (161, 167, 180, 186)]
+
+## 확장형 84㎡ 단위세대 주단면도(167)가 84㎡형을 구체화하는 도면 증거로 기능
+
+84㎡형 단위세대 주단면도(확장형)는 84㎡형과 연결되며, 확장형 단면이 해당 타입의 수직 치수 및 방 구성(배치) 관계를 보여주는 도면으로 설명됩니다. 이는 84㎡형이 ‘표기된 타입’에 그치지 않고, 도면을 통해 실측/구조적 구성(방 배치, 수직 치수 등)이 구체화되어 있음을 의미합니다. [Data: Entities (167); Relationships (167)]
+
+또한 확장형 단면도는 뒤이어 스케일 표기와 함께(“A1=1/50, A3=1/100”) 문서적으로 완결되는 구조로 연결됩니다. 따라서 84㎡형의 도면 해석 가능성(축척, 인쇄/도면지 규격)이 확보되어, 타입별 구조 검토에 활용될 여지가 커집니다. [Data: Relationships (167, 198, 161)]
+
+## 확장형 단면도 스케일 표기(A1=1/50, A3=1/100)는 도면 해석을 위한 표준화된 메타정보로 연결
+
+도면 스케일 표기(A1=1/50, A3=1/100)는 84㎡형 단위세대 주단면도(확장형)에 적용되는 것으로 연결되어, 확장형 단면도 해석 시 축척 정보가 제공됨을 나타냅니다. 이는 도면이 단지 형태를 보여주는 수준이 아니라, 실제 측정/비교가 가능한 방식으로 관리된다는 신호입니다. [Data: Entities (190); Relationships (198)]
+
+커뮤니티 관점에서는 ‘도면 콘텐츠(확장형 단면)’와 ‘도면 해석 조건(축척)’이 별도 엔티티로 분리되어 있으면서도 관계로 결합되어 있습니다. 이런 구조는 검토자(기술 검토/도면 확인)에게 일관된 해석 환경을 제공할 수 있으며, 후속 분석(치수 비교, 변경 영향 평가 등)의 기초가 됩니다. [Data: Relationships (198, 167)]
+
+## 파우더룸/드레스룸(복합 공간)이 84㎡형 레이아웃의 구성요소로 직접 연결
+
+파우더룸/드레스룸은 84㎡형 유닛의 평면과 배치도에 포함된 복합 공간으로 설명되며, 관계 데이터에서 이 엔티티가 84㎡형과 연결되어 해당 공간이 84㎡형 레이아웃의 일부임이 명시됩니다. 즉 커뮤니티에서는 내부 공간 구성요소가 유닛 타입에 종속되어 문서화되어 있습니다. [Data: Entities (161, 38); Relationships (180)]
+
+설명에 따르면 이 공간은 단순 수납/준비실을 넘어 거주자의 일상 준비와 정리 활동을 효율적으로 지원하는 구성으로 이해됩니다. 이는 84㎡형의 기능적 설계(동선/생활 편의 고려)가 내부 공간 조합을 통해 구현된다는 점을 강조합니다. [Data: Entities (161); Relationships (180)]
+
+## 식당(다이닝 영역)이 84㎡형 단면도/평면 맥락에서 내부 구성요소로 연결
+
+식당은 주방 배관 평면도와 84㎡ 타입 단면도에서 함께 언급되는 공간으로, 84㎡ 유닛 내에서 식사 기능을 담당하는 다이닝 영역으로 설명됩니다. 관계 데이터에서는 식당이 84㎡형과 연결되어, 해당 공간이 84㎡형 타입 내부 구성의 중요한 요소로 문서화되어 있음을 보여줍니다. [Data: Entities (187, 38); Relationships (186)]
+
+또한 설명 상 식당은 주방과 연계되어 배치되는 식사 공간이며 평면도와 단면도 모두에서 확인되는 주요 내부 구성요소로 제시됩니다. 따라서 이 커뮤니티에서는 “공간 기능(식당)”이 특정 도면 종류(단면)와도 연결되는 구조를 갖추고 있으며, 84㎡형 타입의 생활 공간 구성을 파악하는 데 직접적 단서가 됩니다. [Data: Entities (187); Relationships (186)]
+
+## 84㎡형은 단면도(확장형)와 내부 공간 요소(파우더룸/드레스룸, 식당)로 ‘기능+형상’이 통합된 타입으로 관리
+
+관계 흐름을 종합하면, 84㎡형은 수량 계획(세대수 비율표)과 도면 식별자(A-332), 단면도(확장형), 축척 표기(A1/A3), 그리고 내부 구성요소(파우더룸/드레스룸, 식당)까지 일련의 엔티티 네트워크로 묶여 있습니다. 즉 커뮤니티는 유닛 타입을 ‘수량-도면-공간기능’의 결합으로 관리합니다. [Data: Entities (38, 144, 176, 167, 190, 161, 187); Relationships (110, 161, 167, 198, 180, 186)]
+
+이러한 통합 구조는 의사결정에서 동일한 타입(84㎡형)에 대해 서로 다른 관점(프로젝트 규모, 도면 검토, 내부 기능 구성)을 한 곳에서 추적·검증할 수 있게 해줍니다. 다만 본 데이터에는 법적 준수(규정 적합성), 보안/운영 위험(사이버/물리 보안), 평판 정보, 또는 제기된 주장(Claims)이 포함되어 있지 않으므로, ‘영향/리스크’ 판단은 문서화/구조적 측면까지만 한정됩니다. [Data: Entities (38,144,161,167,176,187,190); Relationships (109,110,161,167,180,186,198)]"
+620,3,84㎡형 아파트 단위(주방/식당·거실)와 판넬히팅 구성,"이 커뮤니티는 특정 아파트 평면 구성요소를 중심으로 형성되며, 84㎡형 단위에서 ‘주방/식당’과 ‘거실’이 핵심 실내공간으로 연결된다. 주방/식당은 84㎡형 레이아웃의 일부로 규정되고[Data: Entities (160); Relationships (179)], 거실 또한 84㎡형 단위 내부의 생활공간으로 정의된다[Data: Entities (154); Relationships (173)]. 또한 판넬히팅은 거실(생활공간) 영역의 시공/구성 메모(구조 표기)에 포함된 것으로 나타나, 거실과 기술 설비(난방 방식) 사이에 관계가 형성된다[Data: Entities (199); Relationships (212)]. 전반적으로 데이터는 주거 평면도에서 공간 라벨링(주방/식당, 거실)과 해당 공간에 대한 건축/설비 표기(판넬히팅)가 어떻게 결합되는지에 초점을 둔다.",1.8,"# 84㎡형 아파트 단위(주방/식당·거실)와 판넬히팅 구성
+
+이 커뮤니티는 특정 아파트 평면 구성요소를 중심으로 형성되며, 84㎡형 단위에서 ‘주방/식당’과 ‘거실’이 핵심 실내공간으로 연결된다. 주방/식당은 84㎡형 레이아웃의 일부로 규정되고[Data: Entities (160); Relationships (179)], 거실 또한 84㎡형 단위 내부의 생활공간으로 정의된다[Data: Entities (154); Relationships (173)]. 또한 판넬히팅은 거실(생활공간) 영역의 시공/구성 메모(구조 표기)에 포함된 것으로 나타나, 거실과 기술 설비(난방 방식) 사이에 관계가 형성된다[Data: Entities (199); Relationships (212)]. 전반적으로 데이터는 주거 평면도에서 공간 라벨링(주방/식당, 거실)과 해당 공간에 대한 건축/설비 표기(판넬히팅)가 어떻게 결합되는지에 초점을 둔다.
+
+## 주방/식당은 84㎡형 단위 레이아웃의 구성요소로 연결됨
+
+‘주방/식당’은 84㎡ 아파트 유닛 평면도에서 확인되는 주방과 식사 공간이 결합된 영역으로 정의되며, 유닛 내부 배치도에서 해당 공간으로 라벨링되어 사용된다[Data: Entities (160)].
+
+관계 데이터에서는 ‘주방/식당’이 ‘84㎡형’의 일부라고 명시되어, 커뮤니티 내에서 주방/식당이 단위 평면 구성의 한 축(구역)으로 기능함을 보여준다[Data: Relationships (179)]. 따라서 84㎡형을 기준으로 계획·검토할 때 주방/식당 배치는 공간 동선/용도 참조의 기준점 역할을 갖는 것으로 해석할 수 있다(주어진 설명 범위 내).
+
+## 거실은 84㎡형 단위 내부의 중심 생활공간으로 정의됨
+
+‘거실’은 84㎡ 아파트 및 84㎡ 주거 단위 평면도에서 표시되는 생활공간으로, 해당 세대의 중심이 되는 주요 공용 거실로 설명된다[Data: Entities (154)]. 도면에서는 거실이 주방과 함께 배치되거나 일부 구역에서 결합된 형태로 나타난다고 되어 있어, 주방/식당과의 공간적 연속성도 암시된다[Data: Entities (154)].
+
+관계 데이터는 ‘거실’이 ‘84㎡형’ 내부의 방(룸)이라고 구체화하며, 커뮤니티 구조에서 거실이 84㎡형의 필수 구성요소임을 나타낸다[Data: Relationships (173)]. 또한 거실이 스위치 박스 유형 위치 언급 등 전기 설비 관련 기준 공간으로도 사용된다고 설명되어, 단순 생활공간을 넘어 설비 배치 검토와 연결될 수 있다[Data: Entities (154)].
+
+## 거실 영역에 판넬히팅 표기가 존재해 설비-공간 연계가 형성됨
+
+‘판넬히팅’은 유닛의 바닥/천장 구조(구성 메모)에서 나타나는 패널 난방의 표기라고 정의되어 있다[Data: Entities (199)]. 즉, 난방 방식이 평면도(또는 관련 도면/메모)에서 특정 공간의 시공 요소로 연결되어 표현되는 개념이다.
+
+관계 데이터에서는 ‘거실’과 ‘판넬히팅’ 사이에 명시적 연결이 있으며, 거실(생활공간) 건설/시공 메모에 판넬히팅이 표시된다고 설명한다[Data: Relationships (212)]. 이로 인해 커뮤니티 내에서 거실은 단순히 생활공간으로서만이 아니라, 해당 공간의 시공/난방 기술 적용 대상이 되는 지점으로도 이해된다[Data: Entities (154); Entities (199); Relationships (212)].
+
+## 주방/식당과 거실의 결합 배치 가능성이 커뮤니티의 공간 상호연계를 강화
+
+거실 설명에는 도면에서 거실이 주방과 함께 배치되거나 일부 구역에서 결합된 형태로 나타날 수 있다고 기재되어 있다[Data: Entities (154)]. 이는 커뮤니티의 핵심 공간(주방/식당, 거실) 사이에 물리적 또는 계획적 인접/연결 가능성을 의미한다.
+
+또한 주방/식당 또한 ‘주방과 식당이 결합된 공간’으로 평면도에서 공통적으로 구분·표기된다고 되어 있어[Data: Entities (160)], 두 공간이 84㎡형 내에서 어떻게 묶여 표현되는지(결합 여부, 동선 기준)는 동일한 단위 평면 체계 하에서 해석되어야 한다. 관계 데이터는 각각 주방/식당-84㎡형, 거실-84㎡형의 연결을 제공하지만[Data: Relationships (179); Relationships (173)], 거실 설명의 ‘주방 결합 가능’ 문구를 통해 두 공간의 연동성이 구조적으로 강화될 수 있음을 확인할 수 있다[Data: Entities (154)].
+
+## 커뮤니티 데이터는 ‘법적/평판/위협’보다는 ‘건축 도면 기반 공간·설비 정의’에 집중
+
+제공된 데이터에는 특정 조직, 개인, 범죄/위법 주장, 평판 리스크 같은 성격의 정보(법적 컴플라이언스나 평판 지표)가 포함되어 있지 않다. 대신 ‘주방/식당’, ‘거실’, ‘판넬히팅’처럼 건축/평면 구성요소를 정의하는 설명과, ‘84㎡형’ 및 ‘판넬히팅’과의 관계(구성 메모 표기 등)만 존재한다[Data: Entities (160,154,199); Relationships (179,173,212)].
+
+따라서 이 커뮤니티의 영향(impact)은 기술적으로는 공간 설계·시공 적용(예: 난방 방식)이 관련될 수 있으나, 사회적 위해/위법 가능성을 평가할 근거는 주어진 데이터 내에 없다. 이 점은 커뮤니티 리스크를 평가할 때 ‘도면/설비 정보’와 ‘위험/행위 정보’를 구분해 해석해야 함을 시사한다[Data: Entities (160,154,199); Relationships (179,173,212)].
+
+## 84㎡형을 중심으로 한 ‘공간 라벨링-관계’ 구조가 커뮤니티의 골격을 이룸
+
+커뮤니티 구조의 중심에는 ‘84㎡형’이 있으며, 주방/식당과 거실이 각각 84㎡형의 구성요소로 연결된다[Data: Relationships (179); Relationships (173)]. 이처럼 공간 라벨(주방/식당, 거실)이 동일 단위 유형(84㎡형) 아래에서 체계적으로 분류된다는 점이 커뮤니티의 골격을 형성한다.
+
+여기에 판넬히팅이 거실 건설/시공 메모에 표기된다는 관계가 추가되면서[Data: Relationships (212)], ‘단위 유형(84㎡형) → 생활공간(거실) → 설비 표기(판넬히팅)’로 이어지는 2단계 이상의 연계가 구성된다[Data: Entities (154,199); Relationships (212)]. 이는 해당 커뮤니티가 단일 공간 정의가 아니라, 공간과 시공/설비 표기 간의 관계를 통해 더 구체화된다는 점에서 의미가 있다."
+621,3,"공동주택 신축공사(ㅇㅇ블럭) 도면 구성: KEY PLAN, ELEV. 17인승, 조명·전기 및 준수기준","이 커뮤니티는 건축 도면 세트에서 반복 표기되는 “공동주택 신축공사”를 중심으로 구성되며, 특정 개발 구역/블록인 ㅇㅇ블럭과 문서 내 위치참조 도면 요소인 KEY PLAN이 프로젝트 문서 체계로 연결됩니다. 또한 건물 구성품으로는 ELEV. 17인승(17인승 엘리베이터)과 DOOR CLOSER(도어 클로저)가 “공동주택 신축공사”에 포함된 설비/부품으로 연계됩니다. 조명 설비 측면에서는 “건축물의 에너지절약설계기준” 요구사항이 공동주택 신축공사에 적용되어야 하며, 조명기구 선정에서 “백열전구(incandescent lamps)”는 명시적으로 사용하지 않도록 금지되어 조명·에너지 기준 준수 여부가 중요한 연결 고리로 나타납니다. [Data: Entities (114,115,171,589,267,617,636); Relationships (255,83,254,781,306,838,857,254)]",4.2,"# 공동주택 신축공사(ㅇㅇ블럭) 도면 구성: KEY PLAN, ELEV. 17인승, 조명·전기 및 준수기준
+
+이 커뮤니티는 건축 도면 세트에서 반복 표기되는 “공동주택 신축공사”를 중심으로 구성되며, 특정 개발 구역/블록인 ㅇㅇ블럭과 문서 내 위치참조 도면 요소인 KEY PLAN이 프로젝트 문서 체계로 연결됩니다. 또한 건물 구성품으로는 ELEV. 17인승(17인승 엘리베이터)과 DOOR CLOSER(도어 클로저)가 “공동주택 신축공사”에 포함된 설비/부품으로 연계됩니다. 조명 설비 측면에서는 “건축물의 에너지절약설계기준” 요구사항이 공동주택 신축공사에 적용되어야 하며, 조명기구 선정에서 “백열전구(incandescent lamps)”는 명시적으로 사용하지 않도록 금지되어 조명·에너지 기준 준수 여부가 중요한 연결 고리로 나타납니다. [Data: Entities (114,115,171,589,267,617,636); Relationships (255,83,254,781,306,838,857,254)]
+
+## 공동주택 신축공사가 커뮤니티의 중심 축(메인 프로젝트명)으로 반복 식별됨
+
+“공동주택 신축공사”는 도면 제목란·도면 목록·주기(비고) 등 문서 전반에서 신규 공동주택(다세대/아파트) 신축 프로젝트의 주요 공사명(메인 프로젝트명)으로 공통적으로 지칭되는 것으로 정리됩니다. 또한 단순 건물 신축을 넘어 사이트 레이아웃(부지 배치) 및 개발 구성(건물 블록 표기)까지 문서 구성에 포함되어, 프로젝트 범위가 도면 체계 전반에 걸쳐 연결되는 구조임을 보여줍니다. [Data: Entities (114); Relationships (+more)]
+
+## ㅇㅇ블럭은 공동주택 신축공사의 특정 개발 구역/블록으로서 KEY PLAN과 함께 도면 체계에 편입
+
+ㅇㅇ블럭은 공동주택 신축공사와 직접 연결된 프로젝트 블록/개발 단위로서, 도면 제목 영역 및 사이트 계획에서 해당 블록 이름(지정된 개발 구역)으로 일관되게 식별됩니다. 특히 ㅇㅇ블럭은 KEY PLAN과도 관계를 가지며(ㅇㅇ블럭의 프로젝트 시트에 KEY PLAN이 나타남), 이는 도면 내에서 “어디에 해당 단면/도면이 위치하는지”를 블록 단위로 이해하도록 돕는 문서적 연결고리로 해석됩니다. [Data: Entities (115); Relationships (83,254)]
+
+## KEY PLAN은 단면 도면의 위치 파악을 위한 참조/오리엔테이션 도면 요소로 기능
+
+KEY PLAN은 건축 도면 세트에 포함되는 방향/참조(orientation/reference) 다이어그램으로, 섹션이 전체 건물 배치 속에서 어디에 해당하는지를 파악하고 평면도·단면·입면의 방향성을 이해시키는 시각적 기준으로 설명됩니다. 따라서 KEY PLAN은 프로젝트의 여러 도면 구성(특히 단면 또는 섹션)을 상호 맥락화하는 핵심 메타-문서 요소로 작동하며, ㅇㅇ블럭 문서에서도 나타나는 것으로 연결됩니다. [Data: Entities (171); Relationships (255,254)]
+
+## ELEV. 17인승은 공동주택 신축공사에 포함된 핵심 건물 설비(엘리베이터)로 명시
+
+ELEV. 17인승은 건물 코어에 포함되어 유닛 배치를 지원하는 17인승 엘리베이터로 설명됩니다. 도면 계획에서는 접근성 및 비상/화물 사용까지 고려된 엘리베이터로 제시된다고 정리되어, 공동주택 신축공사의 기능적 요구(이동·운영) 측면에서 중요한 구성 요소임을 시사합니다. [Data: Entities (589); Relationships (781)]
+
+## DOOR CLOSER(도어 클로저)는 공동주택 신축공사의 부품/시방 목록에 포함
+
+DOOR CLOSER는 건축 구성품 중 하나로 프로젝트에 포함되는 하드웨어 사양/품목으로 제시됩니다. 다만 제공된 데이터에는 DOOR CLOSER의 기능적 상세(예: 방화/속도/닫힘 방식 등)는 없고, 현재는 “공동주택 신축공사에 나열되는 부품”이라는 문서적 연결이 근거의 전부입니다. 그럼에도 부품 목록에 편입되었다는 사실은 도면·시방서가 실제 시공 단위의 상세 사양을 포함하고 있음을 보여줍니다. [Data: Entities (267); Relationships (306)]
+
+## 조명 설비는 ‘건축물의 에너지절약설계기준’ 준수 대상으로 별도 기준에 의해 연결
+
+건축물의 에너지절약설계기준은 건물의 조명 설비에 대해 에너지 절약을 위한 설계 적용 사항을 제시하는 문서 기준으로 설명됩니다. 또한 공동주택 신축공사는 조명 설비와 관련하여 이 기준의 요구사항을 반드시 적용해야 하며, 따라서 조명 설치가 해당 기준에 명시된 방식대로 반영되어야 한다고 데이터가 연결합니다. 이는 조명 관련 의사결정(자재/사양/설치 방식)이 단순 도면 표기를 넘어 규정 준수 체크 포인트가 됨을 의미합니다. [Data: Entities (617,114); Relationships (838)]
+
+## 백열전구(incandescent lamps)는 조명기구 선정에서 명시적 ‘사용하지 아니한다’ 금지 항목
+
+백열전구는 조명기구 선택과 관련하여 명시적으로 금지되는 품목(“사용하지 아니한다”)으로 설명됩니다. 이는 조명기구 사양이 에너지절약 설계 기준뿐 아니라, 특정 광원 유형에 대해 실제로 배제하는 형태로 구체화되어 있음을 보여줍니다. 결과적으로 조명 관련 공급/시공 단계에서 백열전구 적용 가능성을 사전에 차단하는 문서적 통제가 존재하는 것으로 해석됩니다. [Data: Entities (636); Relationships (857)]"
+622,3,"공동주택 신축공사 단열·석고보드 마감 자재 커뮤니티(천장결로방지재 W=450, THK 9.5 석고보드/지정벽지, THK110/160 압출법보온판)","이 커뮤니티는 ‘공동주택 신축공사’라는 단일 건설 프로젝트 노트/도면 맥락에서 결로 방지용 천장 자재(천장결로방지재 W=450), 벽체 마감 자재(THK 9.5 석고보드/지정벽지), 그리고 단열층을 구성하는 압출법보온판(THK110 특호, THK160 특호)으로 구성된 자재 사양 묶음이다. 네 개의 관계는 각 자재가 동일 프로젝트의 시공/조립 사양에 포함되어 있음을 보여주며, 특히 천장결로방지재(W=450)는 THK110 압출법보온판 특호와 함께 ‘함께 지정’된 조합으로도 기록되어 있어 자재 간 패키지(천장 결로 방지 + 단열 두께)의 일관성을 시사한다. 제공된 정보는 자재의 규격(폭/두께, 제품 등급/특호, 마감 구성)을 중심으로 하며, 법적 준수·보안위협·명시적 주장(Claims)은 데이터에 포함되어 있지 않다.",2.2,"# 공동주택 신축공사 단열·석고보드 마감 자재 커뮤니티(천장결로방지재 W=450, THK 9.5 석고보드/지정벽지, THK110/160 압출법보온판)
+
+이 커뮤니티는 ‘공동주택 신축공사’라는 단일 건설 프로젝트 노트/도면 맥락에서 결로 방지용 천장 자재(천장결로방지재 W=450), 벽체 마감 자재(THK 9.5 석고보드/지정벽지), 그리고 단열층을 구성하는 압출법보온판(THK110 특호, THK160 특호)으로 구성된 자재 사양 묶음이다. 네 개의 관계는 각 자재가 동일 프로젝트의 시공/조립 사양에 포함되어 있음을 보여주며, 특히 천장결로방지재(W=450)는 THK110 압출법보온판 특호와 함께 ‘함께 지정’된 조합으로도 기록되어 있어 자재 간 패키지(천장 결로 방지 + 단열 두께)의 일관성을 시사한다. 제공된 정보는 자재의 규격(폭/두께, 제품 등급/특호, 마감 구성)을 중심으로 하며, 법적 준수·보안위협·명시적 주장(Claims)은 데이터에 포함되어 있지 않다.
+
+## 천장 결로 방지용 ‘천장결로방지재(W=450)’가 공동주택 신축공사 사양에 포함
+
+‘천장결로방지재(W=450)’는 천장 부위의 결로를 예방하기 위한 마감/재료로, 폭(또는 규격) ‘W=450’이 명시된 천장 관련 자재로 기술되어 있다. 이 자재는 ‘공동주택 신축공사’의 건설 프로젝트 노트에 포함되어, 해당 프로젝트에서 결로 방지 목적의 천장 자재가 사양으로 채택되었음을 뒷받침한다 [Data: Entities (509); Relationships (625)].
+
+커뮤니티 관점에서 이는 결로 관련 성능(천장 부위의 습기/결로 억제)을 확보하려는 의도가 프로젝트 사양에 반영되어 있음을 의미한다. 또한 자재 규격(W=450)이 명확히 기록되어 있어, 시공 시 자재 스펙 편차가 발생할 경우 성능 기대치가 흔들릴 가능성(품질/일관성 측면의 리스크)을 평가할 수 있는 출발점이 된다 [Data: Entities (509); Relationships (625)].
+
+## 벽체 마감은 ‘THK 9.5 석고보드/지정벽지’로 표준화되어 공동주택 신축공사에 반영
+
+‘THK 9.5 석고보드/지정벽지’는 9.5mm 두께의 석고보드를 기반으로 하고, 지정된(플랜에 명시된) 벽지로 마감하는 벽체 마감 사양으로 설명된다. 즉, 단순 재료 1종이 아니라 ‘기재(석고보드)+표면마감(지정 벽지)’의 조합 사양으로 기록되어 있다 [Data: Entities (512); Relationships (624)].
+
+이 자재 사양은 ‘공동주택 신축공사’에 포함된 도면/마감 작업의 일부로 명시되어 있어, 프로젝트에서 벽체 마감층이 규격(THK 9.5)과 마감 재료(지정 벽지) 단위로 설계·관리되고 있음을 보여준다 [Data: Entities (512); Relationships (624)].
+
+다만 제공된 데이터에는 ‘지정 벽지’의 구체 성능(내화, 방수, 특정 유해물질 등)이나 규격 적합 여부를 판단할 수 있는 세부 준수/시험 정보가 포함되어 있지 않으므로, 법적 준수나 품질 위험을 직접 추정하긴 어렵다. 대신 마감 계층(석고보드+벽지)이 명시된 점은 시공 검측(자재 대체 여부, 두께 준수, 지정 마감 적용 여부)에 활용될 수 있다 [Data: Entities (512); Relationships (624)].
+
+## 단열층은 압출법보온판 ‘THK110 특호’와 ‘THK160 특호’로 두께 변형이 존재
+
+커뮤니티에는 두 종류의 압출법보온판 사양이 포함되어 있다. ‘THK110 압출법보온판 특호’는 110 두께의 압출법보온판(특호로 분류된 제품)으로 설명되며, ‘THK160 압출법보온판 특호’는 160 두께의 압출법보온판(특호로 분류된 제품)으로 설명된다 [Data: Entities (510, 511)].
+
+두 자재 모두 ‘공동주택 신축공사’의 단열/조립 관련 건설 조립 사양에 포함되어 있어, 동일 프로젝트 내에서 위치 또는 시스템에 따라 단열 두께가 달라질 수 있음을 시사한다 [Data: Relationships (626, 694); Entities (510, 511)].
+
+즉, 단열 사양이 단일 스펙이 아니라 복수 두께로 구성된 점은 열성능/결로 방지 성능을 설계 요구에 맞추기 위한 조정으로 볼 여지가 있다. 다만 데이터는 ‘왜 110과 160이 필요한지’, ‘어떤 구성 부위에 각각 적용되는지’까지 제공하지 않으므로, 실제 영향(열/결로 리스크의 분포)을 정량화하려면 도면의 적용 위치 정보가 추가로 필요하다 [Data: Entities (510, 511); Relationships (626, 694)].
+
+## 천장 결로 방지 재료는 THK110 보온판과 ‘함께’ 지정되어 조합 사양으로 관리될 가능성
+
+‘천장결로방지재(W=450)’는 ‘THK110 압출법보온판 특호’와 함께 건설 노트에 지정된 것으로 설명된다. 관계 설명은 ‘천장 결로 방지용 재료가 110mm 단열 보온판과 함께’ 사양으로 기록되었다고 명시한다 [Data: Relationships (694)].
+
+이는 단일 자재의 독립 적용이 아니라, 천장 결로 방지 목적을 위해 단열층 두께(110mm)와 함께 설계된 시스템적 접근이 존재함을 시사한다. 커뮤니티 관점에서 이는 자재 간 기능적 연계(결로 억제—단열층 구성)가 문서화되어 있다는 점이며, 시공 단계에서 자재 대체(예: 110 대신 다른 두께 사용)나 누락이 발생할 경우 시스템 성능 저하로 이어질 수 있는 체크 포인트가 된다 [Data: Entities (509, 510); Relationships (694)].
+
+다만 해당 데이터는 ‘함께 지정’이 기록되었다는 수준의 구조만 제공하고, 실제로 두 자재가 어떤 부위에 어떻게 조합되는지(예: 천장 내 단열 위치, 층간 구조)까지는 포함하지 않는다. 따라서 영향 평가는 ‘조합 관리 필요성’에 초점을 둘 수 있으며, 구체적인 위협/법적 이슈 여부는 데이터가 부족하다 [Data: Entities (509, 510); Relationships (694)].
+
+## 네 개의 자재 모두가 동일 프로젝트(공동주택 신축공사)와 연결되어 ‘프로젝트 중심 커뮤니티’ 성격이 강함
+
+이 커뮤니티의 모든 주요 자재는 ‘공동주택 신축공사’와 관계로 연결되어 있다. 천장결로방지재(W=450), THK 9.5 석고보드/지정벽지, THK160 보온판(특호), THK110 보온판(특호) 각각이 프로젝트의 건설/도면 사양(공사 노트, 마감 작업, 단열 조립 사양)에 편입되어 있음을 보여준다 [Data: Relationships (625, 624, 626, 694)].
+
+이는 이 데이터가 개인/조직 간 네트워크가 아니라, 특정 건설 프로젝트 문서(도면/마감/조립 사양) 안에서 자재가 묶여 나타나는 형태임을 의미한다. 따라서 커뮤니티의 ‘구조’는 자재-프로젝트 간 연결 중심이며, 자재 상호 간의 기능적 결합이 일부(천장 결로 방지 + THK110 보온판)에서 추가로 드러난다 [Data: Relationships (694); Entities (509, 510)].
+
+결과적으로 영향은 보통 ‘기술/품질/시공 준수’ 관점에서 판단되는 성격이 강하며, 명시적 범죄·사기·위법 행위나 사이버/기술적 악용 능력 같은 보안 항목은 제공된 데이터에 존재하지 않는다. 따라서 본 리포트의 관점은 ‘프로젝트 스펙 준수 및 시스템 성능’에 대한 잠재적 시사점으로 제한된다 [Data: Entities (509, 512, 510, 511); Relationships (625, 624, 626, 694)].
+
+## 법적 준수/명시적 주장(Claims) 관련 데이터가 제공되지 않아 ‘준수 리스크’는 직접 평가 불가
+
+제공된 데이터는 자재의 규격(폭 W=450, 두께 THK 9.5/110/160), 제품 분류(‘특호’), 그리고 프로젝트에 포함되는 관계 설명 중심으로 구성되어 있다. 그러나 법적 준수(예: 인증, 규격서 번호, 환경/안전 규정 준수 여부)나, 보안/유해/위법 관련 ‘Claims’ 및 그에 대한 근거 데이터는 포함되어 있지 않다 [Data: Entities (509, 512, 510, 511); Relationships (625, 624, 626, 694)].
+
+이 때문에 커뮤니티가 법적으로 문제가 될 가능성(또는 반대로 충분히 준수함)을 데이터 기반으로 단정할 수 없다. 결로 방지/단열/마감 사양은 통상 건축 품질과 관련된 영역이지만, 이 리포트는 근거 없는 추정(예: 특정 법규 위반 가능성, 유해물질 사용 의혹 등)을 포함할 수 없다.
+
+따라서 의사결정 관점에서는 ‘문서상 사양이 명확히 존재하므로 시공 준수 확인이 중요’하다는 기술적 관리 포인트만 도출 가능하며, 구체적 법적 위험 평가는 추가 문서(자재 성적서, 인증서, 시방서 조항, 품질검수 결과)가 필요하다 [Data: Entities (509, 512, 510, 511); Relationships (625, 624, 626, 694)]."
+623,3,"지붕층 평면도(옥상) 레벨 마커·설치 항목 커뮤니티: EL+29.0, 캐노피 설치, 안전사다리설치","이 커뮤니티는 ‘지붕층 평면도’ 도면 산출물을 중심으로, 다양한 수치형 레벨 표기(예: EL+29.0, EL+28.0, FL±0, GL±0 등)와 옥상부 시설 설치 지시 항목(캐노피 설치, 안전사다리설치), 그리고 출입 동선 관련 항목(주차장 출입구)이 구조적으로 연결된 형태로 구성됩니다. 레벨 표기는 도면 내 일관된 수직 기준(표고/바닥/기준레벨)을 제공하기 위해 여러 개의 EL 값이 ‘지붕층 평면도’에 포함되며, 캐노피 및 안전사다리 설치는 옥상 계획의 구체적 반영 요소로 제시됩니다. 또한 주차장 출입구는 지붕층 평면도에서 출입 동선·영역 경계 계획 맥락과 연결되어, 옥상 접근 및 외부 동선과의 관계를 도면상에서 고려하고 있음을 시사합니다. [Data: Entities (1285,1273,1274,1286,1291,1292); Relationships (1497,1506,1495,1492,1508,1509)]",1.2,"# 지붕층 평면도(옥상) 레벨 마커·설치 항목 커뮤니티: EL+29.0, 캐노피 설치, 안전사다리설치
+
+이 커뮤니티는 ‘지붕층 평면도’ 도면 산출물을 중심으로, 다양한 수치형 레벨 표기(예: EL+29.0, EL+28.0, FL±0, GL±0 등)와 옥상부 시설 설치 지시 항목(캐노피 설치, 안전사다리설치), 그리고 출입 동선 관련 항목(주차장 출입구)이 구조적으로 연결된 형태로 구성됩니다. 레벨 표기는 도면 내 일관된 수직 기준(표고/바닥/기준레벨)을 제공하기 위해 여러 개의 EL 값이 ‘지붕층 평면도’에 포함되며, 캐노피 및 안전사다리 설치는 옥상 계획의 구체적 반영 요소로 제시됩니다. 또한 주차장 출입구는 지붕층 평면도에서 출입 동선·영역 경계 계획 맥락과 연결되어, 옥상 접근 및 외부 동선과의 관계를 도면상에서 고려하고 있음을 시사합니다. [Data: Entities (1285,1273,1274,1286,1291,1292); Relationships (1497,1506,1495,1492,1508,1509)]
+
+## 지붕층 평면도는 EL·FL·GL 등 다수 레벨 표기의 허브 역할을 수행
+
+이 커뮤니티에서 핵심 연결 고리는 ‘지붕층 평면도’이며, 이 도면에 다수의 표고(EL+… ) 및 기준 레벨 표기(FL±0, GL±0)가 함께 포함되어 수직 기준의 체계화가 드러납니다. 특히 EL+29.0, EL+27.74, EL+28.55, EL+29.10 등 서로 다른 표고 값들이 동일한 도면 범위(지붕층 계획 높이/옥상 레벨 구성)에서 레벨 참조로 기능하도록 배치됩니다. [Data: Entities (1285,1273); Relationships (1497,1498,1500,1501,1495)]
+
+이 구조는 설계 도면에서 서로 다른 뷰(예: 평면/단면/입면) 간 높이 정합성을 맞추기 위한 전형적인 도면 논리와 일치하며, EL 계열이 ‘roof plan(지붕층 평면도)’ 및 관련 도면들에서 일관되게 쓰이는 레벨 마커임을 각 엔티티 설명이 뒷받침합니다. 결과적으로, 지붕층에서의 각 구성 요소가 어느 표고를 기준으로 배치되는지 추적 가능해지고, 공정/시공 시 수직 오차를 줄이려는 의도가 반영된 커뮤니티로 해석됩니다. [Data: Entities (1285,1273,1283,1274,1288); Relationships (1497,1506,1502,1496,1495)]
+
+## EL+29.0 등 표고(표고) 마커는 옥상 높이 기준의 수직 데이터로 사용
+
+EL+29.0은 표고(표고)라는 목적으로 정의된 elevation level mark로, 지붕층 및 관련 도면에서 특정 높이를 나타내는 레벨 표기입니다. 이 엔티티는 지붕층 평면도 레벨 표기 목록에 포함되어 있으며, 단면/지붕층 평면도/입면 등 문서 내 여러 도면에서 동일 수직 참조를 일관되게 제공하는 기능을 수행하는 것으로 설명됩니다. [Data: Entities (1273); Relationships (1497)]
+
+또한 EL+28.0, EL+27.94 등 다른 EL 값들도 ‘지붕층 평면도’에 동일한 방식으로 포함되므로, 커뮤니티 내에서 EL 마커 체계가 ‘옥상부에서 여러 구획/요소가 서로 다른 높이를 가질 수 있다’는 설계 상황을 반영하고 있음을 보여줍니다. 이는 도면상에서 각 구역의 계획 높이를 명확히 구분하는 데 기여하며, 설계 변경이나 시공 확인 시 어떤 높이 기준이 적용되는지 파악하는 데 직접적인 근거가 됩니다. [Data: Entities (1283,1270,1276); Relationships (1506,1499,1501,1505,+more)]
+
+## FL±0과 GL±0은 기준 바닥 레벨/기준 고도의 수직 기준점 제공
+
+FL±0과 GL±0은 각각 지상 기준 마감바닥 레벨(바닥층 기준)과 기준 바닥 레벨(지반 또는 기준 고도)을 의미하는 레벨 표기이며, 지붕층 평면도에서 기준 레벨로 함께 제시됩니다. 관계 데이터에 따르면 FL±0 및 GL±0은 모두 ‘지붕층 평면도’에 레벨 기준으로 연결되어, 옥상 표고(EL+… )가 이 기준점들에 상대적으로 해석될 수 있는 구조를 갖습니다. [Data: Entities (1288,1274); Relationships (1495,1496)]
+
+이렇게 기준 레벨(FL/GL)과 표고(EL)가 함께 표기되면, 도면 판독자는 지붕층에서 각 요소의 고도를 절대/상대 기준으로 환산할 수 있어 설계 의도가 명확해집니다. 또한 레벨 기준의 존재는 시공 확인(예: 마감 두께, 구조체 높이, 설치 장비/구조물의 요구 높이)에서 기준 오차를 줄이는 데 핵심적인 정보입니다. [Data: Entities (1285,1288,1274); Relationships (1495,1496)]
+
+## 주차장 출입구는 지붕층 평면도 내 외부 동선/경계 계획과 연결
+
+‘주차장 출입구’는 지붕층 평면도에 명시된 시설/구성 요소로, 출입 동선 및 영역 경계 계획과 연관된 것으로 설명됩니다. 관계 데이터에서도 주차장 출입구는 ‘지붕층 평면도’ 도면 항목으로 명시되어 있어, 옥상 레벨 계획이 단순히 옥상 내부 구성에만 그치지 않고 접근/동선과 같은 외부 연계 요소까지 고려하고 있음을 시사합니다. [Data: Entities (1286); Relationships (1492)]
+
+따라서 커뮤니티 관점에서는 ‘지붕층 평면도’가 레벨 마커와 더불어 동선/경계 관련 시설도 포함하는 통합 도면이라는 점이 중요합니다. 이는 관련 설계 검토 시 옥상 계획(예: 휴게·적치 공간, 이동 동선 요소)이 실제 접근 체계와 어떻게 맞물리는지를 확인하는 근거가 되며, 특히 이용자 동선과 관련된 안전·운영 이슈 검토에 활용될 수 있습니다. [Data: Entities (1285,1286); Relationships (1492,+more)]
+
+## 캐노피 설치는 지붕층 계획에 반영된 구체적 상부 구조/차양 요소
+
+‘캐노피 설치’는 지붕층 평면도에 포함된 시공/설치 지시 항목으로, 지붕층 계획에서 캐노피 설치가 반영되어 있으며 배치 또는 지시 사항이 함께 제시되는 것으로 설명됩니다. 관계 데이터에서는 ‘지붕층 평면도’가 캐노피 설치와 직접 연결되어 해당 계획이 도면상에 구현됨을 나타냅니다. [Data: Entities (1291); Relationships (1508)]
+
+캐노피는 옥상에서 차양 또는 구조물 설치와 관련된 요소이므로, 레벨 표기(EL/FL/GL) 체계와 함께 검토될 때 설치 높이, 단차, 구조물의 기준 위치 등이 명확해집니다. 따라서 이 커뮤니티의 정보 구조는 수직 기준(레벨 마커)과 설비/구조 설치(캐노피)를 결합해, 실제 시공에 필요한 좌표/고도 수준의 맥락을 제공하는 형태로 이해됩니다. [Data: Entities (1285,1291,1273); Relationships (1508,1497,+more)]
+
+## 안전사다리설치는 옥상 접근/피난 및 작업 안전을 고려한 설계 요소
+
+‘안전사다리설치’는 지붕층 평면도에서 명시된 시공/설치 항목으로, 지붕층 계획에 안전사다리 설치 사항이 포함되어 있으며 설치 위치 또는 필요성을 나타내는 것으로 설명됩니다. 관계 데이터에서는 ‘지붕층 평면도’가 안전사다리설치와 직접 연결되어 해당 안전 관련 요소가 도면에 반영되어 있음을 보여줍니다. [Data: Entities (1292); Relationships (1509)]
+
+안전사다리는 옥상에서의 접근 및 피난/작업 안전과 연결될 가능성이 높기 때문에, 레벨 마커(EL 계열, 기준 바닥 레벨 FL/GL)와 함께 존재한다는 점이 중요합니다. 즉, 안전 장치가 어느 표고/어느 구역에 설치되는지 추적 가능해져, 안전 계획 검토나 시공 확인의 실무적 기준이 될 수 있습니다. [Data: Entities (1292,1285,1274); Relationships (1509,1496,+more)]
+
+## 레벨 표기 다중화는 구역별 높이 차(계획 높이 변화)를 전제로 한 도면 구조
+
+커뮤니티 내에는 다수의 EL 값들이 모두 ‘지붕층 평면도’ 레벨 표기 목록에 포함되어 있으며, 이는 옥상 공간이 동일 고도로만 구성되지 않고 특정 구역별로 계획 표고가 달라질 수 있음을 반영합니다. 관계 데이터에 따르면 EL+27.72, EL+27.74, EL+27.87, EL+28.25, EL+28.75, EL+28.83, EL+29.0, EL+29.10 등 여러 표고 항목이 지붕층 평면도와 연결됩니다. [Data: Entities (1275,1276,1277,1278,1279); Relationships (1502,1498,1504,1507,1501)]
+
+이러한 다중 레벨 표기 체계는 도면에서 각 구성요소(예: 루프탑의 특정 구획, 설치물의 기준 위치)의 수직 조건을 분명히 하고, 설계 의도(배수/단차/구획 높이 등)가 시공 단계에서 오해 없이 구현되도록 돕는 역할을 합니다. 또한 표고 간 관계가 기준 레벨(FL±0, GL±0)과 함께 제시되는 구조이므로, 검토자는 절대/상대 높이 관계를 동시에 확인할 수 있습니다. [Data: Entities (1285,1288,1274,1273); Relationships (1501,1509,+more)]"
+624,3,Solar Panel Foundation Pad and 415Wp Solar Panel Unit,"This community is a small, technical linkage between a solar panel foundation pad component (태양광패널 기초패드) and the solar panel unit specification referenced in a roof plan (415WP/415Wp). The relationships indicate that the foundation pad detail is associated with 415Wp solar panel units, tying the construction component’s detail to the electrical power rating of the solar panels it supports. No legal, organizational, reputation, or security-related entities or claims are provided in the available data—only construction/engineering specification details and their association.",1.5,"# Solar Panel Foundation Pad and 415Wp Solar Panel Unit
+
+This community is a small, technical linkage between a solar panel foundation pad component (태양광패널 기초패드) and the solar panel unit specification referenced in a roof plan (415WP/415Wp). The relationships indicate that the foundation pad detail is associated with 415Wp solar panel units, tying the construction component’s detail to the electrical power rating of the solar panels it supports. No legal, organizational, reputation, or security-related entities or claims are provided in the available data—only construction/engineering specification details and their association.
+
+## 태양광패널 기초패드 is defined as a solar foundation construction component with specific dimensions and a connection to 415Wp panels.
+
+태양광패널 기초패드 is described as a construction component used for solar panel foundation pads, with specified dimensions of 8,650 x 100 x 400 and associated with 415Wp solar panel units. This indicates the foundation pad is not a generic component but is dimensionally and functionally intended to support a particular solar panel unit specification.
+
+Because the description explicitly links the component to 415Wp solar panel units, this foundation-pad definition can be treated as part of a configuration or bill-of-details for a solar installation. Any mismatch between the foundation pad specification and the actual panel specification could affect how the system is engineered or installed, at least at the documentation/compatibility level indicated by the dataset. [Data: Entities (1293); Relationships (1556)]
+
+## 415Wp (415WP) represents the solar panel power rating used in the roof plan specification context.
+
+The entity 415WP is defined as “415Wp,” representing the power rating specified for the solar panel unit in the roof plan. In other words, within this community’s available data, the “415Wp” element functions as the parameter that characterizes the solar panel unit that the construction component is associated with.
+
+This matters because it establishes that the relationship between the foundation pad component and the solar panels is grounded in an electrical rating (power) referenced by the roof plan, even though the dataset does not provide performance, compliance, or safety requirements beyond that identification. [Data: Entities (1315); Relationships (1556)]
+
+## The core relationship ties the foundation pad detail directly to 415Wp solar panel units, indicating an engineered specification link.
+
+The dataset contains a direct relationship stating that the solar panel foundation pad detail (태양광패널 기초패드) is associated with 415Wp solar panel units. This is the main structural linkage in the community: it connects a construction component detail to a solar panel unit specification.
+
+Practically, this suggests the installation design uses coordinated documentation—foundation pad details are defined with a particular panel unit class in mind. However, the data provided does not include additional supporting details (e.g., mounting method, structural load calculations, manufacturers, certifications, or jurisdictional compliance), so the association can only be asserted at the level of specification linkage. [Data: Relationships (1556); Entities (1293, 1315)]
+
+## No additional entities, claims, compliance notes, or reputation signals are provided beyond these engineering specifications.
+
+Within the provided data, only two entities exist: 태양광패널 기초패드 (1293) and 415WP/415Wp (1315). The only relationship provided is the association between the foundation pad detail and 415Wp solar panel units (1556).
+
+Because the dataset includes no organizations, individuals, enforcement bodies, certifications, or narrative claims, the report cannot ground conclusions about legal compliance, operational legitimacy, reputational risk, or malicious intent. The community appears to be strictly a documentation/specification fragment rather than a broader socio-technical or adversarial network. [Data: Entities (1293, 1315); Relationships (1556)]
+
+## Impact severity is limited to engineering/documentation relevance due to the absence of safety, legal, or operational risk data.
+
+Given the available evidence, the only actionable/meaningful information concerns construction component specification and its association to a panel power rating. There are no data points indicating wrongdoing, regulatory violation, security compromise, or harmful intent.
+
+Accordingly, any potential impact is best characterized as low and primarily tied to the risk of specification mismatch or installation/documentation errors—though even that is not explicitly stated in the dataset. The rating therefore reflects the narrow, non-adversarial, engineering-only scope of the community in the provided information. [Data: Entities (1293, 1315); Relationships (1556)]"
+625,3,4층 전등설비 평면도와 주요 시설(식물설치 숲길·어르신안전체험·상담실/의사 진료실),"이 커뮤니티는 ‘4층 전등설비 평면도’를 중심으로, 조경(식물설치 숲길), 어르신 대상 안전 체험(어르신안전체험), 상담 및 진료 공간(상담실/의사 진료실), 그리고 재료/표기 요소(유리)가 도면 내에 라벨링(공간/배치/주석)되어 연결되는 구조입니다. 옥상휴게 마당 또한 ‘4층 전등설비 평면도’의 한 요소로 연결되어, 도면이 단순 조명 계획을 넘어 4층 내/연계 공간 구성을 함께 보여주는 성격임을 시사합니다. [Data: Entities (2349, 1214, 1215, 1223, 2350); Relationships (3475, 3476, 3477, 3481, 3489)]",2.5,"# 4층 전등설비 평면도와 주요 시설(식물설치 숲길·어르신안전체험·상담실/의사 진료실)
+
+이 커뮤니티는 ‘4층 전등설비 평면도’를 중심으로, 조경(식물설치 숲길), 어르신 대상 안전 체험(어르신안전체험), 상담 및 진료 공간(상담실/의사 진료실), 그리고 재료/표기 요소(유리)가 도면 내에 라벨링(공간/배치/주석)되어 연결되는 구조입니다. 옥상휴게 마당 또한 ‘4층 전등설비 평면도’의 한 요소로 연결되어, 도면이 단순 조명 계획을 넘어 4층 내/연계 공간 구성을 함께 보여주는 성격임을 시사합니다. [Data: Entities (2349, 1214, 1215, 1223, 2350); Relationships (3475, 3476, 3477, 3481, 3489)]
+
+## 중심 매개체는 ‘4층 전등설비 평면도’이며, 여러 시설/요소가 이 도면에 라벨링되어 연계됩니다.
+
+‘4층 전등설비 평면도’(2349)는 다른 모든 엔티티(옥상휴게 마당, 식물설치 숲길, 어르신안전체험, 상담실/의사 진료실, 유리)가 관계에서 직접적으로 연결되는 기준축입니다. 이는 커뮤니티 내 관계가 ‘조명 설비 도면’이라는 한 문서/도면에 의해 통합되는 형태임을 보여줍니다. [Data: Entities (2349); Relationships (3475, 3476, 3477, 3481, 3489)]
+
+또한 도면 설명에 따르면 4층 조명 장비 계획이 “after change”로 표기된 개정 버전, 방 배치, 조명 기구 유형, 배선 노트, 축척 정보를 포함하는 것으로 제시되어 있어, 단일 도면이 여러 공간 요소를 기술적으로 함께 반영하는 구조일 가능성이 있습니다. [Data: Entities (2349)]
+
+## ‘식물설치 숲길’은 조경 공간으로, 조명 설비 평면도에 ‘라벨링된 영역’으로 포함됩니다.
+
+‘식물설치 숲길’(1214)은 엔티티 설명에서 ‘식물이 설치된 숲길 형태의 조경 공간’으로 정의되어 있으며, 관계에서 ‘4층 전등설비 평면도’ 내 라벨링된 공간으로 나타납니다. 즉 조경 요소가 조명 계획 도면의 공간 구성에 반영되어 있음을 시사합니다. [Data: Entities (1214); Relationships (3476)]
+
+이러한 포함은 조명 설비가 조경/동선 구역의 가시성·조도 요구 등을 고려해 배치되었을 수 있음을 의미하지만, 실제 조명 기구의 구체 배치나 요구사항은 관계 데이터에 직접 제시되어 있지 않습니다. 따라서 ‘도면 내 공간 라벨링’ 수준의 근거만 확인 가능합니다. [Data: Relationships (3476)]
+
+## ‘어르신안전체험’은 고령자 대상 안전 체험 공간으로, 4층 조명 설비 도면의 일부로 표시됩니다.
+
+‘어르신안전체험’(1215)은 엔티티 설명에서 ‘어르신 대상 안전 체험 프로그램 또는 공간’으로 정의되어 있으며, 관계에서 ‘4층 전등설비 평면도’의 일부 레이아웃/배치로 포함됩니다. 이는 안전 체험 관련 공간이 조명 설비 계획에 의해 고려되는 맥락일 수 있음을 보여줍니다. [Data: Entities (1215); Relationships (3477)]
+
+다만 관계 데이터는 해당 공간에 어떤 조명 기구가 배치되었는지, 조명 요구 수준(예: 비상/안전조명 여부) 등은 제공하지 않습니다. 그럼에도 공간이 ‘도면 레이아웃의 라벨’로 존재한다는 점은 조명 설비가 해당 체험 구역의 동선 및 사용 시나리오와 연동되어 설계되었을 가능성을 시사합니다. [Data: Relationships (3477)]
+
+## ‘상담실/의사 진료실’은 의료·상담 공간으로 도면에 라벨된 방이며, 조명 설비 계획의 범위에 포함됩니다.
+
+‘상담실/의사 진료실’(1223)은 엔티티 설명에서 ‘상담 및 의사 진료를 위한 공간’으로 정의되어 있고, 관계에서 ‘4층 전등설비 평면도’에 ‘라벨링된 방’으로 표시됩니다. 의료/상담 공간은 일반적으로 조명 품질과 운영 편의(관찰/기록 등)와 연관되기 때문에, 조명 계획에 포함된 점은 중요합니다. [Data: Entities (1223); Relationships (3481)]
+
+그렇지만 도면이 의료 목적 조명(예: 진료용 특정 조명, 조도 기준 등)을 명시하는지 여부는 제공된 관계/엔티티 데이터만으로는 확인할 수 없습니다. 현 단계에서는 ‘해당 공간이 조명 설비 평면도에 포함된 라벨 대상’이라는 사실만 grounded 됩니다. [Data: Relationships (3481)]
+
+## ‘유리’는 도면 가장자리/주변에 표시된 재료 주석 요소로 연결됩니다.
+
+‘유리’(2350)는 엔티티 설명에서 도면의 여러 모서리에 ‘표기(annotation)’가 나타나는 재료로 제시됩니다. 관계에서는 ‘유리’ 주석이 ‘4층 전등설비 평면도’의 가장자리(edge)에서 나타난다고 명시되어, 도면이 조명 설비뿐 아니라 자재/주석 정보를 함께 담는 형태임을 보여줍니다. [Data: Entities (2350); Relationships (3489)]
+
+이런 주석 요소의 존재는 공간 구획/구조 요소(예: 유리 파티션, 창/투명 요소 등)가 설계 문서에서 어떻게 표시되는지와 연동될 수 있으나, 실제로 유리가 어떤 위치 기능(창, 칸막이 등)을 수행하는지는 관계 데이터에 구체화되어 있지 않습니다. 따라서 ‘유리 관련 주석이 도면 가장자리에 등장’했다는 수준까지만 판단할 수 있습니다. [Data: Relationships (3489)]
+
+## ‘옥상휴게 마당’ 또한 조명 설비 평면도에 연결되어, 4층 도면이 외부/연계 공간 요소를 포함할 가능성을 시사합니다.
+
+관계 데이터에서 ‘옥상휴게 마당’은 ‘4층 전등설비 평면도’에 대해 ‘옥상 휴게 공간이 해당 도면 내 라벨링된 공간’으로 설명됩니다. 이는 조명 설비 계획이 특정 실내 공간뿐 아니라 옥상/휴게 성격의 공간 요소까지 범위에 포함하고 있음을 암시합니다. [Data: Relationships (3475)]
+
+다만 제공된 엔티티 목록에는 ‘옥상휴게 마당’ 자체의 개별 엔티티 설명(정의/속성)이 포함되어 있지 않습니다. 따라서 현재 근거로는 ‘도면 내 라벨링된 공간으로 연결된다’는 관계 수준의 사실만 확인 가능합니다. [Data: Relationships (3475)]"
+626,3,옥상휴게 마당(지상4층) 및 배수/마감·보행요소 구성,"이 커뮤니티는 ‘지상4층 평면도’라는 단일 도면(계획 문서)을 중심으로, 옥상휴게 마당과 그 주변의 배수·통행 안전·마감 공정 요소(장애인용 트랜치, 아연도철재 그레이팅, 보행 동선 관련 요소인 횡단보도, 조경 요소인 잔디/인조잔디, 인접 도로, 환기 덕트 평면 표기, 방수 및 무근콘크리트 위 패턴찍기/페인트마감)가 상호 관계로 연결된 구성입니다. 특히 옥상휴게 마당은 지상4층 평면도에 배치된 구역으로서 다른 설비/마감/접근성 관련 요소(배수 트렌치·그레이팅, 방수·페인트 마감, 조경 및 보행·도로 인접)가 동일 도면 상에 함께 표시되어, 해당 공간의 기능(휴게, 접근성 고려 배수, 마감 완성도, 안전한 통행/개구부 보호)을 동시에 달성하도록 설계·시공이 계획된 것으로 읽힙니다.",3.2,"# 옥상휴게 마당(지상4층) 및 배수/마감·보행요소 구성
+
+이 커뮤니티는 ‘지상4층 평면도’라는 단일 도면(계획 문서)을 중심으로, 옥상휴게 마당과 그 주변의 배수·통행 안전·마감 공정 요소(장애인용 트랜치, 아연도철재 그레이팅, 보행 동선 관련 요소인 횡단보도, 조경 요소인 잔디/인조잔디, 인접 도로, 환기 덕트 평면 표기, 방수 및 무근콘크리트 위 패턴찍기/페인트마감)가 상호 관계로 연결된 구성입니다. 특히 옥상휴게 마당은 지상4층 평면도에 배치된 구역으로서 다른 설비/마감/접근성 관련 요소(배수 트렌치·그레이팅, 방수·페인트 마감, 조경 및 보행·도로 인접)가 동일 도면 상에 함께 표시되어, 해당 공간의 기능(휴게, 접근성 고려 배수, 마감 완성도, 안전한 통행/개구부 보호)을 동시에 달성하도록 설계·시공이 계획된 것으로 읽힙니다.
+
+## ‘지상4층 평면도’가 커뮤니티의 중심 매핑 레이어임
+
+지상4층 평면도는 ‘건물의 4층, 즉 지상 4층의 평면 배치를 나타내는 도면 항목’으로 정의되며, 이 커뮤니티의 모든 핵심 요소가 해당 도면에서 서로 인접/표기 관계로 연결됩니다 [Data: Entities (1212); Relationships (1418, 1429, 1462, 1428, 1461)].
+
+관계 관점에서 지상4층 평면도는 옥상휴게 마당을 포함하고(옥상휴게 마당 배치 및 레이블 표기), 그 밖에 장애인용 트랜치, 방수 및 무근콘크리트 위 패턴찍기/페인트마감, 아연도철재 그레이팅, 잔디·인조잔디·횡단보도·도로 등 다양한 구성이 함께 표시됩니다. 즉 ‘계획 문서(도면)’가 공간 기능(휴게/보행/배수/마감/조경)을 구성 요소로 묶는 기준점 역할을 합니다 [Data: Relationships (1418, 1429, 1462, 1428, 1459)].
+
+## 옥상휴게 마당은 지상4층 평면도에 배치된 휴게 공간으로 정의됨
+
+옥상휴게 마당은 ‘옥상에 조성된 휴게용 마당 공간’으로 정의되며, 지상4층 평면도에는 이 공간이 배치되어 레이블이 붙은 구역으로 표시된다고 설명됩니다 [Data: Entities (1213); Relationships (1418)].
+
+또한 옥상휴게 마당은 지상4층 환기 설비와 동일 도면 내에서 표기되는 연관이 있으며, 옥상휴게 마당이 4층 환기 덕트 평면도 상의 공간 중 하나로 함께 언급됩니다 [Data: Relationships (3100)]. 이는 휴게 공간이 단독으로 배치된 것이 아니라, 건물 설비(환기 덕트)와 같은 인프라 요소와의 공간적 배치/간섭 또는 동선·구획을 고려한 설계임을 시사합니다 [Data: Relationships (3100, 1418)].
+
+## 접근성 고려 배수 요소로 장애인용 트랜치가 도면에 명시됨
+
+장애인용 트랜치는 문서에서 장애인 관련 구간에 설치되는 트랜치(배수/개구부/라인 구조로 보이는 요소)로 설명되며, 장애인 접근성을 고려한 배수 구간으로 제시됩니다 [Data: Entities (1225)].
+
+지상4층 평면도에는 장애인용 트랜치가 표시되어 있다고 관계가 명시되어, 옥상휴게 마당 또는 해당 4층 구역의 이동/사용 동선과 배수 처리가 접근성 관점에서 함께 설계된 것으로 해석할 수 있습니다 [Data: Relationships (1429)]. 제공된 데이터에는 트랜치의 치수 예시(W:200 및 W:150, L:5.2m)와 설치 목적(장애인 이동·접근을 고려한 배수 처리 환경 확보)이 포함되어, 단순 미관보다는 기능적 배수 설계가 포함됨을 뒷받침합니다 [Data: Entities (1225)].
+
+## 배수/개구부 상부 및 통행 안전 목적의 아연도철재 그레이팅이 함께 표기됨
+
+아연도철재 그레이팅은 배수 시설이나 개구부 위, 그리고 트렌치 상부 등에 설치되는 아연도금 철재 재질의 그레이팅으로, 물의 배수와 통행 안전, 개구부 보호를 목적으로 사용된다고 설명됩니다 [Data: Entities (1224)].
+
+관계 데이터에 따르면 지상4층 평면도에 아연도철재 그레이팅이 표시되어 있어, 장애인용 트랜치 등 배수 관련 요소가 ‘커버/보호’ 및 ‘안전한 통행(상부 통행 가능성)’까지 고려되며 구성된 것으로 읽힙니다 [Data: Relationships (1428)]. 또한 아연도 처리로 내식성이 비교적 우수하다는 설명이 포함되어 있어, 옥상 환경(노출 가능성)에서 유지관리/내구성을 고려한 재료 선택일 가능성이 제시됩니다 [Data: Entities (1224)].
+
+## 방수 후 무근콘크리트 위 패턴찍기 및 페인트 마감이 표기된 공정 존재
+
+‘방수 및 무근콘크리트 위 패턴찍기 / 페인트마감’은 방수 처리가 완료된 후 무근콘크리트 상부에서 패턴을 찍고 이를 페인트로 최종 마감하는 공정/마감 사양으로 설명됩니다 [Data: Entities (1247)].
+
+지상4층 평면도에는 이 마감 시공이 표기되어 있다고 관계가 명시되어, 해당 구역이 단순 방수만 하는 것이 아니라 표면 형상(패턴)과 시각적 완성도(페인트 마감)까지 포함하는 계획임을 보여줍니다 [Data: Relationships (1462)]. 또한 설명대로 방수층 위의 무근콘크리트 표면에 원하는 형상의 패턴을 형성한 뒤 페인트로 마감하는 흐름이 데이터에 포함되어 있어, 방수 성능과 외관·표면 처리 전략이 결합된 공정임을 확인할 수 있습니다 [Data: Entities (1247)].
+
+## 옥상 조경 구성: 잔디와 인조잔디가 4층 평면도에 배치됨
+
+잔디는 ‘옥상휴게 마당과 도로 사이 경계 요소로 사용되는 잔디 조경’으로 정의되어 있고 [Data: Entities (1244)], 인조잔디는 ‘옥상휴게 마당에 깔리는 인조잔디 마감재’로 정의됩니다 [Data: Entities (1246)].
+
+지상4층 평면도에는 잔디와 인조잔디가 각각 배치되어 있다고 관계가 명시되어 있어, 휴게 마당 내부 마감(인조잔디)과 주변 경계/완충(잔디)이 분리된 조경 전략으로 계획된 것으로 해석됩니다 [Data: Relationships (1459, 1461)]. 이러한 구분은 옥상에서의 경계 처리 및 보행/차량 인접부의 시각적·기능적 구획 의도를 반영할 수 있습니다 [Data: Entities (1244, 1246)].
+
+## 보행·교통 인접 요소로 횡단보도와 도로가 함께 포함됨
+
+횡단보도는 보행자의 횡단을 위한 도로 시설물로 정의되어 있으며 [Data: Entities (1216)], 도로는 조경 및 보행 구간과 인접한 도로로 정의됩니다 [Data: Entities (1245)].
+
+지상4층 평면도에는 횡단보도와 도로가 모두 표시되어 있다고 관계가 명시되어, 옥상 휴게 공간이 단순 실내/옥상 전용 구역이 아니라 보행 동선 및 도로 인접 환경과의 접점(횡단·연결)을 고려한 배치임을 시사합니다 [Data: Relationships (1456, 1460)]. 이때 잔디가 ‘옥상휴게 마당과 도로 사이 경계 요소’로 정의된 점과 결합하면 [Data: Entities (1244)], 도로-보행-휴게 구간 사이의 전환부를 다층적으로 계획했을 가능성이 있습니다 [Data: Relationships (1459, 1460)].
+
+## 옥상 휴게 공간은 환기 덕트 평면도 표기와 연계되어 설비-공간 통합을 시사
+
+관계 데이터에서 옥상휴게 마당은 ‘지상 4층 환기 덕트 평면도’에 포함된 공간 중 하나로 설명됩니다 [Data: Relationships (3100)].
+
+이 연결은 휴게 공간 설계가 단지 조경/마감만이 아니라, 환기 덕트 등 기계 설비와의 배치 및 구획을 함께 고려했음을 나타낼 수 있습니다. 다만 제공된 데이터는 실제 간섭(예: 이격거리, 덕트 통로 유지 여부)이나 운영상의 제약을 직접적으로 명시하지는 않으므로, ‘통합적으로 같은 도면 체계에서 관리되는 구성요소’ 수준에서의 근거 기반 해석이 적절합니다 [Data: Relationships (3100)]."
+627,3,창고·서고·창호G01 — 평생건강관리센타 공간 요소 커뮤니티,"이 커뮤니티는 건축 도면/공간 배치도에서 반복적으로 식별되는 공간 요소들(창고, 서고)과 창호 유형 지정(창호G01)으로 구성됩니다. ‘평생건강관리센타’의 공간 구성에 ‘창고’가 포함되어 센타 운영을 지원하는 보조 공간으로 배치된 점이 중심 연결고리이며, ‘서고’는 지상 4층 환기 덕트 평면도 등 특정 도면에서 라벨링된 실내 공간으로 나타납니다. ‘창호G01’은 프로그램실에 적용되는 창호(창 유형)로 지정되어, 특정 용도 공간과의 연계(프로그램실 ↔ 창호G01)가 도면 상에서 확인됩니다.",1.5,"# 창고·서고·창호G01 — 평생건강관리센타 공간 요소 커뮤니티
+
+이 커뮤니티는 건축 도면/공간 배치도에서 반복적으로 식별되는 공간 요소들(창고, 서고)과 창호 유형 지정(창호G01)으로 구성됩니다. ‘평생건강관리센타’의 공간 구성에 ‘창고’가 포함되어 센타 운영을 지원하는 보조 공간으로 배치된 점이 중심 연결고리이며, ‘서고’는 지상 4층 환기 덕트 평면도 등 특정 도면에서 라벨링된 실내 공간으로 나타납니다. ‘창호G01’은 프로그램실에 적용되는 창호(창 유형)로 지정되어, 특정 용도 공간과의 연계(프로그램실 ↔ 창호G01)가 도면 상에서 확인됩니다.
+
+## 평생건강관리센타 내부 구성에 ‘창고’가 포함되어 운영을 보조하는 공간으로 배치됨
+
+‘평생건강관리센타’의 공간 구성에는 ‘창고’가 포함되며, 이 창고는 센타 운영을 지원하는 보조 공간으로 배치되어 있다고 설명됩니다. 즉, 창고는 단순한 부속 공간을 넘어 센타의 전체 레이아웃 일부로서 물품 보관과 운영 지원 역할을 수행하는 것으로 정리되어 있습니다. [Data: Entities (1396); Relationships (1396)]
+
+또한 창고는 건축 도면 및 공간 배치도에서 보관 공간으로 반복적으로 표시되며(여러 층 평면도 및 건강관리센터 배치도 포함), 결과적으로 평생건강관리센타의 운영/시설 관리 관점에서 중요한 ‘공간 기능’으로 문서화되어 있습니다. [Data: Entities (149,1254); Relationships (1396,+more)]
+
+## ‘창고’는 여러 도면(층별·계획도)에서 반복 식별되는 보관 기능 중심의 공간으로 정의됨
+
+‘창고’는 물품을 보관하는 용도의 공간으로 정의되며, 문서와 평면도에서 반복적으로 표시된다고 설명됩니다. 구체적으로 지하층 평면도, 지하 계획도, 건물 평면도, 1층 평면도, 5층 평면도, 그리고 2층 조명설비 평면도에서도 확인된다고 되어 있어, 단일 도면이 아니라 여러 설계 관점에서 ‘보관 공간’으로 지속 등장합니다. [Data: Entities (149)]
+
+이와 같은 반복 표기는 해당 공간이 설계·운영·공간계획 전반에서 필요한 요소로 다뤄졌을 가능성을 시사합니다. 다만 제공된 데이터에는 보관 물품의 종류나 접근 권한, 보안/위험 관련 구체 정보는 포함되어 있지 않으므로, ‘공간 기능’ 수준의 확인까지만 가능합니다. [Data: Entities (149)]
+
+## ‘서고’는 실내 공간 항목으로 도면에서 구체 배치/구성 요소 형태로 등장
+
+‘서고’는 실내 공간 용도로 도면에서 항목으로 구체 배치/구성 요소로 등장하며, 해당 페이지의 평면 구성 중 하나라고 정의되어 있습니다. 즉 ‘서고’는 공간 배치도 상에서 특정 구성요소로 자리 잡아 문서화된 유형의 실내 공간으로 이해할 수 있습니다. [Data: Entities (1254)]
+
+또한 ‘서고’는 지상 4층 환기 덕트 평면도에서 라벨링된 공간 중 하나로 연결되며, 이는 서고가 단지 평면상 위치만이 아니라 설비/동선/환기 등 다른 설계 도면 맥락과 함께 나타날 수 있음을 보여줍니다. [Data: Relationships (3101); Entities (1254)]
+
+## ‘서고’와 환기 덕트 평면도 연계는 설비-공간 계획의 교차점을 시사
+
+관계 데이터에 따르면 ‘서고’는 ‘지상 4층 환기 덕트 평면도’에서 라벨링된 공간으로 등장합니다. 이는 서고라는 공간이 환기 덕트 계획 도면과 교차하여 고려되었을 가능성을 의미합니다(예: 덕트 경로, 천장/배관 계획, 공간 활용 제약 등). [Data: Relationships (3101)]
+
+다만 이 데이터는 환기 덕트가 서고에 어떤 방식으로 영향을 주는지(예: 수요, 소음/환경 요구, 기밀/위생 등)까지는 제공하지 않습니다. 따라서 ‘서고-설비 계획의 존재’까지만 근거 기반으로 말할 수 있습니다. [Data: Relationships (3101); Entities (1254)]
+
+## ‘창호G01’은 프로그램실에 지정되는 창 유형(창호 유형 코드)
+
+‘창호G01’은 건축 스케줄(architectural schedule)에서 여러 공간에 사용되는 창 유형 지정 코드로 설명됩니다. 또한 관계 데이터에서는 ‘창호G01’이 ‘프로그램실’에 대해 지정된다고 명시되어 있어, 용도 공간(프로그램실)과 창호 유형 지정이 도면/스케줄 상에서 연결됩니다. [Data: Entities (1708); Relationships (2402)]
+
+이 점은 특정 실의 기능(프로그램실)과 외피/창호 사양이 설계 문서에서 매핑되어 관리된다는 것을 시사합니다. 다만 제공 데이터에는 프로그램실의 기능 내용, 창호 성능(예: 방음/차열/환기 요구), 설치 수량 등 상세 정보는 없으므로 영향 범위는 제한적으로 해석해야 합니다. [Data: Entities (1708); Relationships (2402)]
+
+## 커뮤니티의 핵심 ‘노드’는 공간 요소(창고·서고)와 창호 유형(창호G01)이며, 용도/도면으로 연결됨
+
+전체적으로 엔티티는 ‘공간 요소’(창고, 서고)와 ‘부재/유형 지정’(창호G01)으로 나뉘며, 관계는 특정 문서/도면 맥락 또는 특정 용도 공간과의 연결로 표현됩니다. 창고는 평생건강관리센타 운영을 지원하는 보조 공간으로, 서고는 특정 도면(지상 4층 환기 덕트 평면도)의 라벨링 공간으로, 창호G01은 프로그램실에 적용되는 창 유형으로 각각 연결됩니다. [Data: Entities (149,1254,1708); Relationships (1396,3101,2402)]
+
+이 구조는 ‘공간 기능(보관/서고)’과 ‘문서 상 매핑(도면/스케줄/라벨)’이 결합되어 설계 데이터가 관리되는 방식에 가깝습니다. 제공 데이터만으로는 보안·위협·불법 활동 같은 행위 정보가 나타나지 않으며, 커뮤니티의 영향은 주로 건축/공간 설계 관점의 중요도에 해당합니다. [Data: Entities (149,1254,1708)]"
+628,3,Jongdan 5th-Floor Building Plan Components (지상5층 건물 외피 전개도),"This community is composed of interconnected architectural plan elements focused on the fifth-floor layout and construction envelope. The central artifact, “지상5층 건물 외피 전개도” (fifth-floor exterior envelope elevation drawing), is explicitly linked to multiple room/area entities—검진 (examination), 접수기초상담실 (reception/initial consultation), 일상생활훈련실 (daily living training), 탕비및창고 (pantry and storage), 공용부접수기초상담실 (shared common-area reception/initial consultation), and 안내 (information/guidance). In addition, a structural specification entity, “벽체W01,” is tied to the examination room, indicating standardized wall construction for that space within the same planning set. Overall, the relationship graph is a document-to-space mapping (drawing to room/area elements) plus a room-to-wall-type mapping (examination to wall type W01), with no claims, people, or organizations described in the provided data.",1.2,"# Jongdan 5th-Floor Building Plan Components (지상5층 건물 외피 전개도)
+
+This community is composed of interconnected architectural plan elements focused on the fifth-floor layout and construction envelope. The central artifact, “지상5층 건물 외피 전개도” (fifth-floor exterior envelope elevation drawing), is explicitly linked to multiple room/area entities—검진 (examination), 접수기초상담실 (reception/initial consultation), 일상생활훈련실 (daily living training), 탕비및창고 (pantry and storage), 공용부접수기초상담실 (shared common-area reception/initial consultation), and 안내 (information/guidance). In addition, a structural specification entity, “벽체W01,” is tied to the examination room, indicating standardized wall construction for that space within the same planning set. Overall, the relationship graph is a document-to-space mapping (drawing to room/area elements) plus a room-to-wall-type mapping (examination to wall type W01), with no claims, people, or organizations described in the provided data.
+
+## “지상5층 건물 외피 전개도” serves as the central layout and exterior-envelope reference for multiple fifth-floor spaces.
+
+The fifth-floor exterior envelope elevation drawing is the hub entity that connects to several distinct functional spaces on the plan, indicating it is the primary artifact grounding the community’s spatial structure. It documents the exterior envelope for the listed spaces, meaning it likely coordinates how those rooms interface with the building’s exterior.
+
+This centrality is supported by direct relationships from the drawing to each space/area entity (including 검진, 접수기초상담실, 일상생활훈련실, 탕비및창고, 공용부접수기초상담실, and 안내), showing that the drawing is not just an abstract document but a structured map of the fifth-floor program. [Data: Entities (1749, 1751, 1755, 1752, 1753); Relationships (2361, 2362, 2375, 2364, 2368, +more)]
+
+## The drawing explicitly includes 검진 (examination room) as one of the externally bounded spaces.
+
+One of the key connected spaces is 검진 (linked as a target of the fifth-floor exterior envelope drawing), implying that the examination room is part of the exterior-facing envelope scope of the plan. This matters because the examination room’s exterior wall/window configuration would be a critical design driver and may affect operational safety, environmental control, and privacy considerations in a facility context.
+
+The relationship is grounded in the fact that the drawing “documents the fifth-floor exterior envelope for spaces including the examination room.” [Data: Relationships (2361); Entities (1749)]
+
+## Reception/consultation functions appear in multiple areas, indicating differentiated intake flow across the fifth floor.
+
+The plan includes both a dedicated reception/initial consultation room (접수기초상담실) and a shared/common reception/initial consultation space (공용부접수기초상담실). This suggests the fifth-floor program distinguishes between separate intake zones (possibly for different user groups, services, or workflow stages), while still maintaining a common consultation concept.
+
+These distinctions are supported by separate relationships from the exterior envelope drawing to each reception/consultation area entity, each described as part of the fifth-floor layout. [Data: Entities (1751, 1753); Relationships (2362, 2368); Entities (1749)]
+
+## Daily living training and support/storage areas are also incorporated into the same fifth-floor envelope/documentation set.
+
+Beyond intake and examination, the exterior envelope drawing also connects to 일상생활훈련실 (daily living training room) and 탕비및창고 (pantry and storage room). Including these rooms in the same drawing context implies they are not peripheral; instead, they are part of the coordinated floor plan and exterior-envelope considerations.
+
+The grounding comes from the drawing’s explicit inclusion of these rooms in the fifth-floor layout (for daily living training and for pantry/storage). [Data: Entities (1755, 1752); Relationships (2375, 2364); Entities (1749)]
+
+## An “안내” (information/guidance) area is referenced within the fifth-floor plan documentation, indicating an on-floor guidance point.
+
+The plan’s inclusion of 안내 indicates a designated information/guidance area within the fifth-floor layout. While the drawing description positions 안내 as referenced in plan notes and shown on the fifth-floor plan, the relationship to the exterior envelope drawing suggests that this guidance area is part of the coordinated room/area set being documented.
+
+This is supported by the relationship stating the document notes a reference to an information/guidance area related to the building plan and links that concept as a target of the fifth-floor exterior envelope drawing. [Data: Entities (1754, 1749); Relationships (2371)]
+
+## A standardized wall type, “벽체W01,” is specified for the examination room, linking structural specification to a functional space.
+
+The wall type entity 벽체W01 is connected to the 검진 (examination) room, indicating that the examination room uses a particular wall construction specification (W01). This kind of linkage is important in facility planning because it can influence structural behavior, acoustic performance, fire resistance, and overall compliance to building standards.
+
+The relationship is grounded by the explicit statement that wall type W01 is specified for the examination room, and by the wall type entity’s repeated specification in an area schedule. [Data: Entities (1707); Relationships (2380); Entities (1707)]
+
+## The provided data describes architectural planning elements only; no legal compliance, operational procedures, or stakeholder claims are included.
+
+Although the dataset includes degrees (likely prioritization or an internal scoring) and detailed room/space descriptors, there are no accompanying fields for compliance status, safety certifications, regulatory review outcomes, or any allegations/claims. The relationships are purely architectural/document mapping.
+
+As a result, the report can only assess the community’s informational content as “facility design artifacts and their linkages,” not as entities with reputational risk, wrongdoing, or legal exposure based on the given evidence. [Data: Entities (1749, 1751, 1755, 1752, 1753, 1754, 1707); Relationships (2361, 2362, 2375, 2364, 2368, +more)]"
+629,3,프로그램실과 ‘서’(West) 표기가 포함된 지상 5층 건물 도면 구성,"이 커뮤니티는 도면(지상 5층 건물 외피 전개도 및 배치/표기 체계)에서 ‘프로그램실’과 방향 라벨 ‘서(서쪽, west)’가 연결되어 등장하는 설계 도면 요소들로 구성됩니다. ‘지상5층 건물 외피 전개도’가 ‘프로그램실’을 포함하는 것으로 설명되며, 별도로 ‘서’ 라벨이 ‘프로그램실’에 대해 서쪽 방향 표기로 함께 사용되는 관계가 확인됩니다. 즉, 프로그램실은 5층 기능 공간 구성 요소로 도면에 열거되며, 일부 프로그램실은 ‘서(서쪽)’ 방향 표기와 결합되어 공간/배치 해석에 영향을 줄 수 있습니다. [Data: Entities (1255, 1757); Relationships (2373, 2418)]",1.6,"# 프로그램실과 ‘서’(West) 표기가 포함된 지상 5층 건물 도면 구성
+
+이 커뮤니티는 도면(지상 5층 건물 외피 전개도 및 배치/표기 체계)에서 ‘프로그램실’과 방향 라벨 ‘서(서쪽, west)’가 연결되어 등장하는 설계 도면 요소들로 구성됩니다. ‘지상5층 건물 외피 전개도’가 ‘프로그램실’을 포함하는 것으로 설명되며, 별도로 ‘서’ 라벨이 ‘프로그램실’에 대해 서쪽 방향 표기로 함께 사용되는 관계가 확인됩니다. 즉, 프로그램실은 5층 기능 공간 구성 요소로 도면에 열거되며, 일부 프로그램실은 ‘서(서쪽)’ 방향 표기와 결합되어 공간/배치 해석에 영향을 줄 수 있습니다. [Data: Entities (1255, 1757); Relationships (2373, 2418)]
+
+## ‘지상 5층’ 레벨에서 ‘프로그램실’이 기능 공간 구성 요소로 열거됨
+
+‘프로그램실’은 지상 5층 평면도에 포함된 공간 용도로, 도면에 함께 열거되어 해당 층의 기능 공간 구성 요소로 정의됩니다. 이는 커뮤니티의 핵심이 ‘공간 용도(프로그램실)’가 특정 층(5층)에서 도면 요소로써 체계적으로 분류·표현된다는 점에 있음을 시사합니다. 특히 ‘프로그램실’이 단순 참고 표기가 아니라 ‘층의 기능 공간 구성 요소’로 성격이 명확히 규정되어, 해당 도면에서 공간 조직(기능 배치) 이해의 기준점 역할을 할 가능성이 있습니다. [Data: Entities (1255); Relationships (2373)]
+
+## ‘지상5층 건물 외피 전개도’가 ‘프로그램실’을 포함한다는 관계가 존재
+
+관계 데이터에 따르면 ‘지상5층 건물 외피 전개도’가 ‘프로그램실’이 포함되었다고 설명됩니다. 이는 ‘외피 전개도’라는 도면 범위/관점 안에 5층의 프로그램실(기능 공간)이 함께 표시되거나 연동되어 있음을 의미합니다. 따라서 이 커뮤니티는 단일 도면(평면도)뿐 아니라 외피 전개도 같은 다른 도면 유형과의 결합을 통해, 프로그램실의 위치/범위가 외피 전개 표현과 함께 해석될 여지가 있음을 보여줍니다. [Data: Relationships (2373); Entities (1255)]
+
+## ‘서’(west) 방향 라벨이 ‘프로그램실’ 표기에 연결됨
+
+‘서’는 건물 외피 도면에서 방향(서쪽)을 의미하는 라벨로 사용되어, 방향성을 나타내기 위한 표기로 설명됩니다. 또한 ‘서’는 ‘프로그램실’과의 관계로 연결되어 있으며, ‘프로그램실’이 서쪽 방향과 연계되어 표기되었다고 데이터가 말합니다. 즉, 프로그램실은 단지 공간 용도 명칭으로 끝나지 않고, 해당 공간이 도면상 ‘서쪽’ 방향 맥락에서 표시/해석될 수 있도록 방향 라벨과 결합되어 제시된 것으로 보입니다. [Data: Entities (1757, 1255); Relationships (2418)]
+
+## 일부 ‘프로그램실’이 ‘서’ 방향으로 마킹되어 배치/해석의 단서 제공
+
+관계 데이터에서는 ‘여러 프로그램실’이 서쪽 방향(west) 표기로 표시되어 있다고 설명합니다. 이 점은 커뮤니티에서 ‘방향 라벨(서)’이 실제 공간 요소(프로그램실)와 결합되어, 공간 배치나 도면에서의 상대적 위치 파악에 영향을 줄 수 있음을 시사합니다. 예를 들어 도면을 읽는 사용자가 프로그램실을 식별할 때 방향 표기를 참고하여 해당 공간의 면/위치를 추정할 수 있어, 설계 의도 전달이나 문서 해석 과정에서 중요한 맥락 정보가 될 가능성이 있습니다. [Data: Relationships (2418); Entities (1757, 1255)]
+
+## 커뮤니티 영향도는 ‘도면 표기/해석’ 범위에 국한되며, 구체적 안전·위협 정보는 제공되지 않음
+
+제공된 자료는 도면 요소(프로그램실, 서 방향 라벨)와 그 사이의 표기/포함 관계에 대한 설명으로 구성되어 있습니다. 외부 위협, 불법성, 악의적 행위, 법규 위반, 보안 취약점 등과 직접적으로 연결되는 정보나 추가 증거는 제공되지 않았습니다. 따라서 이 커뮤니티의 ‘영향(impact)’은 주로 도면 해석의 정확성, 설계/공간 구성 이해에 미치는 영향처럼 정보적·문서화 측면으로 한정된 것으로 판단됩니다. [Data: Entities (1255, 1757); Relationships (2373, 2418)]"
+630,3,기억키움(프로그램실)과 ‘북’ 방향 표기가 포함된 기억 지원 공간,"이 커뮤니티는 건물 도면/평면도/단면도에서 확인되는 ‘기억키움’이라는 기억 자극·기억 지원 공간을 중심으로 구성된다. ‘기억키움’은 프로그램실(5층 프로그램 영역 인근)로도 표현되며, 단면도에서 ‘기억 향상 구역’으로 식별되고 평면도에서는 기억 자극 및 기억 지원실로 표시되는 등 도면 상의 다중 표기(공간 기능 설명 포함)를 통해 일관된 목적(인지적 자극 제공 및 기억 기능 도움)을 갖는 것으로 해석된다. 또한 ‘북’은 방향(상단/북향)을 나타내는 라벨로서 ‘기억키움’에 북 방향 표기가 함께 연결되어, 해당 공간의 위치/배향을 도면 판독 시 구체화하는 역할을 한다.",1.5,"# 기억키움(프로그램실)과 ‘북’ 방향 표기가 포함된 기억 지원 공간
+
+이 커뮤니티는 건물 도면/평면도/단면도에서 확인되는 ‘기억키움’이라는 기억 자극·기억 지원 공간을 중심으로 구성된다. ‘기억키움’은 프로그램실(5층 프로그램 영역 인근)로도 표현되며, 단면도에서 ‘기억 향상 구역’으로 식별되고 평면도에서는 기억 자극 및 기억 지원실로 표시되는 등 도면 상의 다중 표기(공간 기능 설명 포함)를 통해 일관된 목적(인지적 자극 제공 및 기억 기능 도움)을 갖는 것으로 해석된다. 또한 ‘북’은 방향(상단/북향)을 나타내는 라벨로서 ‘기억키움’에 북 방향 표기가 함께 연결되어, 해당 공간의 위치/배향을 도면 판독 시 구체화하는 역할을 한다.
+
+## 기억키움은 기억 자극·기억 지원 목적의 특화 프로그램 공간으로 설명된다.
+
+‘기억키움’은 도면과 평면도, 단면도에서 모두 확인되는 ‘기억 자극 및 기억 지원을 위한 공간’으로 정의되어 있다. 평면도에서는 ‘메모리 스티뮬레이션 또는 기억 지원실’로 표시되며, 단면도에서는 ‘기억 향상 구역’으로 식별된다고 설명되어 있어, 도면 유형에 따라 명칭이 달라져도 기능적 목표(이용자의 기억 기능을 돕고 인지적 자극을 제공)가 일관되게 제시된다 [Data: Entities (1446)].
+
+따라서 이 커뮤니티의 핵심은 단순한 위치 표기가 아니라, 도면 전반에서 반복적으로 나타나는 ‘기억 지원’ 기능을 수행하는 공간 개념에 있다. 이는 해당 공간이 이용자에게 제공하려는 인지적 자극/지원이라는 목적성에 기반해 설계 의도가 반영되어 있음을 시사한다 [Data: Entities (1446)].
+
+## 기억키움은 5층 프로그램 영역 내 프로그램실 인근에 포함되는 것으로 연결된다.
+
+관계 데이터에 따르면 ‘기억키움’은 ‘프로그램실’에 포함되어(또는 인접 배치되어) 5층 프로그램 영역의 일부로 나타난다. 구체적으로 ‘기억키움 is shown as part of the fifth-floor program area near 프로그램실’로 서술되어, 공간 배치가 프로그램실과의 거리/인접성까지 고려된 형태로 표현됨을 보여준다 [Data: Relationships (3539); Entities (1446)].
+
+이 연결은 ‘기억키움’이 건물 내 동선이나 기능 구획(프로그램실이 속한 레벨/구역)과 결합되어 배치된다는 점을 의미한다. 즉, 기억 지원 공간이 독립된 단일 요소라기보다 해당 층의 프로그램 공간 흐름 속에서 운영/사용될 가능성을 높인다 [Data: Relationships (3539)].
+
+## ‘북’ 방향 표기는 기억키움에 부착되어 공간 배향/방위 정보를 제공한다.
+
+‘북’은 건물 외피 도면에서 사용되는 ‘북쪽 방향을 뜻하는 지시 라벨’로 정의되어 있다. 또한 ‘북’이 ‘기억키움’과의 관계로 연결되며, ‘The memory-support room is marked with north orientation’(기억 지원실이 북향으로 표시됨)이라는 설명이 동반된다 [Data: Entities (1758, 1446); Relationships (2419)].
+
+이로써 ‘기억키움’이 단순히 어느 위치에 존재하는지뿐 아니라, 도면 판독 관점에서 북향 배치(방위)를 함께 고려하는 요소임을 알 수 있다. 이는 후속 검토(예: 채광/동선/방향성에 따른 사용자 경험 등)를 할 때 기준점(북향)을 제공할 수 있다는 점에서 의미가 있다 [Data: Relationships (2419)].
+
+## 기억키움의 표현은 평면도/단면도에서 기능 중심으로 일관되게 재서술된다.
+
+관계 데이터는 공간 간 연결(프로그램실 인근, 북향 표시)을 보여주지만, 엔터티 설명 자체는 도면 유형에 따른 표기 방식(평면도: 기억 지원실/메모리 스티뮬레이션, 단면도: 기억 향상 구역)을 구분해 제시한다 [Data: Entities (1446)].
+
+이는 도면 문서에서 ‘기억키움’이라는 동일 공간 개념이 서로 다른 도면 뷰에서도 동일한 목적(기억 기능 도움 및 인지적 자극 제공)으로 해석 가능하도록 설계 의도가 반영되었을 가능성을 보여준다. 따라서 커뮤니티 관점에서는 ‘공간 기능의 일관성’이 중요한 특징으로 나타난다 [Data: Entities (1446)].
+
+## 현재 제공된 데이터는 법적 준수/기술 역량/평판 관련 근거를 포함하지 않는다.
+
+제공된 엔터티와 관계는 건물 도면/공간 구성에 대한 설명(기억 지원 공간의 기능적 서술, 5층 프로그램 영역 인접, 북향 표기)으로만 구성되어 있으며, 어떤 규정 준수(법적 컴플라이언스), 기술적 능력(예: 시스템/기술 스펙), 평판(대외 평판/평가/평론) 또는 위협 주장(위험 행위/사례)에 대한 데이터는 포함되어 있지 않다 [Data: Entities (1446, 1758); Relationships (3539, 2419)].
+
+따라서 이 커뮤니티에 대한 ‘영향(Impact)’ 평가는 공간 기능 및 배치 정보의 존재 여부만으로 제한적으로만 수행될 수 있다. 법적/기술적/평판적 리스크를 판단할 근거가 현재 데이터에 없다는 점이 중요하다 [Data: Entities (1446, 1758); Relationships (3539, 2419)]."
+631,3,건물 외피 전개도–지상1층–계단실–창고탕비실 도면 커뮤니티,"이 커뮤니티는 건축 도면의 구성요소들(건물 외피 전개도, 지상1층)과 공간 요소(계단실, 창고탕비실)가 창호(창호G01) 및 특정 공간 배치(평생건강관리센타)를 통해 서로 연결되는 구조로 설명된다. 건물 외피 전개도와 지상1층은 평생건강관리센타라는 공간을 공통으로 라벨링하며, 계단실과 창고탕비실은 각각 창호G01 창호 타입 배정이라는 동일한 일정/스케줄 수준의 연관 고리를 공유한다. 따라서 커뮤니티의 핵심 관계는 (1) 층/외피 도면과 특정 시설 공간의 연결, (2) 복합 공간인 계단실과 부속 공간인 창고탕비실을 창호 타입 스케줄로 매개하는 연결로 요약된다.",1.6,"# 건물 외피 전개도–지상1층–계단실–창고탕비실 도면 커뮤니티
+
+이 커뮤니티는 건축 도면의 구성요소들(건물 외피 전개도, 지상1층)과 공간 요소(계단실, 창고탕비실)가 창호(창호G01) 및 특정 공간 배치(평생건강관리센타)를 통해 서로 연결되는 구조로 설명된다. 건물 외피 전개도와 지상1층은 평생건강관리센타라는 공간을 공통으로 라벨링하며, 계단실과 창고탕비실은 각각 창호G01 창호 타입 배정이라는 동일한 일정/스케줄 수준의 연관 고리를 공유한다. 따라서 커뮤니티의 핵심 관계는 (1) 층/외피 도면과 특정 시설 공간의 연결, (2) 복합 공간인 계단실과 부속 공간인 창고탕비실을 창호 타입 스케줄로 매개하는 연결로 요약된다.
+
+## 건물 외피 전개도는 평생건강관리센타를 외피(창/벽 배치) 관점에서 라벨링한다.
+
+건물 외피 전개도는 외벽 및 창 할당을 공간 단위로 제시하는 도면 요소로 정의되어 있다. 이 도면에서 평생건강관리센타는 ‘건물 외피 전개도에 라벨된 공간’으로 연결되어 있어, 외장 계획 관점에서 해당 센타의 위치/구성이 외피 전개도에 반영되었음을 시사한다. [Data: Entities (1689); Relationships (2242)].
+
+이 연결은 외피 계획(창호·외벽 배치 등)이 평생건강관리센타의 외장 구성을 직접 규정하거나 영향을 미치는 관계일 수 있음을 의미한다. 또한 외피 전개도가 단순 문서가 아니라 ‘창 및 외벽 배치’를 공간 할당 형태로 제공한다는 점에서, 평생건강관리센타의 외관/개구부 설계가 이 커뮤니티의 중요한 기술적 단서가 된다. [Data: Entities (1689); Relationships (2242)].
+
+## 지상1층 도면은 평생건강관리센타를 1층 계획의 일부로 포함한다.
+
+지상1층은 ‘첫 번째 지상(above-ground) 층 레벨’로 정의된 도면 범주이며, 지상1층의 첫층 평면 구성에 평생건강관리센타 공간이 포함된다. 즉, 외피 관점에서 라벨된 평생건강관리센타가 층 계획(평면)에도 동일하게 나타나 커뮤니티 내에서 교차 참조된다. [Data: Entities (1692); Relationships (2257)].
+
+이 교차 참조는 평생건강관리센타가 외장(외피 전개)뿐 아니라 실제 사용되는 층 계획(동선·공간 배치)에서도 해당 도면 세트에 체계적으로 반영되어 있음을 보여준다. 따라서 커뮤니티의 구조적 중심축 중 하나가 ‘평생건강관리센타’라는 특정 공간이며, 그것이 외피 도면과 층 평면 양쪽에 걸쳐 연결된 점이 중요하다. [Data: Relationships (2242, 2257)].
+
+## 계단실은 수직 동선 기능을 넘어 출입·외피 요소(창호·문)까지 결합된 복합 공간으로 정의된다.
+
+계단실은 여러 층에 반복적으로 나타나는 수직 이동 공간으로 정의되며, 평면도·건물 단면·설계 개요 시트에서 면적 치수 및 구조적 세부사항과 함께 제시되는 것으로 설명된다. 또한 계단실은 ‘스테인리스 점검문’과 ‘내화강재 문’ 등 출입/개구 관련 요소 설치 장소로 도면 및 자재 일정에서 참조된다고 제시되어, 단순 통로가 아닌 복합 공간임을 강조한다. [Data: Entities (1135)].
+
+더 나아가 알루미늄 단열 커튼월 창이 계단실에 적용되는 것으로 명시되어 있어, 외피(창호) 성격의 요소가 계단실에 결합될 수 있음을 보여준다. 즉, 계단실은 구조·기능(수직 동선)과 외피/출입(문·창) 요소를 함께 아우르는 도면 상의 중요한 공간 단위로 볼 수 있다. [Data: Entities (1135)].
+
+## 계단실은 창호G01 일정/스케줄로 연결되어 특정 창호 타입이 계단실에 배정된다.
+
+계단실은 창호G01 타입으로 지정된 것으로 관계 데이터에 명시되어 있다. 이는 계단실이라는 공간 단위가 창호 일정(스케줄) 체계 안에서 특정 창호 유형을 부여받는다는 뜻이며, 계단실의 외피·창 관련 설계가 커뮤니티 내에서 ‘창호G01’이라는 기술적 매개를 통해 다른 공간(창고탕비실)과도 간접적으로 연결될 수 있음을 시사한다. [Data: Relationships (2283)].
+
+또한 계단실이 외피/출입 요소와 결합된 복합 공간이라는 정의(문·창 등)를 고려할 때, 창호G01 배정은 단순한 마감 스펙 수준을 넘어 계단실의 환경(채광/환기/단열 등)과 안전/기능 요구사항을 만족시키는 데 중요한 설계 포인트일 가능성이 있다. [Data: Entities (1135); Relationships (2283)].
+
+## 창고탕비실은 창호G01로 배정되어 부속 공간도 동일 창호 타입 스케줄에 포함된다.
+
+창고탕비실은 건물 계획 및 바닥 면적 스케줄에 나타나는 저장 및 다용도(팬트리) 공간으로 정의되어 있다. 관계 데이터에 따르면 창고탕비실은 창호G01 타입으로 배정되어 있어, 부속 기능 공간 역시 창호 일정 체계에 의해 창호 타입이 결정되는 커뮤니티의 구성원으로 포함된다. [Data: Entities (1688); Relationships (2282)].
+
+계단실과 창고탕비실이 모두 창호G01에 의해 연결된다는 점은, 커뮤니티의 ‘창호 타입 스케줄’이 서로 다른 공간군(주요 수직 동선 공간 vs. 저장·팬트리 공간)을 하나의 기술 기준으로 묶는 역할을 한다는 것을 의미한다. 이는 도면/스케줄 기반으로 설계 일관성을 추적하거나 동일 창호 적용 범위를 분석할 때 중요한 단서가 된다. [Data: Relationships (2283, 2282)].
+
+## 공간 간 연결의 핵심 매개는 ‘창호 타입(창호G01) 배정’과 ‘평생건강관리센타의 층/외피 참조’이다.
+
+이 커뮤니티에서 관계는 크게 두 축으로 나타난다. 첫째, 평생건강관리센타는 건물 외피 전개도와 지상1층(평면) 양쪽에서 공간으로 연결된다. [Data: Relationships (2242, 2257)].
+
+둘째, 계단실과 창고탕비실은 각각 창호G01로 연결되어 창호 일정 체계를 통해 간접적으로 함께 묶인다. [Data: Relationships (2283, 2282)].
+
+결과적으로 커뮤니티는 ‘특정 시설 공간(평생건강관리센타)’을 도면 세트 내에서 중복 참조하는 구조와, ‘창호 타입 스케줄(창호G01)’로 공간들을 기술적으로 정렬하는 구조가 결합된 형태로 정리된다. [Data: Relationships (2242, 2257, 2283, 2282)].
+
+## 법적/규제 준수, 보안·위협 정보는 제공된 데이터 범위 내에서 확인되지 않는다.
+
+제공된 엔티티와 관계 데이터는 건축 도면 구성요소와 공간/창호 배정의 기술적 설명에 집중되어 있으며, 법적 준수(인허가, 코드 준수), 안전 규정 위반, 보안 위협 등과 직접 연결되는 주장이나 근거 데이터가 포함되어 있지 않다.
+
+따라서 커뮤니티가 야기할 수 있는 ‘임팩트(impact)’는 본 데이터만으로는 건축 설계 문맥의 기술적 관계 파악 수준을 벗어나지 않으며, 규제 리스크나 위해 가능성에 대한 단정은 할 수 없다. [Data: Entities (1689, 1692, 1135, 1688); Relationships (2242, 2257, 2283, 2282)]."
+632,3,화장실·검진공간·벽체 및 동(동/남) 오리엔테이션 건축도면 구성요소 커뮤니티,"이 커뮤니티는 건축 도면/문서에서 반복적으로 등장하는 공간(화장실, 검진/검사실)과 건축 구성요소(벽체, 동/남 방향 라벨), 그리고 이들의 배치·사양 관계로 구성된다. 화장실은 공용 위생 공간으로 도면에서 창호(창호G01) 및 급배수/전기/온수 관련 계획 맥락과 연결되며, 일부 화장실은 동 방향(동 라벨)으로 표시된다. 검진(의학적/검사) 공간은 5층 외피 전개도 맥락에서 특정 위치에 포함되고, 벽체(일반 벽체 사양)와의 연계가 문서에 명시되며, 일부 파사드/외피 사양에서는 남(남 라벨) 방향으로 오리엔테이션이 지정된다. 벽체는 단열·기밀·방습(결로 방지) 성능 확보가 강조되는 핵심 요소로서, 검사 공간과 같은 내부 공간뿐 아니라 건물 외피 성능 전반을 지지하는 구성요소로 이해된다.",3.2,"# 화장실·검진공간·벽체 및 동(동/남) 오리엔테이션 건축도면 구성요소 커뮤니티
+
+이 커뮤니티는 건축 도면/문서에서 반복적으로 등장하는 공간(화장실, 검진/검사실)과 건축 구성요소(벽체, 동/남 방향 라벨), 그리고 이들의 배치·사양 관계로 구성된다. 화장실은 공용 위생 공간으로 도면에서 창호(창호G01) 및 급배수/전기/온수 관련 계획 맥락과 연결되며, 일부 화장실은 동 방향(동 라벨)으로 표시된다. 검진(의학적/검사) 공간은 5층 외피 전개도 맥락에서 특정 위치에 포함되고, 벽체(일반 벽체 사양)와의 연계가 문서에 명시되며, 일부 파사드/외피 사양에서는 남(남 라벨) 방향으로 오리엔테이션이 지정된다. 벽체는 단열·기밀·방습(결로 방지) 성능 확보가 강조되는 핵심 요소로서, 검사 공간과 같은 내부 공간뿐 아니라 건물 외피 성능 전반을 지지하는 구성요소로 이해된다.
+
+## 화장실(공용 위생공간)은 창호G01 및 설비/전기/온수 계획과 직접적으로 연결된 반복 구성요소다.
+
+화장실은 여러 도면과 문서에서 반복적으로 나타나는 공용 위생 공간으로, 평면도에서 화장실 구역이 다층/다기 배치로 표시되고 지하층 평면에도 포함되어 지상 및 지하에서 이용 가능한 설비 공간으로 계획된 것으로 설명된다 [Data: Entities (150); Relationships (2280)].
+
+또한 설비 시스템 측면에서 화장실은 위생 배관 시스템도에 나타나 급배수 및 관련 장비/배관이 해당 구역으로 연결되는 것으로 기술되어 있어, 건축 구성요소가 단순 공간 표기가 아니라 설비 설계와 결합된 범위임을 시사한다 [Data: Entities (150)].
+
+전기 설비 계획과도 연계가 언급되며, 특히 조명 박스용 전선관 사용 관련 메모에서 화장실이 관련 공간으로 드러난다 [Data: Entities (150)]. 또한 장비 사양에서 화장실이 온수 사용 지점으로 제시되어 세정 및 위생 기능을 위한 급탕 공급 고려가 포함된 것으로 해석된다 [Data: Entities (150)].
+
+구체적으로, 도면/스케줄에서 화장실 공간은 창호 유형 G01로 배정된다고 명시되어(즉 화장실-창호 사양 매핑) 공간의 개구/채광/환기 등 건축 성능 요소와도 연결된다 [Data: Relationships (2280)].
+
+## 검진/검사 공간은 ‘5층 외피 전개도’ 문서 맥락에 포함되며, 벽체 사양(일반 벽체)과 연결된다.
+
+검진(의학적/스크리닝) 공간은 평면도에서 라벨로 구분되는 검사/검진 영역으로 설명되며, 벽과 창의 사양(벽체·창호 스펙)과 연동되는 성격이 있다 [Data: Entities (1750)].
+
+관계 데이터로는 ‘지상5층 건물 외피 전개도’가 검사 공간(검진)을 포함한다고 명시되어, 검진 공간이 단독 실내 요소에 그치지 않고 해당 층 외피(건물 외피 전개/조립체 표현)의 설계 맥락 속에서 다뤄짐을 보여준다 [Data: Relationships (2361)].
+
+또한 일반 벽체 사양이 검진 공간에 제공된다고 기술되어 있어, 검진 공간의 벽 구성(단열/기밀/방습 등 외피 성능에 연계되는 요소) 검토가 문서 흐름에서 강조된다 [Data: Relationships (2410)].
+
+## 벽체는 단열·기밀·방습 및 결로 방지 성능을 중심으로 설명되는 ‘핵심 외피 구성요소’로 기능한다.
+
+벽체는 문서 전반에서 사용되는 일반적 벽 요소로, 건물 외피의 일부로서 단열 요구사항과 결로 방지 기준을 충족해야 하는 요소로 언급된다 [Data: Entities (407)].
+
+벽체는 방습층과 결로 방지 대책과 직접 연결되어 수분 침투 억제 및 내부 결로 예방을 위한 설계 대상임이 설명된다 [Data: Entities (407)].
+
+더 나아가 벽체의 표면, 접합부, 내부 및 외부 경계면이 모두 기밀성 확보와 결로 방지 지침의 적용 범위에 포함되는 것으로 나타나, 벽체가 단순 구조가 아니라 공기 누설 방지 및 열/수분 거동까지 고려하는 복합 성능 요소로 정의된다 [Data: Entities (407)].
+
+따라서 벽체는 검진 공간과 같은 내부 공간의 사양(일반 벽체 적용) 및 5층 외피 전개도 같은 외피 문서와 연결될 가능성이 높고, 결로 리스크 등 건물 성능 및 안전(장기적으로는 위생/운용 영향) 측면의 중요도를 갖는다 [Data: Entities (407); Relationships (2410); Relationships (2361)].
+
+## 동(동향)과 남(남향) 방향 라벨이 화장실/검진의 오리엔테이션 사양을 구체화한다.
+
+동과 남은 건물 외피 도면에서 사용하는 방향 라벨로, 각각 동(east)과 남(south) 오리엔테이션을 나타낸다고 설명된다 [Data: Entities (1759, 1756)].
+
+관계 데이터에서는 일부 화장실 공간이 동 방향으로 표시된다고 명시되며, ‘동’(라벨)과 ‘화장실’ 사이에 오리엔테이션 연결이 존재한다 [Data: Relationships (2420)].
+
+또한 검진(검사) 공간은 하나의 파사드/외피 사양에서 남 방향으로 오리엔테이션이 지정된다고 서술되어, 검진 공간의 외피 성능(일사/열적 부담, 개구 배치 등) 및 설계 가정에 방향성이 반영될 수 있음을 보여준다 [Data: Relationships (2417)].
+
+이처럼 방향 라벨은 단순 지시가 아니라, 화장실과 검진 같은 특정 공간의 배치/사양을 외피 문서의 맥락에서 정량화하는 역할을 한다 [Data: Entities (1759, 1756); Relationships (2420); Relationships (2417)].
+
+## 화장실과 창호(창호G01) 매핑은 공간 성격(위생/환기 등)과 건축 개구 사양이 결합됨을 시사한다.
+
+화장실은 위생 기능 공간으로서 설비(급배수/온수)와 전기 배선 계획이 함께 검토되는 것으로 설명되며, 이는 공간 요구조건이 복합적임을 뜻한다 [Data: Entities (150)].
+
+여기에 더해, 화장실이 창호 유형 G01로 배정된다는 관계가 존재하여(스케줄 기반 배정) 화장실의 개구/창호 관련 건축 사양이 공간 설계에 포함되었음을 보여준다 [Data: Relationships (2280)].
+
+따라서 화장실 설계는 ‘위생 설비’와 ‘건축 개구(창호)’가 상호 영향을 주는 설계 영역일 가능성이 있으며, 이는 향후 유지관리(환기/습기 관리)나 실내 환경 성능(결로/곰팡이 위험 등) 평가에 중요한 단서가 될 수 있다 [Data: Entities (150); Relationships (2280)].
+
+## 검진 공간의 외피 문서 포함은 설비가 아닌 ‘건물 성능(외피 전개)’ 관점에서 검토되고 있음을 나타낸다.
+
+검진 공간은 검사/스크리닝 라벨로 정의되며, 벽과 창 사양과 연동된 형태로 설명된다 [Data: Entities (1750)].
+
+특히 ‘지상5층 건물 외피 전개도’가 검진을 포함한다고 명시되어, 검진 공간이 실내 운영 관점만이 아니라 해당 층 외피 조립체 표현과 함께 검토되는 구조임을 보여준다 [Data: Relationships (2361)].
+
+또한 검진 공간에 일반 벽체 사양이 제공된다고 관계가 설정되어, 검진 공간 주변(또는 경계부)의 단열·기밀·방습/결로 방지 설계가 외피 성능 요구와 직접 연결될 수 있음을 시사한다 [Data: Relationships (2410); Entities (407)]."
+633,3,카페테리아·방풍실·창호G02/창호D01 공간 연결 구조,"이 커뮤니티는 건축 도면/스케줄 상의 공간(카페테리아, 방풍실)과 창호/개구부 지정(창호G02, 창호D01)로 구성되며, 카페테리아와 방풍실이 모두 창호G02 배정과 연결되고, 별도 공간(검진, 접수기초상담실)에도 창호G02/창호D01이 연계되어 있어 창호 유형이 여러 구역에 걸쳐 반복 적용되는 구조로 파악된다. 특히 방풍실은 건물의 출입구 주변에 배치되는 완충(바람 차단) 공간으로 설명되며, 카페테리아 및 방풍실과 같은 실내 구역이 특정 개구부 타입(G02)과 결합되어 실내 환경 유지 및 외부 유입 억제 같은 기능적 의도가 창호 스케줄 지정으로 반영된 형태로 보인다. [Data: Entities (1445, 192, 1709, 1710); Relationships (2276, 2278, 2395, 2401)]",1.2,"# 카페테리아·방풍실·창호G02/창호D01 공간 연결 구조
+
+이 커뮤니티는 건축 도면/스케줄 상의 공간(카페테리아, 방풍실)과 창호/개구부 지정(창호G02, 창호D01)로 구성되며, 카페테리아와 방풍실이 모두 창호G02 배정과 연결되고, 별도 공간(검진, 접수기초상담실)에도 창호G02/창호D01이 연계되어 있어 창호 유형이 여러 구역에 걸쳐 반복 적용되는 구조로 파악된다. 특히 방풍실은 건물의 출입구 주변에 배치되는 완충(바람 차단) 공간으로 설명되며, 카페테리아 및 방풍실과 같은 실내 구역이 특정 개구부 타입(G02)과 결합되어 실내 환경 유지 및 외부 유입 억제 같은 기능적 의도가 창호 스케줄 지정으로 반영된 형태로 보인다. [Data: Entities (1445, 192, 1709, 1710); Relationships (2276, 2278, 2395, 2401)]
+
+## 카페테리아가 창호 유형 G02로 스케줄 지정됨
+
+카페테리아는 단면도에서 확인되는 공간이며 카페테리아 구역으로 식별된다. [Data: Entities (1445)]
+
+또한 카페테리아는 창호 스케줄에서 창호G02 배정이 이루어진 것으로 연결되어, 해당 구역의 창/개구부 구성에 G02 타입이 적용되는 것으로 해석된다. [Data: Relationships (2276)]
+
+이처럼 기능 공간(카페테리아)과 창호 타입이 직접 연결되어 있으므로, 실제 설계/시공 시에도 카페테리아 구역의 외피 개구부 품질이나 성능(예: 기밀/차단 관련 사양)이 G02 지정에 종속될 가능성이 있다. 다만 본 데이터에는 G02의 구체 성능 사양이 제시되어 있지 않다. [Data: Entities (1709); Relationships (2276)]
+
+## 방풍실(vestibule/airlock)이 창호G02로 지정된 출입 완충 구조
+
+방풍실은 건물 내에서 외풍을 차단하기 위해 마련된 실내 공간(완충 영역)으로, 출입구 주변 동선에 배치되며 windbreak room 또는 vestibule로 표시되는 기능 구성 요소로 설명된다. [Data: Entities (192)]
+
+방풍실은 창호 스케줄에서 창호G02 배정과 연결되어, 출입구 주변의 완충 공간에도 G02 타입의 창/개구부가 적용된 것으로 나타난다. [Data: Relationships (2278)]
+
+따라서 방풍실의 목적(외부 바람 유입 감소, 실내 환경 안정 유지)이 창호 스케줄 지정(G02)과 결합되어 설계 의도가 반영된 구조일 수 있다. 다만 방풍실에 적용된 G02가 어떤 기술적 특성을 가지는지(예: 차음/기밀 등)는 데이터에 포함되어 있지 않아, 기능-성능을 확정적으로 결론내리기는 어렵다. [Data: Entities (192, 1709); Relationships (2278)]
+
+## 창호G02가 ‘검진’ 공간의 외피 개구부로도 지정됨(다구역 반복 적용)
+
+창호G02는 건축 스케줄에서 여러 공간에 사용되는 창호 유형 지정으로 설명된다. [Data: Entities (1709)]
+
+관계 데이터에 따르면, 창호G02는 ‘검진’ 공간의 입면/개구부에 대해 지정되어 있다. [Data: Relationships (2395)]
+
+이는 창호G02가 카페테리아 및 방풍실뿐 아니라 검진과 같은 다른 기능 공간에도 공통 적용되는 ‘반복 적용형’ 구성일 수 있음을 시사한다. [Data: Relationships (2276, 2278, 2395)]
+
+따라서 G02가 의미하는 표준화된 개구부 사양(또는 동일/유사 성능 기준)이 여러 구역에서 요구되는 설계 패턴으로 해석될 수 있으나, G02의 구체 요건은 제공되지 않았다. [Data: Entities (1709); Relationships (2395)]
+
+## 창호D01은 ‘접수기초상담실’의 창/문 개구부 유형으로 지정됨
+
+창호D01은 건축 스케줄에서 여러 공간에 사용되는 문/창 개구부 지정으로 설명된다. [Data: Entities (1710)]
+
+관계 데이터에 따르면 창호D01은 ‘접수기초상담실’의 창/문 유형으로 지정되어 있다. [Data: Relationships (2401)]
+
+이 연결은 창호 유형이 기능 공간별로 분리되어 적용될 수 있음을 보여준다(예: 어떤 구역은 G02, 다른 구역은 D01). [Data: Relationships (2276, 2278, 2401)]
+
+다만 D01이 어떤 개구부 성격(출입문, 내부문, 특정 등급 등)을 갖는지의 상세는 데이터에 포함되지 않아, 보안/안전/접근성 측면 영향은 추가 자료 확인이 필요하다. [Data: Entities (1710); Relationships (2401)]
+
+## 공간-개구부 매핑이 존재하며(카페테리아/방풍실/검진), ‘창호 타입’이 설계 제약요인일 가능성
+
+이 커뮤니티의 핵심은 공간(카페테리아, 방풍실)과 창호 개구부 타입(창호G02, 창호D01) 간 매핑 관계다. [Data: Entities (1445, 192, 1709, 1710); Relationships (2276, 2278, 2395, 2401)]
+
+특히 카페테리아와 방풍실이 창호G02로, 검진도 창호G02로 연결되며, 접수기초상담실은 창호D01로 연결된다. [Data: Relationships (2276, 2278, 2395, 2401)]
+
+따라서 어떤 공간은 특정 창호 타입에 종속되어 설계/시공 시 동일한 표준 부재 선택 또는 동일한 사양 충족이 요구될 수 있다. 이는 품질 일관성이나 유지관리 효율에는 유리할 수 있으나, 반대로 G02/D01 사양이 부적합한 경우 여러 구역에 영향을 확산시킬 수 있다. [Data: Relationships (2276, 2278, 2395, 2401)]
+
+현재 데이터는 ‘부적합 여부’나 ‘성능/규격’에 대한 정보를 제공하지 않으므로, 위험성/규정준수(예: 법규 등) 평가는 불가능하고 구조적 제약 가능성만 확인된다. [Data: Entities (1709, 1710)]
+
+## 방풍실의 기능 설명(외풍 차단)이 ‘출입구 주변 완충’ 설계 맥락과 결합됨
+
+방풍실은 출입구와 내부 공간 사이에 위치해 외부 바람의 유입을 줄이고 실내 환경을 안정적으로 유지하는 역할을 한다고 설명된다. [Data: Entities (192)]
+
+동시에 방풍실이 창호G02 배정과 연결되어 있어, 출입구 주변 완충 공간의 개구부 구성 역시 G02 사양을 따라 설계된 것으로 나타난다. [Data: Relationships (2278)]
+
+즉, 기능적 요구(외풍 차단)가 개구부 타입 지정과 결합되어 있을 가능성이 있다. 이 조합은 실내 환경 안정성과 관련된 건축 목표 달성에 긍정적일 수 있다. [Data: Entities (192); Relationships (2278)]
+
+다만 G02가 방풍실의 ‘외풍 차단’에 직접적으로 어떤 기술적 기여를 하는지(예: 열관류/차압/기밀 등)와 관련된 근거는 제공되지 않는다. [Data: Entities (1709); Relationships (2278)]
+
+## 데이터 범위가 ‘건축 도면/스케줄’ 수준으로 제한되어 법적·평판 영향 평가는 보류됨
+
+제공된 엔터티/관계는 카페테리아·방풍실 같은 공간 정의와 창호G02/창호D01 같은 스케줄 지정 및 공간 간 연결(관계 ID)로 구성되어 있다. [Data: Entities (1445, 192, 1709, 1710); Relationships (2276, 2278, 2395, 2401)]
+
+따라서 본 데이터만으로는 규제 준수(법적 적합성), 기술 보안(사이버/데이터 보안), 평판(대외 평판/평판 사건) 또는 위해/위험 주장(사고, 위법 등) 같은 ‘커뮤니티 영향 요소’를 직접적으로 입증할 근거가 존재하지 않는다.
+
+또한 “특정 창호 타입이 위해를 야기한다/규정 위반이다”와 같은 주장이나 증거(클레임 데이터)가 제공되지 않아, 영향의 원인-결과를 단정하는 것은 데이터 밖이다. [Data: Entities (1709, 1710); Relationships (2276, 2278, 2395, 2401)]"
+634,3,평생건강관리센타 도면 구성(지상 1층 환기 덕트 평면도·데크·설문작성대·휴게공간),"이 커뮤니티는 ‘평생건강관리센타’를 중심으로, 건축/설계 문서에 해당하는 ‘지상 1층 환기 덕트 평면도’와 시설 내 공간 요소들(데크, 설문작성대, 휴게공간)이 공간 배치 및 기능적 역할을 통해 연결된 구조로 파악된다. 특히 지상 1층 환기 덕트 평면도는 평생건강관리센타의 공조·환기 시스템 이해에 필요한 도면으로 제시되며, 데크는 1층 평면 구성과 인접한 외부/내부 연결 및 순환 동선 보조 역할로 연결된다. 또한 설문작성대는 평생건강관리센타의 1층 평면에 포함된 구성요소로 확인되며, 휴게공간은 시설 내 부속 휴식/대기 공간으로 건물 도면 전반(배치도·단면도)과 연계되는 것으로 설명된다. 별도의 관계로 ‘지상 5층 건물 외피 전개도’에 휴게공간이 포함된 것으로 연결되나, 제공된 정보만으로는 지상 5층에서의 휴게공간 위치·운영 방식까지는 추가 확인이 필요하다.",2.5,"# 평생건강관리센타 도면 구성(지상 1층 환기 덕트 평면도·데크·설문작성대·휴게공간)
+
+이 커뮤니티는 ‘평생건강관리센타’를 중심으로, 건축/설계 문서에 해당하는 ‘지상 1층 환기 덕트 평면도’와 시설 내 공간 요소들(데크, 설문작성대, 휴게공간)이 공간 배치 및 기능적 역할을 통해 연결된 구조로 파악된다. 특히 지상 1층 환기 덕트 평면도는 평생건강관리센타의 공조·환기 시스템 이해에 필요한 도면으로 제시되며, 데크는 1층 평면 구성과 인접한 외부/내부 연결 및 순환 동선 보조 역할로 연결된다. 또한 설문작성대는 평생건강관리센타의 1층 평면에 포함된 구성요소로 확인되며, 휴게공간은 시설 내 부속 휴식/대기 공간으로 건물 도면 전반(배치도·단면도)과 연계되는 것으로 설명된다. 별도의 관계로 ‘지상 5층 건물 외피 전개도’에 휴게공간이 포함된 것으로 연결되나, 제공된 정보만으로는 지상 5층에서의 휴게공간 위치·운영 방식까지는 추가 확인이 필요하다.
+
+## 평생건강관리센타의 공조·환기 설계 문서로서 ‘지상 1층 환기 덕트 평면도’가 핵심 연결고리
+
+‘지상 1층 환기 덕트 평면도’는 평생건강관리센타의 전체 설계 및 건축 문서에 포함된 도면으로, 건물 1층의 환기 계획(공조 및 환기 시스템 구성)을 이해하는 데 필요한 자료로 정의된다. 즉, 이 도면이 단순 참고 그림이 아니라 센터의 설비/환경 측면 기능을 설명·구현하기 위한 문서로 기능한다는 점에서 커뮤니티의 중심 축이 된다. [Data: Entities (2096, 1181); Relationships (2976)]
+
+다만 제공된 관계 정보는 ‘도면이 무엇을 나타내는지’(환기 계획, 설비 배치 및 이해에 필요한 자료)까지만 확인하며, 실제 운영 방식(예: 특정 구역의 환기량, 유지보수 절차)이나 규정 준수 여부를 판단할 추가 데이터는 포함되어 있지 않다. 따라서 기술적 세부 위험/규정 준수 수준 평가는 제한적이다. [Data: Entities (2096); Relationships (2976)]
+
+## 데크는 센터의 실내-외부 연결 및 순환 동선을 보조하는 공간요소로 기능
+
+‘데크’는 평생건강관리센타의 1층 평면과 인접한 외부 데크 공간으로, 첫 번째 층 실내 공간과 직접 이어지는 형태로 계획되어 실내-외부를 자연스럽게 연결하는 역할을 한다고 설명된다. 관계로도 ‘평생건강관리센타’가 데크를 포함한 평면 구성을 가진다고 명시되어, 데크가 단일 부속이 아니라 센터 공간 계획의 일부(이동 동선/순환 공간 역할)로 편성됨을 보여준다. [Data: Entities (1181); Relationships (1394)]
+
+이 연결성은 이용자 동선의 연속성을 높일 수 있는 반면, 출입 흐름이나 안전 관리(예: 외부 구역과 내부 구역 간 통제, 동선 혼잡 관리) 등 운영 상의 쟁점이 될 가능성도 있다. 하지만 현재 데이터에는 출입 통제 방식, 안전 기준 충족 여부 등 ‘운영 리스크’를 직접 뒷받침하는 정보가 제공되지 않아, 영향 평가는 ‘잠재적 영향 가능성’ 수준으로만 제한된다. [Data: Entities (1181); Relationships (1394)]
+
+## 설문작성대는 평생건강관리센타 1층 평면 구성 요소로 포함
+
+‘설문작성대’는 1층 평면도에 표시되는 ‘질문지(설문) 작성용 책상/공간’으로 정의되어 있으며, 관계로는 평생건강관리센타의 1층 평면 일부라고 연결된다. 즉, 설문작성대는 단순 가구가 아니라 이용자 활동(설문 작성)과 관련된 공간 구성요소로서 센터 운영 프로세스의 한 부분을 드러낸다. [Data: Entities (1905); Relationships (2628)]
+
+이와 같은 대면/절차 기반 활동이 포함된 공간은 이용자 흐름, 대기 또는 안내 동선과 연동될 수 있어 운영 리스크(예: 혼잡, 사적 정보 취급 절차 등)가 존재할 수 있으나, 제공된 데이터에는 설문 방식(종이/전자), 개인정보 처리 관행, 동선 설계 세부 등이 없다. 따라서 현재 정보만으로는 규정 준수나 보안 수준을 단정할 수 없다. [Data: Entities (1905); Relationships (2628)]
+
+## 휴게공간은 센터 내 ‘휴식 및 대기’ 기능의 핵심 부속공간으로 정의
+
+‘휴게공간’은 센터 건물의 일부로 포함된 휴식 및 대기 공간이며, 배치도와 건물 단면도에 모두 나타나는 공간으로 설명된다. 또한 1층 평면도에서 ‘이름 있는 공간’으로 표시되는 라운지형 휴게 구역이며, 이용자들이 잠시 쉬거나 머무를 수 있도록 설계된 부속공간이라고 명시된다. [Data: Entities (1329)]
+
+관계 정보에서는 휴게공간이 ‘지상5층 건물 외피 전개도’에 포함된 것으로도 연결되어 있어, 휴게공간이 특정 층에만 국한된 구성인지, 혹은 여러 층에 걸친 유사 공간(또는 전개도 상의 표기)인지에 대한 추가 해석이 필요하다. 다만 현재 데이터는 ‘휴게공간’이라는 명칭의 도면상 포함/표시에 대한 연결만 제공하므로, 실제 운영 위치·규모·인원 수용 등은 판단 불가다. [Data: Entities (1329); Relationships (2369)]
+
+## 커뮤니티는 ‘설계 문서(도면)’와 ‘공간 요소(데크·설문작성대·휴게공간)’의 관계망으로 구성
+
+제공된 엔티티와 관계를 보면, ‘지상 1층 환기 덕트 평면도’는 설비 설계 문서로서 평생건강관리센타의 기술적 구성을 이해시키는 역할을 하며, ‘데크’, ‘설문작성대’, ‘휴게공간’은 이용자 경험과 공간 기능을 구성하는 요소로 연결된다. 즉, 이 커뮤니티는 단일 건물 자체(평생건강관리센타)를 중심으로 도면과 공간 기능이 교차 연결되는 형태이며, 기술(환기/공조)과 운영(설문 작성, 휴식/대기)의 관점이 함께 등장한다. [Data: Entities (1181, 1329, 1905, 2096); Relationships (2976, 1394, 2628, 2369)]
+
+이 구조는 의사결정자가 건축·설비 설계 문서와 실제 공간 구성 요소를 동시에 파악하게 해, 잠재적 운영 영향(동선/체류/이용 행위)과 기술적 영향(환경 설계)을 함께 고려할 수 있게 한다. 다만, 제공 데이터는 ‘무엇이 포함되어 있다’는 수준의 설명이 중심이라, 규정 준수(예: 관련 법규/기준 충족), 보안/개인정보 보호, 안전성 검증 같은 실증 정보가 포함되어 있지 않다. [Data: Relationships (2976, 1394, 2628, 2369)]
+
+## 관계 데이터는 ‘포함’ 중심으로, 리스크(사고·위반·취약점)를 직접 시사하는 증거는 제한적
+
+관계 설명은 대체로 ‘도면에 포함된다’, ‘평면 구성의 일부다’, ‘표시된다’와 같은 구조적 포함 관계를 제시한다. 예를 들어 환기 덕트 평면도는 센터 설계 문서의 일부이며 환기 계획 이해에 필요한 자료로 정의되고, 데크와 설문작성대는 센터 평면 구성요소로 연결된다. 휴게공간 역시 배치도/단면도에 나타나는 공간이며 특정 외피 전개도에 포함된 것으로 연결된다. [Data: Relationships (2976, 1394, 2628, 2369)]
+
+따라서 현 시점에서는 위반, 사고, 악용, 위험 행동 등 ‘부정적 영향’을 직접 뒷받침할 청구(Claims)나 구체적 증거가 제시되지 않는다. 결과적으로 커뮤니티의 영향 평가는 ‘운영 환경에 영향을 줄 수 있는 공간/설비가 존재함’ 정도의 잠재성만 반영해야 하며, 높은 확신의 부정적 결론은 데이터 공백으로 인해 도출하기 어렵다. [Data: Entities (2096, 1181, 1905, 1329); Relationships (2976, 1394, 2628, 2369)]"
+635,3,평생건강관리센타(로비·접수대·검진·환기/난방 배관) 커뮤니티,"이 커뮤니티는 ‘평생건강관리센타’를 중심으로 접수대, 영역별상담, 신체계측, 기초검진, 체력측정, 편의공간(계단형 북카페), 관리공간(실장실) 등 다양한 실·프로그램이 기능적으로 연결되어 있는 건물 계획/도면 기반 구조로 구성됩니다. 또한 지하 1층 환기 덕트 평면도 및 지상 1·2층 냉·난방 배관 평면도, 그리고 서비스 코어(C.P.), 창고/탕비실, 무빙 월, 엘리베이터(15인승) 같은 설비·구조 요소가 평생건강관리센타의 배치에 포함되어 운영 기능을 뒷받침하는 것으로 나타납니다. 보안 측면에서는 로비 구역에 상부 방범셔터 설치 메모가 연결되어 있고, 로비와 카페테리아가 단면도에 함께 기재되는 정황이 제시됩니다. [Data: Entities (1414,1179,2092,1902,1903,2280,2626,2634,2627,3323); Relationships (2975,1389,1390,1393,2602,2603,1395,1391,2623,2624,2626,2634,2627,3317,3323,+more)]",3.2,"# 평생건강관리센타(로비·접수대·검진·환기/난방 배관) 커뮤니티
+
+이 커뮤니티는 ‘평생건강관리센타’를 중심으로 접수대, 영역별상담, 신체계측, 기초검진, 체력측정, 편의공간(계단형 북카페), 관리공간(실장실) 등 다양한 실·프로그램이 기능적으로 연결되어 있는 건물 계획/도면 기반 구조로 구성됩니다. 또한 지하 1층 환기 덕트 평면도 및 지상 1·2층 냉·난방 배관 평면도, 그리고 서비스 코어(C.P.), 창고/탕비실, 무빙 월, 엘리베이터(15인승) 같은 설비·구조 요소가 평생건강관리센타의 배치에 포함되어 운영 기능을 뒷받침하는 것으로 나타납니다. 보안 측면에서는 로비 구역에 상부 방범셔터 설치 메모가 연결되어 있고, 로비와 카페테리아가 단면도에 함께 기재되는 정황이 제시됩니다. [Data: Entities (1414,1179,2092,1902,1903,2280,2626,2634,2627,3323); Relationships (2975,1389,1390,1393,2602,2603,1395,1391,2623,2624,2626,2634,2627,3317,3323,+more)]
+
+## 평생건강관리센타가 다수의 진료·상담·측정 기능 공간을 포괄하는 중심 엔티티로 연결됨
+
+‘평생건강관리센타’는 접수대, 영역별상담, 신체계측, 기초검진, 체력측정, 계단형 북카페, 실장실 등 여러 실/기능이 서로 연결되어 운영 흐름을 형성하는 중심 공간으로 설명됩니다. 특히 도면/배치도에서 센타의 레이아웃 일부로 반복·지정되는 기능들이 관찰되어, 방문자 응대(접수/상담)부터 측정·검사(신체계측/기초검진/체력측정)까지 일련의 서비스 구성이 도면상으로 구조화되어 있음을 시사합니다. [Data: Entities (1414,1177,1180,1892,1891,1395,1178); Relationships (1390,1393,2602,2603,1389,1395,+more)]
+
+또한 센타 내 세부 공간들은 “센터 프로그램의 일부”, “배치도에 포함”, “층별 배치와 전체 레이아웃의 일부”처럼 기능적 통합의 표현으로 근거가 제시되어, 단일 시설이 아니라 다기능 운영 단위로 계획되어 있음을 뒷받침합니다. 이는 정보공유/운영 방식이 특정 구역(접수·측정·검사 등)에 집중될 가능성을 의미하며, 시설 변경·장비 배치·동선 관리가 전반 서비스 품질에 영향을 줄 수 있습니다. [Data: Relationships (1389,1390,1393,2602,2603,+more)]
+
+## 지하 1층 환기 덕트 평면도가 평생건강관리센타의 설계 문서 체계에 포함됨
+
+지하 1층 환기 덕트 평면도는 ‘평생건강관리센타’의 전체 설계 문서 구성 요소로 연결되어, 센타가 위치한 건물의 공조 설계(환기 경로·장비 구성)가 시설 설계 단계에서 핵심적으로 반영되었음을 보여줍니다. 해당 도면 설명에는 지하 주차장, 기계실/유틸리티실, 저수조, 펌프실, 전기실, 집수정(sump pit) 등 지하 구역과 환기 덕트 라우팅 및 공기 흐름 요소가 종합적으로 표현된다고 되어 있어, 단순 평면이 아니라 설비 간 간섭 저감 및 시공/유지관리 기준 자료 역할을 목표로 하는 문서 성격이 제시됩니다. [Data: Entities (2092); Relationships (2975)]
+
+이 연결은 센타 운영과 직접 연동되는 공조·환기 요구사항(예: 이용자 체류 공간, 검사/측정 공간 등)의 만족 가능성을 설계상 고려했을 가능성을 의미하지만, 구체적인 공조 성능 수치나 위생 기준 충족 여부는 제공된 자료에서 확인되지 않습니다. 다만 설비 설계 문서가 센타 단위로 묶여 있다는 점에서, 센타 변경/증설 시 환기 설계 검토가 필요할 수 있는 구조적 의존성이 존재함을 시사합니다. [Data: Entities (2092); Relationships (2975)]
+
+## 1·2층 냉·난방 배관 평면도가 센타의 공간 범위를 실제로 포함하는 설비 문서로 연결됨
+
+‘지상 1층 냉,난방 배관 평면도’ 및 ‘지상 2층 냉,난방 배관 평면도’는 각각 평생건강관리센타의 설계 문서(배치/공간 묘사)로 연결되며, 센타 내부 공간이 난방·냉방 배관 계획과 함께 도시되어 있음을 나타냅니다. 도면 설명은 해당 배관 평면도가 층별 냉·난방 배치(구역, 배관 유형, 치수, 장비 위치)를 보여주는 문서임을 명시합니다. [Data: Entities (1902,1903); Relationships (2623,2624)]
+
+이러한 연결은 센타의 이용 공간과 설비 공간이 단순 배치가 아니라 배관 네트워크를 고려한 통합 설계로 계획되었을 가능성을 높입니다. 결과적으로 센타 공간 용도(예: 검사실, 상담/측정 구역) 변경이나 장비 추가가 생기면 배관 동선·장비 위치·치수 재검토가 요구될 수 있으며, 운영 연속성 측면에서 설비 변경 비용/리스크가 발생할 수 있습니다(단, 구체 리스크 수준은 자료에 근거가 부족). [Data: Entities (1902,1903); Relationships (2623,2624)]
+
+## 서비스 코어(C.P.)가 평생건강관리센타 계획에서 기능적 핵심 요소로 지정됨
+
+서비스 코어(C.P.)는 평생건강관리센타 계획의 서비스/core 요소로 연결되어, 건물 내부에서 수직 동선·설비 집약·서비스 기능이 집중되는 구역 역할을 수행할 가능성을 보여줍니다. ‘C.P.’는 계획에서 라벨된 샤프트 또는 서비스 코어 요소로 나타난다고 설명되어 있습니다. [Data: Entities (2280); Relationships (3317)]
+
+서비스 코어가 센타 계획에 포함된다는 점은 센타의 공간 구성(접수/상담/측정/검진 등)과 함께 설비·동선의 기반 인프라가 설계 단계에서 명확히 구획되었음을 의미합니다. 보안/운영 관점에서는 서비스 코어 주변으로 설비 접근 또는 내부 물류 동선이 존재할 수 있으나, 제공된 자료에는 출입통제, 접근 정책, 보안 등급 같은 구체 정보가 없습니다. 따라서 코어 존재 자체는 기술적·운영적 중요성을 시사하되, 위험도(악용 가능성 등) 판단은 추가 자료 없이는 제한됩니다. [Data: Entities (2280); Relationships (3317)]
+
+## 로비 구역에 상부 방범셔터 설치 메모가 연결되어 보안 고려가 반영됨
+
+‘상부 방범셔터 설치’는 로비 구역에 대한 설치 메모로 연결되어, 로비 영역에 상부 보안 셔터가 고려/기재되었음을 나타냅니다. 이는 로비가 건물의 1층 평면에서 공용 진입 및 이동 동선의 중심 공간으로 설명되는 것과 맞물려, 이용자 대면 공간에 대해 방범 요소를 별도 메모로 명시했다는 점이 중요합니다. [Data: Entities (1179,2281); Relationships (3323)]
+
+다만 이 자료는 실제 설치가 완료되었는지, 셔터가 상시/비상/시간제 운영되는지, 외부 침입 위협 유형(절도·침입 등)에 대한 구체 근거는 제공하지 않습니다. 그럼에도 로비에 보안 장치 설치가 문서화되어 있다는 사실은 운영 안정성(야간/비운영 시간 통제 등) 관점에서 통제 체계가 존재할 가능성을 시사하며, 운영 절차와 함께 점검할 필요가 있습니다. [Data: Entities (1179,2281); Relationships (3323)]
+
+## 엘리베이터(15인승)·무빙 월 등 이동/가변 요소가 센타 계획에 포함됨
+
+15인승 엘리베이터는 평생건강관리센타 건물 레이아웃에 표시된 이동 수단으로 연결되며, 무빙 월은 평생건강관리센타의 2층 레이아웃에서 보이는 가변/이동식 벽체 또는 파티션 시스템으로 연결됩니다. [Data: Entities (1238,1253); Relationships (2627,2634)]
+
+가변 요소(무빙 월)와 수용/이동 설비(15인승)가 존재한다는 점은 센타 공간이 고정형이 아니라 운영 목적에 따라 일부 레이아웃이 조정될 수 있음을 의미할 수 있습니다. 이는 프로그램 운영(상담 구역/검사 구역/대기 공간 구성 등)의 유연성을 제공할 가능성이 있지만, 동시에 동선·실 분리·설비 간섭(냉난방/환기/전기/방범 등)의 재검토가 필요해질 수 있습니다. 다만 구체 재배치 방식이나 실제 운영 시나리오는 제공된 근거에서 확인되지 않습니다. [Data: Entities (1253,1238); Relationships (2634,2627)]
+
+## 기초검진·체력측정·신체계측 등 검사/평가 기능이 센타 내 핵심 공간으로 배치됨
+
+평생건강관리센타에는 기초검진, 체력측정, 신체계측 공간이 포함되어 있으며, 각각 이용자의 건강 상태를 확인/측정하기 위한 ‘기본 검사’ 및 ‘물리적 측정/평가’ 기능으로 설명됩니다. 이들은 센타의 층별 배치 및 전체 레이아웃의 일부로 연결되어, 센타가 단순 상담 중심 시설이 아니라 측정·검사 중심 서비스 흐름을 갖는 것으로 나타납니다. [Data: Entities (1180,1892,1891); Relationships (1393,2602,2603)]
+
+이러한 기능적 묶음은 이용자 개인정보·의료 데이터 취급 가능성(예: 검사 결과 기록 등)을 시사할 수 있으나, 제공된 자료에는 데이터 처리, 보관, 접근통제, 법적 준수 사항(의료정보 보호 관련)이 명시되어 있지 않습니다. 따라서 ‘기능이 존재한다’는 수준까지만 근거 기반으로 말할 수 있고, 실제 규제 준수 수준은 추가 자료 확인이 필요합니다. [Data: Relationships (1393,2602,2603)]
+
+## 창고/탕비실 및 실장실 등 운영 보조·관리 공간도 센타 계획에 포함됨
+
+평생건강관리센타에는 창고/탕비실이 포함되어 물품 보관 및 간단 준비 용도로 사용되는 별도 구역으로 설명되며, 실장실은 관리자의 사무/디렉터 공간으로 센타 계획에 포함됩니다. [Data: Entities (1904,1178); Relationships (2626,1391)]
+
+운영 보조·관리 공간의 존재는 센타가 일상 운영(물품/준비/관리) 기능을 갖춘 복합 시설임을 보여줍니다. 다만 제공된 자료는 해당 공간의 보안 수준(접근 권한), 위생 운영 절차, 또는 관련 규정 준수(예: 위생/안전 기준) 같은 구체 내용을 포함하지 않습니다. 결론적으로, 센타 운영의 ‘기능 분업’ 가능성은 높게 시사되지만, 규정 준수나 위험성 평가는 추가 증거가 필요합니다. [Data: Relationships (2626,1391)]
+
+## 로비와 카페테리아가 도면(단면)에서 모두 ‘실내 프로그램 공간’으로 함께 기재됨
+
+로비와 카페테리아는 단면도(section drawing)에 함께 등재된 ‘실내 프로그램 공간’으로 연결되며, 로비는 공용 진입 및 이동 동선의 중심 역할로 설명됩니다. [Data: Entities (1179); Relationships (1804,3323)]
+
+이 연결은 센타의 이용자 경험(대기·이동·휴식 가능성)이 로비 인근의 프로그램 공간과 통합적으로 고려되었을 수 있음을 시사합니다. 다만 카페테리아(카페테리아 엔티티 자체)의 별도 상세 설명은 관계 정보에만 간접적으로 반영되어 있어, 위생/주방 설비·인허가·운영 방식 같은 규제 준수는 본 자료만으로 특정하기 어렵습니다. 따라서 커뮤니티의 구조적 특징(대면 공용공간의 존재)까지만 근거 기반으로 해석하는 것이 적절합니다. [Data: Relationships (1804)]"
+636,3,지상 4층 위생 배관 도면 및 관련 실(접수/검진/휴게/창고) 커뮤니티,"이 커뮤니티는 ‘지상 4층 위생 배관 평면도’를 중심으로, 같은 4층 공간들(접수/기초상담실, 검진.2, 탕비 및 창고, 임산부 휴게실)과 더불어 ‘지상 4층 환기 덕트 평면도’ 및 ‘지상 4층 확대 위생 배관 평면도’ 같은 도면 자산을 서로 연결하는 구조로 구성됩니다. 특히 지상 4층 위생 배관 평면도는 옥상휴게 마당을 포함하는 것으로 연결되어 있으며, 확대 위생 배관 평면도는 접합·연결 및 상세를 위한 참조 도면으로 기능하는 것으로 설명됩니다. 동시에 여러 실(접수/기초상담실, 검진.2, 탕비 및 창고, 임산부 휴게실)은 각각 지상 4층 환기 덕트 평면도에 ‘라벨링된 공간’으로 연결되어 있어, 위생 배관/환기 덕트 도면 체계가 함께 사용되는 설비 계획·시공 맥락이 드러납니다. [Data: Entities (2040,2046,1217,1220,2041,2045); Relationships (2875,2902,3102,3105,3103,+more)]",2.2,"# 지상 4층 위생 배관 도면 및 관련 실(접수/검진/휴게/창고) 커뮤니티
+
+이 커뮤니티는 ‘지상 4층 위생 배관 평면도’를 중심으로, 같은 4층 공간들(접수/기초상담실, 검진.2, 탕비 및 창고, 임산부 휴게실)과 더불어 ‘지상 4층 환기 덕트 평면도’ 및 ‘지상 4층 확대 위생 배관 평면도’ 같은 도면 자산을 서로 연결하는 구조로 구성됩니다. 특히 지상 4층 위생 배관 평면도는 옥상휴게 마당을 포함하는 것으로 연결되어 있으며, 확대 위생 배관 평면도는 접합·연결 및 상세를 위한 참조 도면으로 기능하는 것으로 설명됩니다. 동시에 여러 실(접수/기초상담실, 검진.2, 탕비 및 창고, 임산부 휴게실)은 각각 지상 4층 환기 덕트 평면도에 ‘라벨링된 공간’으로 연결되어 있어, 위생 배관/환기 덕트 도면 체계가 함께 사용되는 설비 계획·시공 맥락이 드러납니다. [Data: Entities (2040,2046,1217,1220,2041,2045); Relationships (2875,2902,3102,3105,3103,+more)]
+
+## 지상 4층 위생 배관 평면도(2040)가 커뮤니티의 중심 도면 역할
+
+지상 4층 위생 배관 평면도는 4층의 위생 배관 배치를 종합적으로 보여주는 건물 설비용 도면으로, 배관 경로와 연결 상태, 관통부 상세, 치수·단열 관련 사항 및 시공 주의사항/설치 지침이 함께 포함된 것으로 설명됩니다. 이는 커뮤니티 내에서 ‘위생 설비의 설계·검토 기준’이 되는 핵심 기준 자산임을 시사합니다. [Data: Entities (2040)]
+
+또한 이 도면은 ‘지상 4층 확대 위생 배관 평면도(2046)’를 참조하는 관계로 연결되어, 기본 평면도에서 상세(연결·디테일)로 내려가는 체계가 있음을 보여줍니다. 즉, 2040은 전체 배치 개요를 제공하고 2046은 연결/상세 구현을 위한 확장 정보를 제공하는 역할 분담 구조입니다. [Data: Relationships (2902); Entities (2046)]
+
+## 확대 위생 배관 평면도(2046)는 연결·상세 구현을 위한 참조 도면으로 기능
+
+지상 4층 확대 위생 배관 평면도(2046)는 4층 위생 배관 계획을 “연결 및 디테일을 위해” 사용하는 확대 참조 도면이라고 설명되어 있습니다. 따라서 커뮤니티 내에서 2046은 실제 시공 단계에서 필요한 접합/연결 세부를 확인하기 위한 보조적이면서도 구체적인 기준 자료로 자리합니다. [Data: Entities (2046)]
+
+또한 2040(지상 4층 위생 배관 평면도)가 2046을 참조한다고 명시되어 있어, 사용자(시공자·검토자)가 기본 배치도→확대 상세도 순으로 검증 및 시공을 진행할 가능성이 높습니다. 이러한 도면 연결은 설비 설치 시 오류 가능성을 줄이고, 부품/연결부의 정확한 구현을 돕는 구조적 특징으로 해석됩니다. [Data: Relationships (2902)]
+
+## 옥상휴게 마당과의 연결(2875)은 위생 배관 계획이 외부/공용 공간 요소를 포함할 가능성 시사
+
+관계 데이터에 따르면 지상 4층 위생 배관 평면도는 ‘옥상휴게 마당’을 포함하는 것으로 설명됩니다. 이는 위생 배관이 단일 실 내부뿐 아니라 옥상 휴게/마당 영역 같은 공용 또는 준외부 구역과도 연동되어 계획되었음을 나타낼 수 있습니다. [Data: Relationships (2875)]
+
+다만 제공된 데이터에서는 옥상휴게 마당이 어떤 방식으로(예: 배수, 급수, 관통부 처리 등) 연동되는지는 구체화되어 있지 않습니다. 그럼에도 “포함(includes)” 관계가 존재한다는 사실 자체가, 설비 범위가 건물 내부 특정 실에만 한정되지 않을 수 있음을 보여주는 정황입니다. [Data: Relationships (2875)]
+
+## 접수/기초상담실(1217)은 환기 덕트 평면도(3102)에 라벨된 공간으로 연결
+
+접수/기초상담실(1217)은 방문 접수 및 초기 상담을 수행하는 공간으로 정의되어 있습니다. 관계 데이터는 이 공간이 지상 4층 환기 덕트 평면도(3102)의 ‘라벨링된 공간’ 중 하나라고 설명합니다. [Data: Entities (1217); Relationships (3102)]
+
+따라서 커뮤니티는 위생 배관(2040/2046) 중심뿐 아니라, 환기 덕트 설계에서도 특정 기능 공간(접수/상담)의 설비 계획이 함께 표기되는 체계를 포함합니다. 환기 설비가 사용자 동선 및 체류 시간과 맞물릴 수 있는 점을 고려하면, 이 공간이 설비 계획 문서에 연결되어 있다는 사실은 운영 환경(공기질/환기)과 관련된 잠재적 영향이 있음을 시사합니다. [Data: Relationships (3102)]
+
+## 검진.2(1220)는 환기 덕트 평면도(3105)의 라벨된 진료/검사 공간으로 연결
+
+검진.2(1220)는 건강 검진용 진료/검사 공간의 하나로 설명됩니다. 관계 데이터는 검진.2가 지상 4층 환기 덕트 평면도(3105) 상의 라벨된 방 중 하나라고 명시합니다. [Data: Entities (1220); Relationships (3105)]
+
+이 연결은 검진 기능이 수행되는 공간이 환기 덕트 계획 문서에 반영되어 있음을 의미합니다. 제공된 데이터는 덕트 규모나 필터링 여부, 환기 방식 같은 구체 성능 정보는 포함하지 않지만, 적어도 도면 수준에서 ‘환기 설비-기능 공간’의 매칭이 이루어지고 있음을 보여줍니다. [Data: Relationships (3105)]
+
+## 탕비 및 창고(2041)는 환기 덕트 평면도(3103)의 라벨된 공간으로 연결
+
+탕비 및 창고(2041)는 4층 평면도에 표시된 공간으로 탕비 기능과 함께 물품 보관(창고) 역할을 하는 구역으로 설명됩니다. 관계 데이터에 따르면 이 공간은 지상 4층 환기 덕트 평면도(3103)에서 라벨된 공간 중 하나입니다. [Data: Entities (2041); Relationships (3103)]
+
+이처럼 탕비·보관 성격의 공간이 환기 덕트 도면에 연결되어 있다는 점은, 물품 보관 환경(환기 필요성) 또는 탕비 관련 작업 구역의 공기 관리가 설비 계획에 포함되었을 가능성을 보여줍니다. 다만 데이터는 연결 방식이나 환기 요구 수준을 직접적으로 제공하지는 않습니다. [Data: Relationships (3103)]
+
+## 임산부 휴게실(2045)은 환기 덕트 평면도(3109)의 라벨된 공간으로 연결
+
+임산부 휴게실(2045)은 임산부 전용 휴게 공간으로 설계되어 있으며 4층 평면도에서 확인된다고 설명됩니다. 관계 데이터는 임산부 휴게실이 지상 4층 환기 덕트 평면도(3109)의 라벨된 공간임을 나타냅니다. [Data: Entities (2045); Relationships (3109)]
+
+임산부 전용 휴게 공간은 상대적으로 취약할 수 있는 이용자 특성(휴식/체류)이 있을 수 있으므로, 환기 설비 계획 문서에 연결되어 있다는 사실 자체가 운영 환경의 중요성을 시사합니다. 다만 제공된 증거는 환기 성능(예: ACH, 압력구배, 필터 등)을 제시하지 않으므로 구체적인 안전/보건 판단은 추가 데이터가 필요합니다. [Data: Relationships (3109)]
+
+## 법적/평판 리스크에 대한 직접 단서 부재: 제공 데이터는 ‘설비 도면/공간’ 중심
+
+제공된 엔터티와 관계는 모두 건물 설비 도면(지상 4층 위생 배관 평면도, 확대 위생 배관 평면도, 환기 덕트 평면도)과 기능 공간(접수/기초상담실, 검진.2, 탕비 및 창고, 임산부 휴게실)으로 구성되어 있습니다. 어떤 엔터티도 법적 분쟁, 규제 위반, 보안 사고, 또는 평판 이슈에 대한 ‘청구/주장(Claims)’이나 관련 증거가 제공되지 않았습니다. [Data: Entities (2040,2046,1217,1220,2041,2045); Relationships (+more)]
+
+따라서 이 커뮤니티의 ‘임팩트(impact) 심각도’는 주로 설비 설계/시공 정확성과 관련된 운영·안전 영향 가능성 정도로 제한적으로 해석되며, 사회적 위협이나 범죄/악의적 활동 같은 고위험 범주는 데이터가 뒷받침하지 않습니다. [Data: Entities (2040,2046,1217,1220,2041,2045)]"
+637,3,4th-Floor Ventilation Duct Plan Linking Rooftop Yard and Exam Rooms (검진.1~검진.5),"This community is structured around a single architectural/engineering floor plan entity—""지상 4층 환기 덕트 평면도""—which serves as the hub connecting multiple labeled medical examination rooms (검진.1, 검진.3, 검진.4, 검진.5) and a rooftop resting yard (옥상휴게 마당). The related entities are not described as organizations or people, but as mapped spaces: the ventilation duct plan provides the layout context in which each exam room and the rooftop yard appear as labeled features on the fourth-floor drawing. The provided dataset supports that Exam 1, Exam 3, Exam 4, and Exam 5 are specifically identified as labeled rooms on that plan, and that the rooftop resting yard is also included among the spaces shown. ",1.8,"# 4th-Floor Ventilation Duct Plan Linking Rooftop Yard and Exam Rooms (검진.1~검진.5)
+
+This community is structured around a single architectural/engineering floor plan entity—""지상 4층 환기 덕트 평면도""—which serves as the hub connecting multiple labeled medical examination rooms (검진.1, 검진.3, 검진.4, 검진.5) and a rooftop resting yard (옥상휴게 마당). The related entities are not described as organizations or people, but as mapped spaces: the ventilation duct plan provides the layout context in which each exam room and the rooftop yard appear as labeled features on the fourth-floor drawing. The provided dataset supports that Exam 1, Exam 3, Exam 4, and Exam 5 are specifically identified as labeled rooms on that plan, and that the rooftop resting yard is also included among the spaces shown. 
+
+## ""지상 4층 환기 덕트 평면도"" is the central hub that links multiple facility spaces.
+
+The community’s structure is centered on the ventilation duct floor plan drawing for the 4th floor (""지상 4층 환기 덕트 평면도""), which is explicitly described as showing ventilation-related installation details such as duct layout and diffuser schedule. Multiple other entities are connected to this single plan through relationships that indicate those spaces are labeled on (or included within) the same fourth-floor drawing context.
+
+This hub-and-spoke relationship suggests that the plan is the primary reference artifact for understanding how different rooms and areas coexist on the fourth floor, at least from the perspective of ventilation layout and labeling. [Data: Entities (2155); Relationships (3100, 3104, 3106, 3107, 3108)]
+
+## Rooftop resting yard (옥상휴게 마당) is included as a space shown on the fourth-floor ventilation duct plan.
+
+The rooftop resting yard (""옥상휴게 마당"") is connected to the ventilation duct plan via a relationship stating that the rooftop resting yard is one of the spaces shown on the 4th-floor ventilation duct plan. This places the rooftop yard within the same documented layout scope as the ventilation system elements and other labeled areas.
+
+Because the only grounded information provided ties the rooftop yard to being “one of the spaces shown” on the plan (rather than describing its specific ventilation interaction), the most defensible conclusion is that it is spatially co-referenced with ventilation-related drawings. [Data: Relationships (3100)]
+
+## Exam room 검진.3 is labeled as an examination room (Exam 3) on the fourth-floor ventilation duct plan.
+
+The entity ""검진.3"" is described as part of health checkup/treatment and inspection spaces. Additionally, the relationship from ""검진.3"" to the ventilation duct plan states that ""Exam 3"" is one of the labeled rooms on the 4th-floor plan.
+
+Taken together, the grounded evidence supports that the facility’s exam rooms are mapped onto the same drawing artifact used for ventilation planning, at least in terms of room identification and labeling on the floor plan. [Data: Entities (1221); Relationships (3106)]
+
+## Exam room 검진.4 is labeled as an examination room (Exam 4) on the fourth-floor ventilation duct plan.
+
+The entity ""검진.4"" is described as part of health checkup/treatment and inspection spaces. The relationship to the ventilation duct plan further specifies that ""Exam 4"" is one of the labeled rooms on the 4th-floor plan.
+
+This establishes that multiple exam-room designations (beyond a single room) are present on the ventilation duct floor plan, implying a recurring mapping pattern of clinical spaces within the ventilation drawing scope. [Data: Entities (1222); Relationships (3107)]
+
+## Exam room 검진.1 is labeled as an examination room (Exam 1) on the fourth-floor ventilation duct plan.
+
+The entity ""검진.1"" is described as part of health checkup/treatment and inspection spaces. The relationship to the ventilation duct plan states that ""Exam 1"" is one of the labeled rooms on the 4th-floor plan.
+
+While the descriptions do not provide explicit technical details linking ventilation performance to this particular room, the grounded relationship confirms that the room is identified as a labeled feature within the same fourth-floor ventilation duct layout document. [Data: Entities (1219); Relationships (3104)]
+
+## Exam room 검진.5 is labeled as an examination room (Exam 5) on the fourth-floor ventilation duct plan.
+
+The entity ""검진.5"" includes a more detailed description: it is a medical examination room shown on the floor plan as Exam 5, and identified in the fourth-floor plan as 검진.5; it is designated for clinical evaluation within the facility and located on the fourth floor.
+
+The relationship additionally supports that ""Exam 5"" is one of the labeled rooms on the 4th-floor plan. This combination of entity-level description and relationship-level confirmation provides the strongest grounded linkage in the dataset between a named clinical space and its representation on the fourth-floor plan associated with ventilation duct layout. [Data: Entities (2044); Relationships (3108)]
+
+## The community appears to be a documentation/mapping cluster rather than an operational network of actors.
+
+All provided entities are architectural or spatial/documentation concepts (a ventilation duct floor plan and exam rooms and a rooftop resting yard). There are no organizations, individuals, or procedural/operational relationships described—only spatial inclusion and labeling relationships tying rooms/areas to the plan.
+
+Accordingly, the “impact” implied by this community is limited to the informational/structural significance of having multiple clinical rooms and a rooftop yard documented within a ventilation duct plan. The dataset does not include claims about safety incidents, compliance status, or malicious intent, so no such conclusions should be inferred beyond the mapping relationships provided. [Data: Entities (2155, 1221, 1222, 1219, 2044); Relationships (3100, 3104, 3106, 3107, 3108)]"
+638,3,Basement HVAC Community: AHU-01/AHU-02/AHU-03 and FIRST BASEMENT FLOOR,"This community centers on the building’s HVAC infrastructure as represented in an HVAC flow diagram. Three air handling units—AHU-01, AHU-02, and AHU-03—are each associated with the FIRST BASEMENT FLOOR, where they serve heating and cooling functions for different basement-related areas (B1 to 1st floor generally, a B1 first-floor current velocity experience area, and a marine survival experience area). The relationships indicate a shared structural linkage: each AHU is configured to supply heating and cooling to systems and spaces located within or tied to the basement-related zone represented by FIRST BASEMENT FLOOR, suggesting coordinated mechanical conditioning coverage across multiple underground areas. [Data: Entities (3247, 3263, 3248, 3249); Relationships (4626, 4627, 4628)]",3.5,"# Basement HVAC Community: AHU-01/AHU-02/AHU-03 and FIRST BASEMENT FLOOR
+
+This community centers on the building’s HVAC infrastructure as represented in an HVAC flow diagram. Three air handling units—AHU-01, AHU-02, and AHU-03—are each associated with the FIRST BASEMENT FLOOR, where they serve heating and cooling functions for different basement-related areas (B1 to 1st floor generally, a B1 first-floor current velocity experience area, and a marine survival experience area). The relationships indicate a shared structural linkage: each AHU is configured to supply heating and cooling to systems and spaces located within or tied to the basement-related zone represented by FIRST BASEMENT FLOOR, suggesting coordinated mechanical conditioning coverage across multiple underground areas. [Data: Entities (3247, 3263, 3248, 3249); Relationships (4626, 4627, 4628)]
+
+## FIRST BASEMENT FLOOR is the common hub connecting all three air handling units.
+
+FIRST BASEMENT FLOOR functions as the central “location/zone” entity in this community, referenced as the basement level within the HVAC diagram for multiple uses. All three air handling units (AHU-01, AHU-02, and AHU-03) have explicit relationships to FIRST BASEMENT FLOOR, indicating that the mechanical conditioning represented by these AHUs is tied to this underground level’s diagrammatic zone. [Data: Entities (3263, 3247, 3248, 3249); Relationships (4626, 4627, 4628)]
+
+Because FIRST BASEMENT FLOOR is the shared target of each AHU relationship, it represents the key structural linkage in the community: regardless of which specific area is served, the heating and cooling supply responsibilities converge on the basement-related zone captured in the diagram. This makes FIRST BASEMENT FLOOR the most relevant entity for understanding the scope and coverage of the community’s HVAC function. [Data: Relationships (4626, 4627, 4628)]
+
+## AHU-01 supports heating and cooling for the B1 to 1st floor system via FIRST BASEMENT FLOOR.
+
+AHU-01 is identified as an air handling unit shown in the HVAC flow diagram and used for B1 to 1st floor heating and cooling supply. Its relationship to FIRST BASEMENT FLOOR explicitly states that AHU-01 serves the B1 to 1st floor heating and cooling system, with a combined relationship degree value reflecting its modeled importance in the HVAC network. [Data: Entities (3247); Relationships (4626)]
+
+This indicates AHU-01’s role in providing conditioning capacity that spans at least the B1 and 1st floor context, while still being connected to the FIRST BASEMENT FLOOR as the diagram’s basement-related linkage point. In community impact terms, AHU-01 is a critical node because its HVAC output is described as serving a larger vertical scope (B1 to 1st floor) rather than a single named experience area. [Data: Entities (3247); Relationships (4626)]
+
+## AHU-02 serves the B1 first-floor current velocity experience area heating and cooling system through FIRST BASEMENT FLOOR.
+
+AHU-02 is described as an air handling unit in the HVAC flow diagram used for the B1 first-floor current velocity experience area heating and cooling supply. Its relationship to FIRST BASEMENT FLOOR specifies that AHU-02 serves the heating and cooling system for that current velocity experience area. [Data: Entities (3248); Relationships (4627)]
+
+Compared to AHU-01, AHU-02’s description ties it more specifically to a particular experience area (current velocity experience area) rather than the broader “B1 to 1st floor” phrasing. This suggests the community includes both general vertical conditioning (AHU-01) and more targeted conditioning for specific functional spaces within the basement-related zone. [Data: Entities (3248); Relationships (4627)]
+
+## AHU-03 is linked to the marine survival experience area and is located within the basement-related zone.
+
+AHU-03 is identified as an air handling unit shown in the HVAC flow diagram used for the marine survival experience area heating and cooling supply. The relationship description further clarifies that AHU-03 serves the marine survival experience area heating and cooling system, which is located in the basement-related zone of the diagram. [Data: Entities (3249); Relationships (4628)]
+
+This provides the most explicit “zone placement” context among the three AHUs: it explicitly states the marine survival experience area system is located in the basement-related zone represented by FIRST BASEMENT FLOOR. As a result, AHU-03 appears to be directly responsible for conditioning a specific basement-zone-contained experience area, making it a key node for any analysis of HVAC coverage within the underground portion of the modeled environment. [Data: Entities (3249); Relationships (4628)]
+
+## All modeled relationships in this community point from each AHU to FIRST BASEMENT FLOOR, implying a unified basement HVAC supply structure.
+
+In the provided relationships, the source entity is each AHU (AHU-01, AHU-02, AHU-03) and the target is consistently FIRST BASEMENT FLOOR, with each relationship documenting the respective heating/cooling system served. This consistency indicates a single structural pattern in the community’s representation: the basement level is the anchor for the HVAC supply relationships of these air handling units. [Data: Relationships (4626, 4627, 4628)]
+
+Because every relationship targets FIRST BASEMENT FLOOR, the community’s internal structure is effectively star-like around the basement zone entity. From an impact perspective, such a structure can concentrate relevance: issues affecting the represented basement-zone interface (as captured in the diagram) could simultaneously affect multiple air handling unit functions tied to that zone. [Data: Relationships (4626, 4627, 4628)]
+
+## The community’s scope is limited to four entities (three AHUs and one basement level) as defined by the dataset.
+
+The dataset contains exactly four entities relevant to this community narrative: AHU-01, AHU-02, AHU-03, and FIRST BASEMENT FLOOR. There are three relationships, each connecting one AHU to FIRST BASEMENT FLOOR with descriptions indicating heating and cooling supply responsibilities. [Data: Entities (3247, 3263, 3248, 3249); Relationships (4626, 4627, 4628)]
+
+With no additional entities (e.g., controllers, fans, duct branches, or other system components) and no claims beyond HVAC supply descriptions, the community’s characterization is necessarily constrained to mechanical-conditioning linkage as represented in the diagram. This limitation also affects potential impact assessment: the evidence supports structural HVAC connectivity, but does not provide information about operational failures, regulatory issues, or security concerns. [Data: Entities (3247, 3263, 3248, 3249); Relationships (4626, 4627, 4628)]"
+639,3,"HVAC SYSTEM Thermal Network (AHU-01, ESS ROOM, Heat Exchanger)","This community is a building services subsystem centered on the HVAC SYSTEM, which coordinates air and hydronic components to condition indoor spaces. Within the network, an ESS ROOM is included as part of the broader zoning/plan, and multiple thermal/hydronic elements—such as the WATER SUPPLY UNIT, HOT WATER TANK, HEAT EXCHANGER, and TRAP—are connected through explicitly defined relationships indicating how heating, heat exchange, and condensate/drain management are implemented. The relationships show a connected topology where the HVAC SYSTEM relates to air-handling (AHU-01) and overall zoning (ESS ROOM), while the heating/thermal path ties HOT WATER TANK and HEAT EXCHANGER to the WATER SUPPLY UNIT, with TRAP components present near heat exchangers in the piping schematic.",2.0,"# HVAC SYSTEM Thermal Network (AHU-01, ESS ROOM, Heat Exchanger)
+
+This community is a building services subsystem centered on the HVAC SYSTEM, which coordinates air and hydronic components to condition indoor spaces. Within the network, an ESS ROOM is included as part of the broader zoning/plan, and multiple thermal/hydronic elements—such as the WATER SUPPLY UNIT, HOT WATER TANK, HEAT EXCHANGER, and TRAP—are connected through explicitly defined relationships indicating how heating, heat exchange, and condensate/drain management are implemented. The relationships show a connected topology where the HVAC SYSTEM relates to air-handling (AHU-01) and overall zoning (ESS ROOM), while the heating/thermal path ties HOT WATER TANK and HEAT EXCHANGER to the WATER SUPPLY UNIT, with TRAP components present near heat exchangers in the piping schematic.
+
+## HVAC SYSTEM is the central coordinating entity linking building services components and zoning.
+
+The HVAC SYSTEM is described as the overall heating, ventilation, and air-conditioning infrastructure that coordinates air-handling and hydronic components to distribute conditioned air and water through the facility. It includes arrangements of AHUs, HVUs, FCUs, boilers/heat pumps, and associated piping/ductwork, indicating the system supports both ventilation and thermal conditioning across spaces [Data: Entities (2972)].
+
+Within the provided network, HVAC SYSTEM is directly connected to AHU-01 as one of its components, and it is also connected to the ESS ROOM as part of the broader building systems plan/zoning diagram. This suggests the community’s structure is organized around HVAC SYSTEM as an integration hub that ties together both terminal equipment and room-level functional spaces [Data: Relationships (4641, 4657)].
+
+## AHU-01 represents the air-handling endpoint within the HVAC SYSTEM component set.
+
+AHU-01 is identified as a specific component under the HVAC SYSTEM, implying it is one of the building’s air-handling units participating in the overall distribution and ventilation/conditioning workflow. The explicit relationship indicates a direct containment/association: HVAC SYSTEM → AHU-01 [Data: Relationships (4641)].
+
+Because the HVAC SYSTEM is characterized as a coordinated network for moving conditioned air, the presence of an explicitly named AHU-01 anchors the community’s “air side” of the system architecture, complementing the “water/thermal side” elements connected via the hydronic diagram [Data: Entities (2972); Relationships (4641)].
+
+## ESS ROOM is incorporated into the HVAC zoning/plan, indicating it is part of the broader systems layout.
+
+The ESS ROOM is described as a basement-two room housing energy storage systems, and it is included in the HVAC zoning diagram within the broader building systems plan. The relationship HVAC SYSTEM → ESS ROOM explicitly places this room within the same overall system planning context as the HVAC infrastructure [Data: Entities (3280); Relationships (4657)].
+
+While the provided relationships do not specify a direct thermal/hydronic coupling between the ESS ROOM and the heating/water components, its inclusion in the HVAC zoning/plan suggests co-location and potential operational interdependence at the building systems level (e.g., shared space planning, power/controls adjacency, or integrated design considerations). This is inferred only at the planning/layout level because no further technical coupling is stated in the data [Data: Relationships (4657)].
+
+## WATER SUPPLY UNIT is the hydronic backbone that connects heat exchange and storage elements.
+
+The WATER SUPPLY UNIT is defined as a supply unit shown in the thermal/hydronic system diagram, and it appears as a connection point for other hydronic components. Specifically, HEAT EXCHANGER is linked as part of the thermal equipment connected to the supply system, and HOT WATER TANK is linked as connected with the supply-unit hydronic equipment [Data: Entities (3257, 584, 1782); Relationships (4636, 4635)].
+
+These relationships indicate WATER SUPPLY UNIT functions as the “backbone” for the thermal/hydronic path in this community: HOT WATER TANK → WATER SUPPLY UNIT (via the described hydronic connection), and HEAT EXCHANGER is also part of the thermal equipment connected to the supply system [Data: Relationships (4635, 4636)].
+
+## HEAT EXCHANGER is a central repeated thermal component connected to the supply system.
+
+The HEAT EXCHANGER is described as a functional component within the thermal system that appears multiple times in the system diagram and plays a central role in the ventilation unit’s heat exchange process. It is associated with heat exchange efficiency specifications and is highlighted as an important repeated element supporting effective ventilation and temperature regulation [Data: Entities (584)].
+
+In the network, HEAT EXCHANGER is connected to WATER SUPPLY UNIT via the relationship HEAT EXCHANGER → WATER SUPPLY UNIT, describing that the heat exchanger is part of the thermal equipment connected to the supply system [Data: Relationships (4636)]. Taken together, the data portrays the heat exchanger as both (1) a repeated/central design element and (2) a node connected directly to the hydronic supply path, making it a key contributor to the community’s thermal performance [Data: Entities (584); Relationships (4636)].
+
+## HOT WATER TANK provides stored hot water and is connected to the hydronic supply equipment.
+
+The HOT WATER TANK is described as a storage-type hot water tank included in the equipment lineup, with specified dimensions and capacity, indicating it serves as a storage vessel and part of the heating system’s equipment [Data: Entities (1782)].
+
+The relationship HOT WATER TANK → WATER SUPPLY UNIT states that the hot water tank is connected with the supply-unit hydronic equipment shown in the diagram. This indicates a direct integration between stored hot water and the supply-side hydronic distribution for the thermal system [Data: Relationships (4635)].
+
+## TRAP elements are repeatedly present near HEAT EXCHANGER piping connections, supporting condensate/drain management.
+
+TRAP is described as a condensate/drain trap repeatedly indicated in the piping schematic, and it is explicitly connected in the network as TRAP → HEAT EXCHANGER with a description that traps are shown repeatedly in piping connections near the heat exchangers [Data: Entities (3258); Relationships (4637)].
+
+This relationship suggests that condensate/drain handling is an important supportive function adjacent to the heat exchange process within the community’s thermal/hydronic design. While the data does not describe failure modes or operational risk, it does establish that the trapping mechanism is repeatedly positioned in proximity to HEAT EXCHANGER components, indicating a recurring, design-significant feature of the system’s plumbing layout [Data: Entities (3258); Relationships (4637)].
+
+## System capability emphasis is on coordinated thermal comfort delivery using both air-side integration (AHU) and hydronic heat exchange/storage (heat exchanger, tank).
+
+At the system level, the HVAC SYSTEM description emphasizes coordination of conditioned air and water through the facility, regulating temperature and ventilation while maintaining indoor environmental quality. It also explicitly notes both VAV and CAV equipment configurations, plus heating and cooling capability implied by the presence of boilers/heat pumps (as described) and ventilation management via AHUs/HVUs/FCUs [Data: Entities (2972)].
+
+Within the provided connections, this capability is reflected by pairing an air-side component (AHU-01) with a hydronic thermal subpath (HOT WATER TANK and HEAT EXCHANGER connected to the WATER SUPPLY UNIT, with TRAP near heat exchangers). The combination of these elements indicates the community represents a complete thermal comfort delivery chain rather than a single isolated component [Data: Relationships (4641, 4635, 4636, 4637); Entities (2972, 584, 1782, 3257, 3258)]."
+253,2,"Architectural Drawing Title Block Fields: NAME OF DRAWING, DESIGN NAME, DRAWING NO","This community consists of three interrelated technical metadata fields used in drawing documents—NAME OF DRAWING, DESIGN NAME, and DRAWING NO. The entities are connected through explicit relationships indicating that they are paired or co-described title-block identifiers that collectively identify and reference the same drawing sheet. Specifically, NAME OF DRAWING and DRAWING NO are treated as paired identifiers for an official drawing number and corresponding drawing name, while DESIGN NAME is described as a design-level metadata field that is also linked to the drawing reference number (DRAWING NO). No legal, organizational, or reputational claims are provided; the available information focuses purely on documentation/metadata usage within technical drawings.",0.8,"# Architectural Drawing Title Block Fields: NAME OF DRAWING, DESIGN NAME, DRAWING NO
+
+This community consists of three interrelated technical metadata fields used in drawing documents—NAME OF DRAWING, DESIGN NAME, and DRAWING NO. The entities are connected through explicit relationships indicating that they are paired or co-described title-block identifiers that collectively identify and reference the same drawing sheet. Specifically, NAME OF DRAWING and DRAWING NO are treated as paired identifiers for an official drawing number and corresponding drawing name, while DESIGN NAME is described as a design-level metadata field that is also linked to the drawing reference number (DRAWING NO). No legal, organizational, or reputational claims are provided; the available information focuses purely on documentation/metadata usage within technical drawings.
+
+## NAME OF DRAWING is a title-block metadata field identifying a drawing’s name.
+
+NAME OF DRAWING is described as a technical-document field used to identify the drawing’s name or title, appearing in the document header and title block as the place where the drawing title is recorded [Data: Entities (1557); Relationships (2301, 2951)]. It is associated with labels such as “도면명/Name Of Drawing,” indicating it functions as the designated slot for the sheet’s subject/title within the title block [Data: Entities (1557)].
+
+Within the community, NAME OF DRAWING is directly paired with DRAWING NO to form a combined set of identifiers for the same drawing sheet, supporting clear cross-referencing in documentation [Data: Relationships (2301, 2951)]. This pairing implies that the drawing name is meant to be used alongside the drawing number for unambiguous sheet identification [Data: Relationships (2951)].
+
+## DRAWING NO serves as the drawing number identifier within the title block.
+
+DRAWING NO is defined as a title-block field used on architectural drawings or plan sheets to identify the drawing number for the specific sheet, document, or plan set [Data: Entities (2077)]. It functions as a unique reference identifying the sheet within a broader set of plans [Data: Entities (2077)].
+
+The relationships in this dataset frame DRAWING NO as part of a coordinated identification mechanism: it is explicitly linked to NAME OF DRAWING as a paired title-block identifier, and it is also linked to DESIGN NAME as a metadata reference number that contextualizes the design within the drawing [Data: Relationships (2301, 3236, 2951)]. This suggests the community’s purpose is to ensure that drawing documents can be reliably indexed and retrieved by both name and number [Data: Relationships (2951)].
+
+## DESIGN NAME is a separate design metadata field linked to the drawing reference number.
+
+DESIGN NAME is described as a design name field in the drawing metadata [Data: Entities (2219)]. In the community context, it is connected to DRAWING NO through a relationship that characterizes both as metadata fields describing the design and its drawing reference number [Data: Relationships (3236)].
+
+This implies a two-level structure: DESIGN NAME provides the design-level label, while DRAWING NO provides the reference number tying that design metadata to a particular drawing sheet or plan set [Data: Relationships (3236)]. While the dataset does not describe any additional operational behavior beyond this descriptive linkage, the phrasing “metadata fields” indicates the fields are intended to be used together for document management and identification [Data: Relationships (3236)].
+
+## NAME OF DRAWING and DRAWING NO are paired to identify the same drawing sheet.
+
+The relationship labeled 2301 states that NAME OF DRAWING and DRAWING NO are both title block fields identifying the drawing and its number [Data: Relationships (2301)]. The relationship labeled 2951 further elaborates that DRAWING NO and NAME OF DRAWING are paired title-block identifiers used to identify the same drawing sheet, providing the drawing’s official number and its corresponding name [Data: Relationships (2951)].
+
+This pairing is important because it directly connects two fields that otherwise serve different descriptive functions—one for the sheet’s name/title and one for the sheet’s number—into a single coherent identification pattern for documentation [Data: Relationships (2951)]. The dataset explicitly states that both appear in the title block and together enable the sheet to be clearly identified and referenced in documentation [Data: Relationships (2951)].
+
+## The community emphasizes consistent documentation referencing through structured title-block fields.
+
+Across the relationships, the recurring theme is structured identification: multiple fields are described as title-block or metadata fields that collectively ensure correct referencing. For example, 2301 characterizes NAME OF DRAWING and DRAWING NO as identifying the drawing and its number [Data: Relationships (2301)], while 3236 characterizes DESIGN NAME and DRAWING NO as describing the design and its drawing reference number [Data: Relationships (3236)].
+
+The relationship 2951 summarizes the intent more directly: the paired fields provide an official drawing number and corresponding name to ensure the sheet can be clearly identified and referenced [Data: Relationships (2951)]. This indicates the community’s “capability” is not technical system operation per se, but rather the standardization of metadata used for reliable document indexing and traceability [Data: Entities (1557, 2219, 2077); Relationships (2301, 3236, 2951)].
+
+## Degrees associated with fields are present, but no interpretation is provided in the data.
+
+The entities include a “degree” attribute (e.g., NAME OF DRAWING degree 8, DESIGN NAME degree 2, DRAWING NO degree 2), indicating that each entity has an associated numeric value [Data: Entities (1557, 2219, 2077)]. However, the dataset does not define what these degrees represent (e.g., importance, relevance, frequency, or risk).
+
+Because no legend or explanatory mapping for the “degree” metric is provided, the safest grounded interpretation is that degrees exist as numeric attributes tied to each field description, rather than as a validated measure of operational impact. Any inference beyond “degrees are provided” would not be supported by the text [Data: Entities (1557, 2219, 2077)]."
+254,2,"AW and Window Schedule Sheets (창 호 도 - 3, 창 호 도 - 4)","This community is centered on the window designation “AW,” which functions as a consistent label in architectural drawing materials. AW is referenced across multiple window schedule sheets—specifically “창 호 도 - 3” (pages 72–73) and “창 호 도 - 4” (pages 73–74)—where it appears in schedule entries describing window types, quantities, locations, and related specifications. A separate relationship indicates that AW is also used alongside “PJ” in the drawing schedule and specifications, suggesting AW participates in broader window-type designation combinations used in the same documentation set. [Data: Entities (1552, 1550, 1551); Relationships (2067, 1982, 1983)].",1.2,"# AW and Window Schedule Sheets (창 호 도 - 3, 창 호 도 - 4)
+
+This community is centered on the window designation “AW,” which functions as a consistent label in architectural drawing materials. AW is referenced across multiple window schedule sheets—specifically “창 호 도 - 3” (pages 72–73) and “창 호 도 - 4” (pages 73–74)—where it appears in schedule entries describing window types, quantities, locations, and related specifications. A separate relationship indicates that AW is also used alongside “PJ” in the drawing schedule and specifications, suggesting AW participates in broader window-type designation combinations used in the same documentation set. [Data: Entities (1552, 1550, 1551); Relationships (2067, 1982, 1983)].
+
+## AW is a standardized window-type designation used across drawings and schedules
+
+AW is described as a window designation used in drawing and window schedules to identify window units of various types, quantities, and locations, and it serves as a consistent label used throughout the drawings to reference the relevant window configuration [Data: Entities (1552); Relationships (2067)].
+
+Because AW is explicitly framed as a consistent label, it indicates an information structure where designations are reused systematically. This matters for information discovery and downstream interpretation because it implies that any analysis of window components must treat “AW” as the authoritative category label in the schedule rather than a one-off description. [Data: Entities (1552)].
+
+## AW window schedule content is maintained on two related sheets: 창 호 도 - 3 and 창 호 도 - 4
+
+The entity “창 호 도 - 3” is a window schedule drawing sheet referenced on pages 72–73, containing window symbols, types, sizes, locations, finishes, hardware, and glass specifications for multiple AW windows and associated notes [Data: Entities (1550); Relationships (1982)].
+
+Additionally, “창 호 도 - 4” continues this window schedule on pages 73–74, listing additional AW windows, their locations, and quantities [Data: Entities (1551); Relationships (1983)]. This split across two sequential sheets suggests the documentation is designed to be read as a set, where completeness for AW entries likely requires checking both sheets rather than only one. [Data: Entities (1550, 1551); Relationships (1982, 1983)].
+
+## 창 호 도 - 3 contains AW schedule entries and specifications
+
+The relationship data explicitly states that “창 호 도 - 3 contains the schedule entries for AW window types and their specifications” [Data: Relationships (1982)].
+
+This means AW’s descriptive and technical attributes (such as types and specifications, and as described in the sheet summary, potentially finishes/hardware/glass) are not merely referenced indirectly; they are directly enumerated within 창 호 도 - 3. For analysts, this sheet is a primary location to extract AW-related configuration details and to understand how AW is defined within the project’s window schedule conventions. [Data: Entities (1550); Relationships (1982)].
+
+## 창 호 도 - 4 contains additional AW schedule entries including quantities and locations
+
+The relationship data explicitly states that “창 호 도 - 4 also contains schedule entries for AW window types and quantities” [Data: Relationships (1983)].
+
+Given the entity description that it lists additional AW windows with locations and quantities, this sheet likely complements 창 호 도 - 3 by expanding coverage of AW beyond the initial page range. For information completeness, any determination of total counts or distribution of AW windows should incorporate entries from both sheets. [Data: Entities (1551); Relationships (1983)].
+
+## AW appears in conjunction with PJ, indicating combined window-type designation usage
+
+A relationship indicates that “AW and PJ are window-type designations appearing together in the drawing schedule and specifications” [Data: Relationships (2067)].
+
+This suggests the documentation system supports either combined forms or co-referenced designation sets, where AW is used alongside PJ within the same scheduling context. Practically, this means interpretation of AW may require awareness that it is sometimes paired with PJ; analysts should look for schedule rows or notes where both designations are present to correctly understand the intended window configuration and how the two designations interact. [Data: Relationships (2067)]."
+255,2,"Window & Curtain-Wall Specification Community (창 호 도 -4, 창 호 도 -5, PJ)","This community is centered on two architectural drawing/schedule sheets—창 호 도 -4 and 창 호 도 -5—that define window and glazing requirements for specific parts of a building. The sheets reference consistent component families (a projectable window type designated PJ, an aluminum insulated curtain-wall/window assembly sized 160x60, accessory hardware requirements, and a roll insect screen) and specify low-E double glazing glass thicknesses (THK 24 and THK 26). Additional allowance notes on 창 호 도 -4 further constrain door handle hardware style options (lever-type, or horizontal/vertical bar-type). Overall, the entities are tightly related through explicit specification relationships, forming a structured set of constraints for fenestration design and installation rather than a socio-political or adversarial actor network.",1.2,"# Window & Curtain-Wall Specification Community (창 호 도 -4, 창 호 도 -5, PJ)
+
+This community is centered on two architectural drawing/schedule sheets—창 호 도 -4 and 창 호 도 -5—that define window and glazing requirements for specific parts of a building. The sheets reference consistent component families (a projectable window type designated PJ, an aluminum insulated curtain-wall/window assembly sized 160x60, accessory hardware requirements, and a roll insect screen) and specify low-E double glazing glass thicknesses (THK 24 and THK 26). Additional allowance notes on 창 호 도 -4 further constrain door handle hardware style options (lever-type, or horizontal/vertical bar-type). Overall, the entities are tightly related through explicit specification relationships, forming a structured set of constraints for fenestration design and installation rather than a socio-political or adversarial actor network.
+
+## 창 호 도 -4 is a primary specification sheet labeled A that bundles window type, glazing, and hardware requirements.
+
+The sheet 창 호 도 -4 is explicitly tied to section/sheet marker A, indicating it is part of a structured drawing set. [Data: Entities (1559); Relationships (2001)].
+
+Within 창 호 도 -4, the glazing specification includes the projectable window type designation PJ, meaning the sheet’s requirements are not limited to glass but also define compatible window configuration. [Data: Entities (1561); Relationships (2039)].
+
+창 호 도 -4 also specifies the aluminum insulated curtain-wall and project window assembly (160 x 60), connecting the sheet to a particular frame/assembly size and type. [Data: Entities (1566); Relationships (2041)].
+
+In addition, the sheet enumerates accessory hardware inclusion (“기타부속철물일체”) and requires that roll insect screens be included (“롤방충망 포함”), which indicates the specification governs not only performance glazing but also integrated functional components. [Data: Entities (1563, 1564); Relationships (2048, 2050)].
+
+Finally, 창 호 도 -4 defines a drawing scale of 1:100, which reinforces that the sheet is a detailed design document intended for accurate component placement and dimensional coordination. [Data: Entities (1558); Relationships (2003)].
+
+## PJ and THK 24 low-E double glazing are directly linked through the 창 호 도 -4 glazing specification.
+
+The project window type designation PJ appears in the 창 호 도 -4 sheet as part of its glazing specification, establishing that the glazing requirements are tied to a specific window behavior/configuration (projectable/projecting). [Data: Entities (1561); Relationships (2039)].
+
+The same sheet specifies 24 mm thick low-E double glazing for project window portions (THK 24 로이 복층유리), making THK 24 a direct glass-performance constraint for the window type referenced on the sheet. [Data: Entities (1569); Relationships (2045)].
+
+Because the data describes THK 24 로이 복층유리 as a low-E double glazing system intended to work with an insulated aluminum window frame (and as specified as an insulated glass assembly), the linkage between PJ and THK 24 suggests that correct pairing of window configuration and glass assembly is essential to meet the intended insulation/energy-efficiency goals described in the entity description. [Data: Entities (1569, 1561); Relationships (2039, 2045)].
+
+## 창 호 도 -5 is another labeled specification sheet that ties glazing/frames to stairwell usage.
+
+The drawing/schedule sheet 창 호 도 -5 is labeled with section/sheet marker A, showing it belongs to the same organized documentation set as 창 호 도 -4. [Data: Entities (1560); Relationships (2002)].
+
+Unlike 창 호 도 -4, the explicit downstream linkage shown for 창 호 도 -5 is to the aluminum insulated curtain-wall window assembly sized 160x60 used in the stairwell location (“160X60 알루미늄 단열커튼월창”). This indicates that 창 호 도 -5 includes specific fenestration requirements for a particular building area (stairs). [Data: Entities (1567); Relationships (2043)].
+
+## THK 26 low-E double glazing appears as a separate glazing detail with a stated layer build-up.
+
+A glazing detail entity for THK 26 로이 복층유리 is present and is linked to a specific glazing layer build-up string (“6LE, PLAONE +14AR(SWS)+6CL”). This directly anchors THK 26 to both performance type (low-E) and a defined internal construction. [Data: Entities (1568); Relationships (2267)].
+
+However, in the provided relationship data, no explicit connection is shown between 창 호 도 -4 or 창 호 도 -5 and THK 26. As a result, THK 26 can be described confidently as a glazing detail that exists within the community, but its specific placement within the two sheets cannot be concluded from the given records alone. [Data: Entities (1568); Relationships (2267)].
+
+## The community includes functional and integration requirements: accessory hardware and roll insect screens are mandated on 창 호 도 -4.
+
+The specification entity “기타부속철물일체” is included as part of the 창 호 도 -4 sheet requirements, explicitly stating that all other accessory hardware is included as part of the window assembly. This means the sheet is not limited to major components (frames and glass) but also includes completeness expectations for the assembly package. [Data: Entities (1563); Relationships (2048)].
+
+Additionally, “롤방충망 포함” is required by 창 호 도 -4, indicating the inclusion of a roll insect screen as part of the specification. This is an important integration detail because it can affect operational clearances, packaging, and installation sequencing. [Data: Entities (1564); Relationships (2050)].
+
+## 창 호 도 -4 contains specific door-hardware allowance notes (lever and bar-style handle types) that constrain acceptable hardware.
+
+Beyond window/glazing, the notes on 창 호 도 -4 allow lever-type handles (레버형). This suggests that the drawing’s notes govern broader openings/hardware compatibility rules, not only glazing assemblies. [Data: Entities (1572); Relationships (2055)].
+
+The sheet also allows horizontal or vertical bar-style door handle types (수평 또는 수직막대형), providing explicit alternative handle styles that meet the note instructions. [Data: Entities (1573); Relationships (2056)].
+
+Because these are “allowance” relationships rather than a single required handle, they likely function as constraints for selecting hardware that fits an approved set of design standards captured in the drawing set. [Data: Entities (1572, 1573); Relationships (2055, 2056)]."
+256,2,"Project Level Reference Community: 지하층 바닥, 1층/2층/3층 바닥, G.L","This community is defined by construction drawing “level references” that establish vertical datums across architectural plans and sections. It centers on the ground level marker (G.L) and a chain of floor/slab levels—지하층 바닥 → 1층 바닥 → 2층 바닥 → 3층 바닥—where each level is represented consistently across elevations, sections, longitudinal sections, and drawing schedules/key plans. The relationships also connect these level markers to specific elevation annotations (e.g., EL+28.6) and to an external elevation drawing context (107동 right-side elevation), indicating how the same vertical reference framework is reused to interpret multiple views.",0.3,"# Project Level Reference Community: 지하층 바닥, 1층/2층/3층 바닥, G.L
+
+This community is defined by construction drawing “level references” that establish vertical datums across architectural plans and sections. It centers on the ground level marker (G.L) and a chain of floor/slab levels—지하층 바닥 → 1층 바닥 → 2층 바닥 → 3층 바닥—where each level is represented consistently across elevations, sections, longitudinal sections, and drawing schedules/key plans. The relationships also connect these level markers to specific elevation annotations (e.g., EL+28.6) and to an external elevation drawing context (107동 right-side elevation), indicating how the same vertical reference framework is reused to interpret multiple views.
+
+## A vertical level chain links basement to ground and upper floors consistently across drawings.
+
+The community’s core structure is a sequential hierarchy of floor/slab levels: 지하층 바닥 (basement), 1층 바닥 (first floor), 2층 바닥 (second floor), and 3층 바닥 (third floor). The relationships explicitly describe that each higher slab level is shown above the level immediately below, forming a coherent vertical ordering used for interpretation of the architectural documentation [Data: Entities (1346, 1294, 1295, 1296); Relationships (1609, 1608, 1607)].
+
+This chain matters because the definitions of each level reference describe consistent use across multiple drawing types (elevation, section, longitudinal section, key plan, drawing schedule), suggesting the project relies on these markers as the standardized “datum” for locating building elements vertically. In practice, if multiple drawings agree on the same level reference, it reduces ambiguity when matching geometry between plan and section views [Data: Entities (1294, 1295, 1296, 1346); Relationships (1607, 1608, 1609)].
+
+## G.L functions as the ground/grade datum and is used as the reference line for elevation measurements.
+
+G.L is defined as the ground level reference (vertical datum) used in architectural drawings, including layout drawings, elevation drawings, and section drawings. The documentation describes G.L as a “reference line from which elevation measurements are indicated,” with examples of G.L elevation values (e.g., G.L (+19.60), G.L (+20.40)) [Data: Entities (229)].
+
+Additionally, a relationship shows G.L associated with a specific elevation context: ground level markers are shown in the right-side elevation drawing for “107동.” This indicates G.L is not only a abstract datum but is actively rendered in elevation views to anchor how heights and elevations are read across the project [Data: Relationships (241)].
+
+## Upper floor slab levels (1층/2층/3층 바닥) are treated as consistent benchmarks across elevations, sections, and schedules.
+
+The definitions for 1층 바닥, 2층 바닥, and 3층 바닥 emphasize that each is shown consistently as a floor level reference in multiple drawing categories, including elevation drawings, section drawings, longitudinal section drawings, and also listed in the key plan and drawing schedule. This shows that the project uses these level references not only in graphical views but also in project documentation management (key plan/schedules) to ensure consistent reference usage [Data: Entities (1294, 1295, 1296)].
+
+The relationships further confirm the intended vertical ordering among these benchmarks: 2층 바닥 is shown above 1층 바닥, and 3층 바닥 is shown above 2층 바닥. Together, the textual definitions and relational constraints indicate these levels serve as a repeatable coordinate framework for interpreting building geometry across views [Data: Relationships (1608, 1607)].
+
+## Basement floor level is linked to a specific elevation marker (EL+28.6) in the key plan.
+
+The basement level reference, 지하층 바닥, is associated with a specific elevation marker “EL+28.6” in the key plan. This relationship indicates that the basement level is not merely labeled as a generic basement floor; it is tied to an explicit elevation value used for reference in documentation [Data: Relationships (1652); Entities (1346)].
+
+This linkage is important for traceability: when different drawings (e.g., sections, key plans) reference the same numeric elevation for the basement, teams can align vertical datum interpretations and reduce errors in reading where basement elements sit relative to other level markers [Data: Relationships (1652); Entities (1346)].
+
+## The documentation shows cross-view consistency for 지하층 바닥 (basement) across sections and longitudinal sections.
+
+The definition of 지하층 바닥 states that it appears in sections (“단면도”) and is also shown in longitudinal sections (“종단면도”). It further notes that the basement floor level is recorded in the key plan and section/elevation-related drawings (키 플랜과 단면 입면도), demonstrating consistent reference usage across multiple representation types [Data: Entities (1346)].
+
+Because this basement level reference repeats across these views, it functions as a stable anchor for matching features that appear in sectioned representations but may be hard to correlate using only one view type. The relationship to EL+28.6 reinforces that this anchor also carries numeric meaning in at least one key documentation artifact (the key plan) [Data: Entities (1346); Relationships (1652)].
+
+## Each level reference is likely intended for interoperability between drawings via shared naming and datum conventions.
+
+Across the entity definitions, the pattern is consistent: each level reference is described as being shown across multiple drawing types and also incorporated into key plans and/or drawing schedules. For instance, 1층 바닥 and 2층 바닥 are described as appearing across elevation drawings, section drawings, and longitudinal section drawings, and both are also listed in key plan and drawing schedule [Data: Entities (1294, 1295)].
+
+This suggests the community is less about programmatic “actors” and more about a systematic documentation network: naming conventions and datum definitions enable interoperability between different drawing outputs. The relationships describing relative vertical placement (above/below) further formalize these conventions into a hierarchy that can be used to interpret the building’s vertical structure consistently [Data: Relationships (1607, 1608, 1609)]."
+257,2,"Building Level-Reference Community: EL+39.7, Floor Levels, and 정면도 Firefighter Access","This community is a set of construction-documentation entities focused on how a building’s vertical levels (e.g., 3rd/4th/5th floor and roof-related floors) are defined and cross-referenced across architectural drawings. The relationships connect level markers and floor labels to specific drawing types (e.g., section A-A and 정면도) and to each other in a consistent stacking order (3층 바닥 < 4층 바닥 < 5층 바닥 < 옥상층 바닥), with additional emphasis in the 정면도 on an emergency component: a firefighter access window detail. A rooftop/roof-layer level (옥상층 바닥 and 지붕층 바닥) is also used as a coordination reference in system-related diagram context (e.g., piping/installation planning for a solar thermal system), indicating that the level-marking conventions extend beyond pure architectural layout into MEP coordination.",3.2,"# Building Level-Reference Community: EL+39.7, Floor Levels, and 정면도 Firefighter Access
+
+This community is a set of construction-documentation entities focused on how a building’s vertical levels (e.g., 3rd/4th/5th floor and roof-related floors) are defined and cross-referenced across architectural drawings. The relationships connect level markers and floor labels to specific drawing types (e.g., section A-A and 정면도) and to each other in a consistent stacking order (3층 바닥 < 4층 바닥 < 5층 바닥 < 옥상층 바닥), with additional emphasis in the 정면도 on an emergency component: a firefighter access window detail. A rooftop/roof-layer level (옥상층 바닥 and 지붕층 바닥) is also used as a coordination reference in system-related diagram context (e.g., piping/installation planning for a solar thermal system), indicating that the level-marking conventions extend beyond pure architectural layout into MEP coordination.
+
+## EL+39.7 functions as an elevation-marker annotation tied to section drawing context.
+
+EL+39.7 is described as an elevation level marker used in section and elevation drawings to indicate a specific vertical height within the building, functioning as a reference point for vertical positioning in the documentation set. The text further indicates that it is associated with floor level markings (including references to third- and fourth-floor levels), implying its role as a stable annotation even if the exact floor designation differs across the described sources. [Data: Entities (1310); Relationships (1684)]
+
+The relationship explicitly connects EL+39.7 to “SECTION A-A,” stating that EL+39.7 appears as one of the elevation markers shown in that section view. This means EL+39.7 is not only a standalone label; it is anchored to a particular drawing sheet/view, strengthening interpretability and reducing ambiguity when translating between section/elevation representations. [Data: Relationships (1684)]
+
+## Floor-level entities (3층 바닥→4층 바닥→5층 바닥→옥상층 바닥) are presented as an ordered vertical stack across drawings.
+
+The community includes multiple explicit floor-level reference entities: 4층 바닥 (fourth-floor slab level), 5층 바닥 (fifth-floor slab level), and 옥상층 바닥 (rooftop floor level). Each is described as a consistent reference used across elevation drawings and section drawings, and each is also listed within key plan and schedule contexts, indicating cross-document coordination. [Data: Entities (1297,1298,1299); Relationships (1605,1606,1604)]
+
+Crucially, relationships define the vertical ordering between these levels in a consistent direction: 5층 바닥 is above 4층 바닥, and 4층 바닥 is above 3층 바닥; additionally, the roof-floor level is shown above the fifth-floor slab level. This ordered set suggests a documentation convention where floor elevations can be mapped reliably from lower to upper levels when analyzing building structure and drawing cross-references. [Data: Relationships (1605,1606,1604)]
+
+## 옥상층 바닥 is used as a unifying rooftop coordination level, including for solar thermal piping/installation diagrams.
+
+옥상층 바닥 is described not only as a rooftop floor level reference used across project section/elevation drawings and schedules, but also as a coordination point used in the piping and installation diagram for the solar thermal system. This indicates that the rooftop elevation labeling serves both architectural referencing and systems coordination (i.e., MEP-related planning and layout constraints tied to the rooftop level). [Data: Entities (1299); Relationships (1604,1606)]
+
+Because the description explicitly states that 옥상층 바닥 is referenced across the project’s section/elevation/key plan/schedules and then again within system diagrams, it implies that downstream design artifacts rely on the accuracy and consistency of this rooftop level marker. The risk/impact associated with such a marker typically stems from potential miscoordination if the rooftop elevation is misunderstood between disciplines (architecture vs. system installation). [Data: Entities (1299)]
+
+## 지붕층 바닥 and 옥상층 바닥 are treated as related roof-level designations but appear as distinct entities in the documentation.
+
+The community includes two roof-related level reference entities: 지붕층 바닥 and 옥상층 바닥. 지붕층 바닥 is described as a roof floor level reference used across project drawings, shown in section and elevation drawings, and included in schedule/key plan/floor elevation notes. [Data: Entities (1300)]
+
+A relationship states that 지붕층 바닥 and 옥상층 바닥 are both roof-related floor levels marked in the section/elevation drawings, indicating they are semantically linked as roof-level markers while still being represented as distinct labels/entities. This duality suggests a documentation practice where “roof-layer” and “rooftop floor” may correspond to different conceptual elevations or layers (even if both are roof-related), requiring careful interpretation when consolidating elevation data. [Data: Relationships (1603); Entities (1300,1299)]
+
+## 정면도 (elevation drawing) includes firefighter access window detail, creating an explicit emergency-access linkage in the drawing set.
+
+정면도 is described as a front elevation view referenced within the architectural drawing set, showing the building’s facade and including details such as a fire fighter access window and related specifics. The description emphasizes that the drawing supports verification not only of exterior form but also of evacuation and firefighting-related elements. [Data: Entities (233)]
+
+A relationship further specifies that 정면도 includes a “소방관 진입창문” (firefighter access window) detail, describing it as designed to support firefighter access and entry during fire or other emergency situations. This indicates that within the community, the emergency-access component is directly embedded in the elevation drawing artifacts rather than being only mentioned in text schedules or separate narrative documentation. [Data: Relationships (1514)]
+
+## The drawing-scale specification (축척: 1/200) connects to 정면도 and standardizes interpretation of the elevation drawings.
+
+축척 : 1/200 is described as a drawing scale specification shown for A1/A3 on the elevation drawings. A relationship connects the scale specification to 정면도, stating that the elevation drawings show an A1/A3 scale of 1/200. [Data: Entities (238); Relationships (249)]
+
+While scale itself does not define structural function, it affects measurement fidelity when analysts extract or compare geometric dimensions from the elevation drawings. In a community centered on level markers and coordination across views, a consistent scale specification supports correct interpretation of the relative positions and heights implied by the floor-level entities and emergency-access details shown in the elevations. [Data: Entities (238); Relationships (249,1514)]
+
+## Cross-section anchoring via “횡 단 면 도 -3” and KEY PLAN suggests navigational orientation of the section within the building layout.
+
+“횡 단 면 도 -3” (Cross Section Drawing -3) is described as a technical construction drawing containing architectural section details, level markers, material layers, and notes for a building design. It is related to KEY PLAN through a relationship stating that the section drawing includes a key plan reference to orient the section within the building layout. [Data: Entities (1453); Relationships (1860)]
+
+This implies that the community’s level markers and section-level information are not isolated—they are systematically tied to an overall layout orientation tool (KEY PLAN). Such linkage improves analysts’ ability to relate section cuts to spatial context when interpreting the vertical references (e.g., roof vs. floor slab levels) and any associated construction notes contained within 횡 단 면 도 -3. [Data: Relationships (1860)]"
+258,2,"Elevation Drawings and Facade Materials: 1/150 Scale, 영롱쌓기, and 콘크리트블록","This community centers on a set of architectural elevation drawing sheets and their linked facade design specifications. The drawing set includes multiple elevation views (including front/정면도, left side/좌측면도, and rear/배면도) that share boundary and floor-level context, and it repeatedly documents the facade’s masonry system: 콘크리트블록 arranged using the openwork stacking pattern 영롱쌓기 (purposefully leaving gaps/openings for a decorative, functional screen-like effect). Relationships within the community connect the elevation sheets to the specified scale (1/150), to the named pattern 영롱쌓기 on the front facade, and to the mapping of 콘크리트블록 to that same openwork pattern on the facade.",1.6,"# Elevation Drawings and Facade Materials: 1/150 Scale, 영롱쌓기, and 콘크리트블록
+
+This community centers on a set of architectural elevation drawing sheets and their linked facade design specifications. The drawing set includes multiple elevation views (including front/정면도, left side/좌측면도, and rear/배면도) that share boundary and floor-level context, and it repeatedly documents the facade’s masonry system: 콘크리트블록 arranged using the openwork stacking pattern 영롱쌓기 (purposefully leaving gaps/openings for a decorative, functional screen-like effect). Relationships within the community connect the elevation sheets to the specified scale (1/150), to the named pattern 영롱쌓기 on the front facade, and to the mapping of 콘크리트블록 to that same openwork pattern on the facade.
+
+## The facade design community is anchored by 콘크리트블록 specified with the openwork stacking pattern 영롱쌓기 (purposefully creating gaps/openings).
+
+콘크리트블록 is explicitly described as an exterior masonry finishing material used on building facade elevations, and within this community it is tied to a specific arrangement approach: 영롱쌓기. 영롱쌓기는 openwork/perforated stacking applied to concrete blocks, described as intentionally laid masonry with gaps or openings to produce a decorative and functional screen-like effect.
+
+This linkage matters because it shows the design intent is not just “concrete block,” but concrete block placed in a particular perforated/openwork configuration on the facade. The relationships also directly state that 콘크리트블록 is specified with 영롱쌓기 on the facade, indicating that the pattern is an integrated part of the facade construction/finishing specification rather than an incidental note. [Data: Entities (1312, 1313); Relationships (1579)]
+
+## 정면도 (front elevation) repeatedly documents the drawing scale as 1/150 and annotates the facade pattern 영롱쌓기.
+
+The community includes a front elevation drawing labeled 정면도 that is associated with the architectural drawing scale repeatedly shown as 1/150. The relationship record states that “The front elevation drawing uses a 1/150 scale,” tying the scale entity (1/150) directly to 정면도.
+
+In addition to scale, the same front elevation drawing notes the use of the openwork stacking pattern 영롱쌓기. Together, these two links indicate that the front facade is specified at a particular drawing scale and that the openwork masonry pattern is a named and documented feature in the front view documentation. [Data: Entities (1316); Relationships (1557, 1527)]
+
+## The elevation drawings in the community (좌측면도 and 배면도) are connected by shared building context and floor-level references.
+
+좌측면도 (left side elevation) and 배면도 (rear elevation) are both elevation drawing sheets of the same building, and they share the same floor-level references and boundary context. This is grounded in the relationship stating that both are elevation drawings of the same building and share floor-level references and boundary context.
+
+The presence of shared references suggests the community’s technical documentation is coordinated across multiple views, enabling consistent interpretation of where facade finishes (including the concrete block system) apply relative to boundaries and floors. While only the relation between the two elevation sheets is explicitly supported here, the shared context strengthens the reliability of using one view’s information to interpret another’s. [Data: Entities (1289, 1290); Relationships (1515)]
+
+## 배면도 (rear elevation) is presented in A1 format, indicating a formal, standard drawing sheet setting within the community’s documentation.
+
+The rear elevation drawing 배면도 is linked to an A1 format presentation via a relationship record. This implies the drawing is produced/presented on a large standardized sheet size, which is typical for detailed elevation deliverables.
+
+Within this community context, the A1 presentation does not itself establish facade performance or risk, but it does reinforce that these elevation drawings are part of a structured and formal architectural documentation set—consistent with repeat, explicit specification of facade materials/patterns across views. [Data: Entities (1290); Relationships (1522)]
+
+## 영롱쌓기 is defined as a decorative and functional openwork/perforated stacking method for concrete block facades, connecting material definition to facade intent.
+
+The entity 영롱쌓기 is described in detail as an architectural masonry pattern for facade design. It is characterized as an openwork or perforated stacking method applied to concrete blocks, intentionally laid with gaps/openings to create a decorative and functional screen-like effect.
+
+This definitional linkage matters because it connects technical drawing annotations to a functional design rationale: the facade is intended to be visually permeable and provides a screen-like quality through the masonry gaps/openings. In the community, this intent is tied back to the named material system (콘크리트블록) and the facade specification relationship. [Data: Entities (1313, 1312); Relationships (1579)]
+
+## The community’s relationships indicate a multi-view documentation approach: scale and pattern notes appear at least in the front view, while other views maintain shared reference context.
+
+The documented relationships show that the front elevation (정면도) has both scale (1/150) and pattern (영롱쌓기) annotations linked to it. Meanwhile, left and rear elevations (좌측면도 and 배면도) are connected through shared floor-level and boundary context.
+
+Taken together, the community appears to represent a cohesive set of elevation drawings where at least one view (front) explicitly documents the facade’s openwork masonry pattern and drawing scale, and other views (left/rear) support consistent interpretation through shared referencing. This structure helps decision-makers understand that the facade system is part of a coordinated set of deliverables rather than an isolated note. [Data: Relationships (1557, 1527, 1515)]"
+259,2,"Drawing Title-Block Metadata Community: REVISION DESCRIPTION, NO., and DATE (A-461)","This community is centered on technical drawing/document title-block metadata fields that standardize how revision information, numbering, and dates are recorded on engineering sheets. The entities include labeled metadata fields—REVISION DESCRIPTION, NO., and DATE—plus language variants of the date field (""날짜"") and a year placeholder (""2020""). Relationships show that REVISION DESCRIPTION is associated with a specific drawing sheet (A-461), that revision number and revision description are paired in the drawing metadata, and that date-related labels and values appear together across the title block and specific plan sheets (including a sanitary/landing floor plumbing plan referencing the year/date).",2.0,"# Drawing Title-Block Metadata Community: REVISION DESCRIPTION, NO., and DATE (A-461)
+
+This community is centered on technical drawing/document title-block metadata fields that standardize how revision information, numbering, and dates are recorded on engineering sheets. The entities include labeled metadata fields—REVISION DESCRIPTION, NO., and DATE—plus language variants of the date field (""날짜"") and a year placeholder (""2020""). Relationships show that REVISION DESCRIPTION is associated with a specific drawing sheet (A-461), that revision number and revision description are paired in the drawing metadata, and that date-related labels and values appear together across the title block and specific plan sheets (including a sanitary/landing floor plumbing plan referencing the year/date).
+
+## REVISION DESCRIPTION functions as a revision-history metadata label tied to drawing A-461.
+
+REVISION DESCRIPTION is defined as an engineering-drawing/document metadata field and title-block label used to record revision details, notes, and the history of changes made to a drawing. In this community, it is explicitly linked to the sheet identifier A-461 as a metadata field on that sheet, indicating that revision tracking is operationalized at the document level rather than being purely conceptual. [Data: Entities (107); Relationships (153)].
+
+The grounding text emphasizes that the field appears in the drawing’s title block or document header as an English label for revision-description, serving as the place where revision information is documented for the file/drawing record. This implies the community’s “structure” is largely about standardized documentation fields that help maintain change traceability across technical artifacts. [Data: Entities (107)].
+
+## Revision number and revision description are recorded as paired metadata fields to enumerate revisions consistently.
+
+The community includes a second metadata-label entity, NO., which is described as an English label used in drawing metadata and schedule tables to indicate numbering such as drawing number, sheet/serial number, item number, or revision number. The relationships further indicate that REVISION DESCRIPTION and NO. are paired metadata fields on a drawing sheet, meaning the system treats the revision identifier (number) and its description as coupled information. [Data: Entities (257, 107); Relationships (3584)].
+
+This pairing is operationally important for document control because it supports unambiguous interpretation of “what revision” and “what changed.” The grounding text describes NO. as the label for the numbering field in the title block, used to enumerate revisions or entries, reinforcing that the community is organized around consistent metadata semantics rather than ad hoc free text. [Data: Entities (257)].
+
+## DATE is a standardized English title-block label for drawing/document/revision dates, and it appears alongside other document-control labels.
+
+DATE is defined as the English label for a date field in drawing metadata and the title block, appearing in the title block or revision section to indicate when the drawing or revision was created or updated. In the community’s relationships, DATE is linked to a Korean term (""일련번호"") in a set of metadata fields that includes serial number and date labels, which suggests that date control is part of a broader document-control block. [Data: Entities (106); Relationships (613)].
+
+Additionally, the community includes a Korean label variant for the same date field (""날짜"") and a relationship that maps ""날짜"" to DATE, indicating bilingual/multilingual labeling for the same underlying date metadata concept. This reinforces that the community’s impact is primarily in standardization and clarity of document control fields for technical drawings. [Data: Entities (3383); Relationships (4738)].
+
+## The Korean label ""날짜"" maps to the DATE title-block field, showing multilingual label coverage.
+
+The entity ""날짜"" is described as a date field shown in the title block of the technical document, establishing that it is not merely a translation artifact but a functional label appearing in documentation. A relationship explicitly connects ""날짜"" to the DATE entity, stating that Korean and English labels refer to the date field in the title block. [Data: Entities (3383); Relationships (4738)].
+
+This bilingual linkage implies the community supports consistent interpretation of document dates across language contexts. Within this community, multilingual alignment is achieved by mapping the Korean term to the English metadata label, enabling analysts, reviewers, or downstream systems to treat the date field as the same concept regardless of language. [Data: Relationships (4738)].
+
+## The year placeholder ""2020"" appears as the date value/timeframe used in drawing sets and specific plan sheets.
+
+The entity 2020 is described as the year shown in the drawing date field and on the drawing sheets as the date placeholder in the title block. It indicates the document or plan revision timeframe and serves as the referenced year for the associated drawing set. [Data: Entities (1923)].
+
+Relationships show that a drawing/planning artifact (a sanitary plumbing plan, specifically a landing floor plumbing plan) includes the year/date value. While the relationship wording indicates the year/date appears on those plan sheets, it is grounded through the entity definition that 2020 serves as the year/date placeholder in the title-block date field. [Data: Relationships (2926); Entities (1923)].
+
+## The community is primarily a document-control metadata ecosystem rather than an operational network of actors.
+
+Across the provided entities and relationships, there are no people, organizations, or external systems described; instead, the community consists of standardized labels and values used in engineering drawings’ title blocks (revision description, numbering, and dates). For example, REVISION DESCRIPTION is tied to a specific sheet identifier (A-461), and DATE/""날짜"" are tied via bilingual mapping. [Data: Relationships (153, 4738); Entities (107, 106, 3383)].
+
+This structure suggests the “community” is an information model used to enforce consistency in technical documentation. Consequently, the most direct “impact” concerns accuracy, traceability, and interpretability of document control fields (revision enumeration and dates), rather than actions taken by malicious actors. [Data: Entities (107, 257, 106, 1923, 3383)].
+
+## Revision control fields (REVISION DESCRIPTION + NO. + DATE) likely support traceability of changes across related drawing sets.
+
+The relationships indicate that REVISION DESCRIPTION is associated with revision metadata on sheet A-461, that it is paired with NO. to represent revision number plus revision description, and that DATE/""날짜"" labels and their values appear in title blocks and plan sheets. Together, these establish a consistent pattern: revisions are identified (NO.), explained (REVISION DESCRIPTION), and time-stamped (DATE/""날짜"" and year value such as 2020). [Data: Entities (107, 257, 106, 3383, 1923); Relationships (153, 3584, 4738, 2926)].
+
+From a decision-support perspective, such a system can improve auditability and review workflows because it standardizes where reviewers look for change history. Conversely, any inconsistency in these fields could undermine traceability, leading to confusion about which revision is current and when it was created/updated—an operational risk in engineering documentation processes. [Data: Entities (107, 257, 106); Relationships (3584, 2926)]."
